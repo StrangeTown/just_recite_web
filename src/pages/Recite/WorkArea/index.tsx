@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { ArrowDownKey, ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
+import ReciteButton from "./ReciteButton";
+
 interface IWorkAreaProps {
 	zh: string;
 	answer: string;
@@ -7,27 +11,60 @@ interface IWorkAreaProps {
 	handleNotClick: () => void;
 }
 const WorkArea = ({
-  zh,
-  answer,
+	zh,
+	answer,
 	answerVisible,
 	handleDisplayClick,
 	handleOkClick,
 	handleNotClick,
 }: IWorkAreaProps) => {
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === "ArrowLeft") {
+				if (answerVisible) {
+					handleNotClick();
+				}
+			} else if (e.key === "ArrowRight") {
+				if (answerVisible) {
+					handleOkClick();
+				}
+			} else if (e.key === "ArrowUp") {
+				if (!answerVisible) {
+					handleDisplayClick();
+				}
+			}
+		};
+		window.addEventListener("keydown", handleKeyDown);
+		return () => {
+			window.removeEventListener("keydown", handleKeyDown);
+		};
+	}, [handleDisplayClick, handleNotClick, handleOkClick]);
+
 	return (
 		<div>
-      <div className="h-10">
-			  {answerVisible && <div className="text-opacity-5 text-black">{answer}</div>}
-      </div>
+			<div className="h-24">
+				{answerVisible && (
+					<div className="text-opacity-5 text-black">{answer}</div>
+				)}
+			</div>
 			<div className="text-opacity-5 text-black">{zh}</div>
 			{answerVisible ? (
-				<div className="flex justify-center gap-5">
-					<button onClick={handleNotClick} className="text-opacity-5 text-black">not</button>
-					<button onClick={handleOkClick} className="text-opacity-5 text-black">ok</button>
+				<div className="flex justify-center gap-6">
+					<ReciteButton onClick={handleNotClick}>
+						Not
+						<ArrowLeftKey />
+					</ReciteButton>
+					<ReciteButton onClick={handleOkClick}>
+						OK
+						<ArrowRightKey />
+					</ReciteButton>
 				</div>
 			) : (
-				<div>
-					<button onClick={handleDisplayClick} className="text-opacity-5 text-black">display</button>
+				<div className="flex justify-center">
+					<ReciteButton onClick={handleDisplayClick}>
+						Display
+						<ArrowUpKey />
+					</ReciteButton>
 				</div>
 			)}
 		</div>
