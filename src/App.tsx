@@ -12,7 +12,7 @@ function App() {
   dispatch(setRandomStrings(randomStrings));
 
   return (
-    <div className="App">
+    <div className="App h-screen">
       <Home />
     </div>
   );

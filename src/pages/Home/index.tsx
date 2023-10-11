@@ -2,7 +2,7 @@ import Recite from "../Recite";
 
 const Home = () => {
   return (
-    <div>
+    <div className="border h-full">
       <Recite />
     </div>
   );
