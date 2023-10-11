@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { globalStrings } from "../../data";
 import { useAppSelector } from "../../store/hooks";
 import { selectRandomStrings } from "../../store/slices/stringSlice";
 import WorkArea from "./WorkArea";

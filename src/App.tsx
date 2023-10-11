@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import { useAppDispatch } from './store/hooks';
@@ -8,7 +6,7 @@ import { setRandomStrings } from './store/slices/stringSlice';
 
 function App() {
   const dispatch = useAppDispatch();
-  const randomStrings = getRandomStrings(3);
+  const randomStrings = getRandomStrings(10);
   dispatch(setRandomStrings(randomStrings));
 
   return (
