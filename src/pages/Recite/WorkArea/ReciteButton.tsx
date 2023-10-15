@@ -7,7 +7,7 @@ const ReciteButton = (props: ReciteButtonProps) => {
 	return (
 		<button
 			onClick={onClick}
-			className="text-opacity-5 text-black flex items-center gap-1"
+			className=" text-black flex items-center gap-1"
 		>
 			{children}
 		</button>

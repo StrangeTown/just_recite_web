@@ -44,10 +44,10 @@ const WorkArea = ({
 		<div>
 			<div className="h-24">
 				{answerVisible && (
-					<div className="text-opacity-5 text-black">{answer}</div>
+					<div className=" text-black">{answer}</div>
 				)}
 			</div>
-			<div className="text-opacity-5 text-black">{zh}</div>
+			<div className=" text-black">{zh}</div>
 			{answerVisible ? (
 				<div className="flex justify-center gap-6">
 					<ReciteButton onClick={handleNotClick}>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAppSelector } from "../../store/hooks";
 import { selectRandomStrings } from "../../store/slices/stringSlice";
 import WorkArea from "./WorkArea";
+import Progress from "./Progress";
 
 const Recite = () => {
 	const randomStrings = useAppSelector(selectRandomStrings);
@@ -31,14 +32,19 @@ const Recite = () => {
 			{isFinished ? (
 				<div>isFinished</div>
 			) : (
-				<WorkArea
-					zh={string.zh}
-					answer={string.en}
-					answerVisible={answerVisible}
-					handleDisplayClick={handleDisplayClick}
-					handleOkClick={handleOkClick}
-					handleNotClick={handleNotClick}
-				/>
+				<div className="h-full flex flex-col pt-2">
+          <Progress current={activeStringIndex + 1} total={randomStrings.length} />
+          <div className="flex-1 flex items-center justify-center">
+            <WorkArea
+              zh={string.zh}
+              answer={string.en}
+              answerVisible={answerVisible}
+              handleDisplayClick={handleDisplayClick}
+              handleOkClick={handleOkClick}
+              handleNotClick={handleNotClick}
+            />
+          </div>
+				</div>
 			)}
 		</div>
 	);
