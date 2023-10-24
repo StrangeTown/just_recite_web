@@ -1,18 +1,17 @@
 import { useEffect } from "react";
 import { ArrowDownKey, ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
 import ReciteButton from "./ReciteButton";
+import { tStringItem } from "../../../data";
 
 interface IWorkAreaProps {
-	zh: string;
-	answer: string;
+	item: tStringItem;
 	answerVisible: boolean;
 	handleDisplayClick: () => void;
 	handleOkClick: () => void;
 	handleNotClick: () => void;
 }
 const WorkArea = ({
-	zh,
-	answer,
+	item,
 	answerVisible,
 	handleDisplayClick,
 	handleOkClick,
@@ -42,31 +41,47 @@ const WorkArea = ({
 
 	return (
 		<div>
-			<div className="h-24">
+			{/* Answer */}
+			<div className="h-32">
 				{answerVisible && (
-					<div className=" text-black">{answer}</div>
+					<div className="text-3xl text-slate-600">{item.en}</div>
 				)}
 			</div>
-			<div className=" text-black">{zh}</div>
-			{answerVisible ? (
-				<div className="flex justify-center gap-6">
-					<ReciteButton onClick={handleNotClick}>
-						Not
-						<ArrowLeftKey />
-					</ReciteButton>
-					<ReciteButton onClick={handleOkClick}>
-						OK
-						<ArrowRightKey />
-					</ReciteButton>
+
+			{/* Keys */}
+			<div>
+				<div className="flex items-center">
+					<div className="text-slate-300 text-xs">钩子：</div>
+					<div>{item.hook?.text}</div>
 				</div>
-			) : (
-				<div className="flex justify-center">
-					<ReciteButton onClick={handleDisplayClick}>
-						Display
-						<ArrowUpKey />
-					</ReciteButton>
+				<div className="mt-2 flex items-center">
+					<div className="text-slate-300 text-xs">译文：</div>
+					<div className="text-slate-600 text-base">{item.zh}</div>
 				</div>
-			)}
+			</div>
+
+			{/* Action Buttons */}
+			<div className="mt-10">
+				{answerVisible ? (
+					<div className="flex justify-center gap-6">
+						<ReciteButton onClick={handleNotClick}>
+							忘记
+							<ArrowLeftKey />
+						</ReciteButton>
+						<ReciteButton onClick={handleOkClick}>
+							记得
+							<ArrowRightKey />
+						</ReciteButton>
+					</div>
+				) : (
+					<div className="flex justify-center">
+						<ReciteButton onClick={handleDisplayClick}>
+							英文
+							<ArrowUpKey />
+						</ReciteButton>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

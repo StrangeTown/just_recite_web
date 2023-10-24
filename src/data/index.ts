@@ -2,6 +2,10 @@ export type tStringItem = {
 	id: string;
 	en: string;
 	zh: string;
+	hook?: {
+		text?: string;
+		imgUrl?: string;
+	}
 };
 
 const globalStrings: tStringItem[] = [
@@ -9,6 +13,9 @@ const globalStrings: tStringItem[] = [
 		zh: "好像我很闲似的",
 		en: "Like I've nothing better to do.",
 		id: "571c8670-fc21-49e0-8e35-2ecfd7dc81e2",
+		hook: {
+			text: '闲',
+		}
 	},
 	{
 		zh: "我也不在意",

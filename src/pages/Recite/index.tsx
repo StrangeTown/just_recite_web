@@ -28,7 +28,7 @@ const Recite = () => {
 	};
 
 	return (
-		<div className="h-full flex items-center justify-center">
+		<div className="h-full flex items-center justify-center p-3">
 			{isFinished ? (
 				<div>isFinished</div>
 			) : (
@@ -36,8 +36,7 @@ const Recite = () => {
           <Progress current={activeStringIndex + 1} total={randomStrings.length} />
           <div className="flex-1 flex items-center justify-center">
             <WorkArea
-              zh={string.zh}
-              answer={string.en}
+							item={string}
               answerVisible={answerVisible}
               handleDisplayClick={handleDisplayClick}
               handleOkClick={handleOkClick}

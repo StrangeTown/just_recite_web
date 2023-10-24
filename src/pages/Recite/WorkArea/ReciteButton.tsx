@@ -7,7 +7,7 @@ const ReciteButton = (props: ReciteButtonProps) => {
 	return (
 		<button
 			onClick={onClick}
-			className=" text-black flex items-center gap-1"
+			className="border border-slate-100 rounded-md px-3 py-1 text-sm flex items-center gap-2 text-slate-400 shadow-md hover:shadow-lg"
 		>
 			{children}
 		</button>
