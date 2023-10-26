@@ -32,7 +32,7 @@ const Recite = () => {
 			{isFinished ? (
 				<div>isFinished</div>
 			) : (
-				<div className="h-full flex flex-col pt-2">
+				<div className="h-full flex flex-col pt-2 w-full">
           <Progress current={activeStringIndex + 1} total={randomStrings.length} />
           <div className="flex-1 flex items-center justify-center">
             <WorkArea

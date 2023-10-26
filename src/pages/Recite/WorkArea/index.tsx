@@ -40,9 +40,9 @@ const WorkArea = ({
 	}, [handleDisplayClick, handleNotClick, handleOkClick]);
 
 	return (
-		<div>
+		<div className="w-full">
 			{/* Answer */}
-			<div className="h-32">
+			<div className="h-32 w-full">
 				{answerVisible && (
 					<div className="text-3xl text-slate-600">{item.en}</div>
 				)}
@@ -54,33 +54,42 @@ const WorkArea = ({
 					<div className="text-slate-300 text-xs">译文：</div>
 					<div className="text-slate-600 text-base">{item.zh}</div>
 				</div>
-				<div className="flex items-center mt-20">
-					<div className="text-slate-300 text-xs">钩子：</div>
-					<div>{item.hook?.text}</div>
-				</div>
 			</div>
 
 			{/* Action Buttons */}
-			<div className="mt-6">
-				{answerVisible ? (
-					<div className="flex justify-center gap-6">
-						<ReciteButton onClick={handleNotClick}>
-							忘记
-							<ArrowLeftKey />
-						</ReciteButton>
-						<ReciteButton onClick={handleOkClick}>
-							记得
-							<ArrowRightKey />
-						</ReciteButton>
+			<div className="flex justify-center">
+				<div className="w-72 mt-20 flex flex-col items-center bg-slate-50 p-10 rounded-lg">
+					<div className="flex items-center relative">
+						{/* left of the text */}
+						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center">
+							钩子：
+						</div>
+
+						<div className="text-lg">{item.hook?.text}</div>
 					</div>
-				) : (
-					<div className="flex justify-center">
-						<ReciteButton onClick={handleDisplayClick}>
-							英文
-							<ArrowUpKey />
-						</ReciteButton>
+
+					<div className="mt-4">
+						{answerVisible ? (
+							<div className="flex justify-center gap-6">
+								<ReciteButton onClick={handleNotClick}>
+									忘记
+									<ArrowLeftKey />
+								</ReciteButton>
+								<ReciteButton onClick={handleOkClick}>
+									记得
+									<ArrowRightKey />
+								</ReciteButton>
+							</div>
+						) : (
+							<div className="flex justify-center">
+								<ReciteButton onClick={handleDisplayClick}>
+									英文
+									<ArrowUpKey />
+								</ReciteButton>
+							</div>
+						)}
 					</div>
-				)}
+				</div>
 			</div>
 		</div>
 	);
