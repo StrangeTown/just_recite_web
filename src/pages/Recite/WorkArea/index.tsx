@@ -49,19 +49,19 @@ const WorkArea = ({
 			</div>
 
 			{/* Keys */}
-			<div>
-				<div className="flex items-center">
-					<div className="text-slate-300 text-xs">钩子：</div>
-					<div>{item.hook?.text}</div>
-				</div>
+			<div className="flex flex-col items-center">
 				<div className="mt-2 flex items-center">
 					<div className="text-slate-300 text-xs">译文：</div>
 					<div className="text-slate-600 text-base">{item.zh}</div>
 				</div>
+				<div className="flex items-center mt-20">
+					<div className="text-slate-300 text-xs">钩子：</div>
+					<div>{item.hook?.text}</div>
+				</div>
 			</div>
 
 			{/* Action Buttons */}
-			<div className="mt-10">
+			<div className="mt-6">
 				{answerVisible ? (
 					<div className="flex justify-center gap-6">
 						<ReciteButton onClick={handleNotClick}>
