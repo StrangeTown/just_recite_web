@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/just_recite_web/static/css/main.b5521512.css",
+    "main.js": "/just_recite_web/static/js/main.1f524d86.js",
+    "static/js/787.c9d6e812.chunk.js": "/just_recite_web/static/js/787.c9d6e812.chunk.js",
+    "index.html": "/just_recite_web/index.html",
+    "main.b5521512.css.map": "/just_recite_web/static/css/main.b5521512.css.map",
+    "main.1f524d86.js.map": "/just_recite_web/static/js/main.1f524d86.js.map",
+    "787.c9d6e812.chunk.js.map": "/just_recite_web/static/js/787.c9d6e812.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5521512.css",
+    "static/js/main.1f524d86.js"
+  ]
+}
