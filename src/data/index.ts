@@ -1,3 +1,5 @@
+import strings2306 from './2306'
+
 export type tStringItem = {
 	id: string;
 	en: string;
@@ -8,7 +10,7 @@ export type tStringItem = {
 	}
 };
 
-const globalStrings: tStringItem[] = [
+const qingkStrings: tStringItem[] = [
 	{
 		zh: "好像我很闲似的",
 		en: "Like I've nothing better to do.",
@@ -1250,5 +1252,10 @@ const globalStrings: tStringItem[] = [
 		}
 	},
 ];
+
+const globalStrings = [
+	...qingkStrings,
+	...strings2306,
+]
 
 export { globalStrings };
