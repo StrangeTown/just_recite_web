@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowDownKey, ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
 import ReciteButton from "./ReciteButton";
 import { tStringItem } from "../../../data";
+import { useTranslation } from "react-i18next";
 
 interface IWorkAreaProps {
 	item: tStringItem;
@@ -39,6 +40,8 @@ const WorkArea = ({
 		};
 	}, [handleDisplayClick, handleNotClick, handleOkClick]);
 
+	const {t} = useTranslation();
+
 	return (
 		<div className="w-full">
 			{/* Answer */}
@@ -52,8 +55,8 @@ const WorkArea = ({
 
 			{/* Keys */}
 			<div className="flex flex-col items-center">
-				<div className="mt-2 flex items-center">
-					<div className="text-slate-300 text-xs">译文：</div>
+				<div className="mt-2 flex items-start">
+					<div className="text-slate-300 text-xs min-w-max leading-6">{t('translation')}</div>
 					<div className="text-slate-600 text-base">{item.zh}</div>
 				</div>
 			</div>
@@ -64,7 +67,7 @@ const WorkArea = ({
 					<div className="flex items-center relative">
 						{/* left of the text */}
 						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center w-max">
-							钩子：
+							{t('hook')}
 						</div>
 
 						<div className="text-lg">{item.hook?.text}</div>
@@ -75,13 +78,17 @@ const WorkArea = ({
 							<div className="flex justify-center gap-6">
 								<ReciteButton onClick={handleNotClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">忘记</div>
+										<div className="w-max">
+											{t('notRemember')}
+										</div>
 										<ArrowLeftKey />
 									</div>
 								</ReciteButton>
 								<ReciteButton onClick={handleOkClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">记得</div>
+										<div className="w-max">
+											{t('remember')}
+										</div>
 										<ArrowRightKey />
 									</div>
 								</ReciteButton>
@@ -90,7 +97,9 @@ const WorkArea = ({
 							<div className="flex justify-center">
 								<ReciteButton onClick={handleDisplayClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">英文</div>
+										<div className="w-max">
+											{t('display')}
+										</div>
 										<ArrowUpKey />
 									</div>
 								</ReciteButton>
