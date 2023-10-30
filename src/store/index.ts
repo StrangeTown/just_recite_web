@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import stringReducer from "./slices/stringSlice";
+import settingsReducer from "./slices/settingSlice";
 
 const store = configureStore({
   reducer: {
+    settings: settingsReducer,
     string: stringReducer,
   },
 });

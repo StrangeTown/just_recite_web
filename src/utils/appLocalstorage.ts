@@ -4,6 +4,7 @@
 
 const keys = {
   language: 'language',
+  enFont: 'en-font',
 };
 
 const localStorage = window.localStorage;

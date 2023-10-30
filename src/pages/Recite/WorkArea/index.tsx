@@ -3,6 +3,8 @@ import { ArrowDownKey, ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
 import ReciteButton from "./ReciteButton";
 import { tStringItem } from "../../../data";
 import { useTranslation } from "react-i18next";
+import { selectEnFont } from "../../../store/slices/settingSlice";
+import { useAppSelector } from "../../../store/hooks";
 
 interface IWorkAreaProps {
 	item: tStringItem;
@@ -42,12 +44,24 @@ const WorkArea = ({
 
 	const {t} = useTranslation();
 
+	const enFont = useAppSelector(selectEnFont)
+
+	interface IEnFonts {
+		[key: string]: string;
+	}
+
+	const enFonts: IEnFonts = {
+		Satisfy: "font-[Satisfy]",
+		Roboto: "font-[Roboto]",
+	};
+	const fontCls = enFonts[enFont];
+
 	return (
 		<div className="w-full">
 			{/* Answer */}
 			<div className="h-32 w-full">
 				{answerVisible && (
-					<div className="text-3xl text-slate-600 font-[Satisfy]">
+					<div className={`text-3xl text-slate-600 ${fontCls}`}>
 						{item.en}
 					</div>
 				)}
