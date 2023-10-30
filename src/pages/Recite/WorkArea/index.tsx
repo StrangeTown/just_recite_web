@@ -44,7 +44,9 @@ const WorkArea = ({
 			{/* Answer */}
 			<div className="h-32 w-full">
 				{answerVisible && (
-					<div className="text-3xl text-slate-600">{item.en}</div>
+					<div className="text-3xl text-slate-600 font-[Satisfy]">
+						{item.en}
+					</div>
 				)}
 			</div>
 
@@ -61,7 +63,7 @@ const WorkArea = ({
 				<div className="w-72 mt-20 flex flex-col items-center bg-slate-50 p-10 rounded-lg">
 					<div className="flex items-center relative">
 						{/* left of the text */}
-						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center">
+						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center w-max">
 							钩子：
 						</div>
 
@@ -72,19 +74,25 @@ const WorkArea = ({
 						{answerVisible ? (
 							<div className="flex justify-center gap-6">
 								<ReciteButton onClick={handleNotClick}>
-									忘记
-									<ArrowLeftKey />
+									<div className="flex items-center gap-1">
+										<div className="w-max">忘记</div>
+										<ArrowLeftKey />
+									</div>
 								</ReciteButton>
 								<ReciteButton onClick={handleOkClick}>
-									记得
-									<ArrowRightKey />
+									<div className="flex items-center gap-1">
+										<div className="w-max">记得</div>
+										<ArrowRightKey />
+									</div>
 								</ReciteButton>
 							</div>
 						) : (
 							<div className="flex justify-center">
 								<ReciteButton onClick={handleDisplayClick}>
-									英文
-									<ArrowUpKey />
+									<div className="flex items-center gap-1">
+										<div className="w-max">英文</div>
+										<ArrowUpKey />
+									</div>
 								</ReciteButton>
 							</div>
 						)}
