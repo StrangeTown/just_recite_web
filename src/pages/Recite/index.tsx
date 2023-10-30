@@ -35,13 +35,15 @@ const Recite = () => {
 				<div className="h-full flex flex-col pt-2 w-full">
           <Progress current={activeStringIndex + 1} total={randomStrings.length} />
           <div className="flex-1 flex items-center justify-center">
-            <WorkArea
-							item={string}
-              answerVisible={answerVisible}
-              handleDisplayClick={handleDisplayClick}
-              handleOkClick={handleOkClick}
-              handleNotClick={handleNotClick}
-            />
+            {
+							string && <WorkArea
+								item={string}
+								answerVisible={answerVisible}
+								handleDisplayClick={handleDisplayClick}
+								handleOkClick={handleOkClick}
+								handleNotClick={handleNotClick}
+							/>
+						}
           </div>
 				</div>
 			)}
