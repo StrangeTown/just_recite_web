@@ -3,6 +3,7 @@ import appLocalstorage from "../../utils/appLocalstorage";
 import SettingsItem from "./SettingsItem";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { selectEnFont, setEnFont } from "../../store/slices/settingSlice";
+import Contact from "./Contact";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -36,6 +37,7 @@ const Settings = () => {
 				current={enFont}
 				onClick={handleEnFontClick}
 			/>
+			<Contact />
 		</div>
 	);
 };

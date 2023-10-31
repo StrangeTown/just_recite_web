@@ -13,6 +13,7 @@ const resources = {
       'notRemember': '忘记',
       'remember': '记得',
       'display': '英文',
+      'settigns': '设置',
     },
   },
   en: {
@@ -22,6 +23,7 @@ const resources = {
       'notRemember': 'Forget',
       'remember': 'Remembered',
       'display': 'English',
+      'settigns': 'Settings',
     },
   },
 };
