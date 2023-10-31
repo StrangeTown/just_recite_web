@@ -56,12 +56,14 @@ const WorkArea = ({
 	};
 	const fontCls = enFonts[enFont];
 
+	const textSizeCls = item.en.length > 50 ? "text-2xl" : "text-3xl";
+
 	return (
 		<div className="w-full">
 			{/* Answer */}
 			<div className="h-32 w-full">
 				{answerVisible && (
-					<div className={`text-3xl text-slate-600 ${fontCls}`}>
+					<div className={`${textSizeCls} text-slate-600 ${fontCls}`}>
 						{item.en}
 					</div>
 				)}
