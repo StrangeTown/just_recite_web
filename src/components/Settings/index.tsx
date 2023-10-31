@@ -4,6 +4,7 @@ import SettingsItem from "./SettingsItem";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { selectEnFont, setEnFont } from "../../store/slices/settingSlice";
 import Contact from "./Contact";
+import Refresh from "./Refresh";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -38,6 +39,7 @@ const Settings = () => {
 				onClick={handleEnFontClick}
 			/>
 			<Contact />
+			<Refresh />
 		</div>
 	);
 };
