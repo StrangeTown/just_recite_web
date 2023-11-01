@@ -26,7 +26,13 @@ function App() {
 				<div className="flex-1">
 					<Home />
 				</div>
-				{settingsVisible && <Settings />}
+				{settingsVisible && (
+					<Settings
+						onClose={() => {
+							setSettingsVisible(false);
+						}}
+					/>
+				)}
 			</div>
 		</div>
 	);

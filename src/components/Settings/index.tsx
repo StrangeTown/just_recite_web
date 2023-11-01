@@ -5,14 +5,30 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { selectEnFont, setEnFont } from "../../store/slices/settingSlice";
 import Contact from "./Contact";
 import Refresh from "./Refresh";
+import { useEffect, useState } from "react";
+import ContactModal from "./ContactModal";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
 
-const Settings = () => {
+interface ISettingsProps {
+	onClose: () => void;
+}
+const Settings = ({ onClose }: ISettingsProps) => {
 	const { i18n } = useTranslation();
 	const dispatch = useAppDispatch();
 	const enFont = useAppSelector(selectEnFont);
+	const [contactModalVisible, setContactModalVisible] = useState(false);
+	const [backdropBgOpacityCls, setBackdropBgOpacityCls] =
+		useState("bg-opacity-0");
+	const [contentTranslateX, setContentTranslateX] =
+		useState("translate-x-full");
+	useEffect(() => {
+		setTimeout(() => {
+			setBackdropBgOpacityCls("bg-opacity-50");
+			setContentTranslateX("translate-x-0");
+		}, 0);
+	}, []);
 
 	const currentLanguage =
 		appLocalstorage.getItem(appLocalstorage.keys.language) || "en";
@@ -26,20 +42,43 @@ const Settings = () => {
 		dispatch(setEnFont(font));
 	};
 
+	// check if the click is on the backdrop
+	const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+		if (e.target !== e.currentTarget) {
+			return;
+		}
+
+		setBackdropBgOpacityCls("bg-opacity-0");
+		setContentTranslateX("translate-x-full");
+		setTimeout(() => {
+			onClose();
+		}, 500);
+	};
+
 	return (
-		<div className="w-40 border-l p-1">
-			<SettingsItem
-				options={languageArr}
-				current={currentLanguage}
-				onClick={handleLanguageClick}
-			/>
-			<SettingsItem
-				options={enFontArr}
-				current={enFont}
-				onClick={handleEnFontClick}
-			/>
-			<Contact />
-			<Refresh />
+		<div
+			className={`fixed top-0 right-0 h-full w-full flex z-10 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
+			onClick={handleBackdropClick}
+		>
+			{contactModalVisible && (
+				<ContactModal onClose={() => setContactModalVisible(false)} />
+			)}
+			<div
+				className={`w-1/2 h-full bg-white ${contentTranslateX} transition-all duration-500`}
+			>
+				<SettingsItem
+					options={languageArr}
+					current={currentLanguage}
+					onClick={handleLanguageClick}
+				/>
+				<SettingsItem
+					options={enFontArr}
+					current={enFont}
+					onClick={handleEnFontClick}
+				/>
+				<Contact onClick={() => setContactModalVisible(true)} />
+				<Refresh />
+			</div>
 		</div>
 	);
 };
