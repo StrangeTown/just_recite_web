@@ -18,7 +18,10 @@ function App() {
 
 	return (
 		<div className="App h-screen flex flex-col">
-			<Header onSettingsClick={() => setSettingsVisible(!settingsVisible)} />
+			<Header
+				settingsVisible={settingsVisible}
+				onSettingsClick={() => setSettingsVisible(!settingsVisible)}
+			/>
 			<div className="flex-1 flex">
 				<div className="flex-1">
 					<Home />
