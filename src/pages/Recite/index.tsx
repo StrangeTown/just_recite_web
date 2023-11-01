@@ -28,7 +28,7 @@ const Recite = () => {
 	};
 
 	return (
-		<div className="h-full flex items-center justify-center p-3">
+		<div className="h-full flex items-center justify-center p-0 md:p-3">
 			{isFinished ? (
 				<div>isFinished</div>
 			) : (

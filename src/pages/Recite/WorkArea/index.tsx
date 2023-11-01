@@ -59,9 +59,9 @@ const WorkArea = ({
 	const textSizeCls = item.en.length > 50 ? "text-2xl" : "text-3xl";
 
 	return (
-		<div className="w-full">
+		<div className="w-full h-full flex flex-col pt-10">
 			{/* Answer */}
-			<div className="h-32 w-full">
+			<div className="flex-1 h-32 w-full flex items-center justify-center p-4">
 				{answerVisible && (
 					<div className={`${textSizeCls} text-slate-600 ${fontCls}`}>
 						{item.en}
@@ -70,7 +70,7 @@ const WorkArea = ({
 			</div>
 
 			{/* Keys */}
-			<div className="flex flex-col items-center">
+			<div className="flex flex-col items-center p-4">
 				<div className="mt-2 flex items-start">
 					<div className="text-slate-300 text-xs min-w-max leading-6">{t('translation')}</div>
 					<div className="text-slate-600 text-base">{item.zh}</div>
@@ -78,8 +78,8 @@ const WorkArea = ({
 			</div>
 
 			{/* Action Buttons */}
-			<div className="flex justify-center">
-				<div className="w-72 mt-20 flex flex-col items-center bg-slate-50 p-10 rounded-lg">
+			<div className="w-full h-72 flex justify-center mt-20">
+				<div className="w-full flex flex-col items-center bg-slate-50 p-10 rounded-tl-[20px] rounded-tr-[20px]">
 					<div className="flex items-center relative">
 						{/* left of the text */}
 						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center w-max">
