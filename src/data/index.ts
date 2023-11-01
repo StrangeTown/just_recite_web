@@ -949,7 +949,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "随着海平面上升，预计未来几年这些岛屿中的许多将消失",
-		en: "With rising sea levels, it's predicted that many of these islands in coming years",
+		en: "With rising sea levels, it's predicted that many of these islands will simply disappear in coming years.",
 		id: "7d42472f-d87a-4df4-bc76-418cbaf8558d",
 		hook: {
 			text: '海平面',
@@ -1013,7 +1013,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "看到这些美丽的花让我想起了我在山上徒步旅行的时候。",
-		en: "Seeing all these beautiful flowers reminds me of the time I mountains.",
+		en: "Seeing all these beautiful flowers reminds me of the time I went hiking in the mountains.",
 		id: "27c185ca-0bdc-4631-b1f2-0b8c94984564",
 		hook: {
 			text: '徒步旅行',
@@ -1133,7 +1133,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "一方面，技术已经彻底改变了沟通方式，使其比以往任何时候都更快捷、更方便。",
-		en: "On the one hand, technology has revolutionized communication, convenient than ever before.",
+		en: "On the one hand, technology has revolutionized communication, making it faster and more convenient than ever before.	",
 		id: "50366848-440b-45c8-9277-ea91f006f107",
 		hook: {
 			text: '技术',
