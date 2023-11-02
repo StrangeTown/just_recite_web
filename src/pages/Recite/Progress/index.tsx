@@ -1,28 +1,22 @@
-
 interface ProgressProps {
-  current: number;
-  total: number;
+	current: number;
+	total: number;
 }
 const Progress = ({ current, total }: ProgressProps) => {
-  const currentIndex = current - 1;
-  const items = Array(total).fill(0).map((_, index) => {
-    return {
-      index,
-      active: index <= currentIndex,
-    }
-  });
-  return (
-    <div className="flex items-center gap-1 justify-center">
-      {
-        items.map(item => (
-          <div
-            key={item.index}
-            className={`w-2 h-2 rounded-full border-2 border-slate-300 ${item.active ? 'bg-slate-300' : ''}`}
-          />
-        ))
-      }
-    </div>
-  );
-}
+	const currentIndex = current - 1;
+	const innerWidth = (currentIndex / total) * 100;
+	return (
+		<div className="flex items-center gap-1 justify-center">
+			{/* Outer */}
+			<div className="w-48 h-1.5 bg-slate-100 rounded-full">
+				{/* Inner */}
+				<div
+					className="h-full bg-slate-300 rounded-full transition-all duration-300"
+					style={{ width: `${innerWidth}%` }}
+				/>
+			</div>
+		</div>
+	);
+};
 
 export default Progress;
