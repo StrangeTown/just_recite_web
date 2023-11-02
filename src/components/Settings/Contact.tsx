@@ -4,7 +4,7 @@ interface IContactProps {
 const Contact = ({ onClick }: IContactProps) => {
 	return (
 		<>
-			<div onClick={onClick}>Contact</div>
+			<div onClick={onClick}>Contact Us</div>
 		</>
 	);
 };
