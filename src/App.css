@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+.highlighter {
+  position: relative;
+}
+.highlighter::before {
+  content: "";
+  position: absolute;
+  top: calc(80% - 2px);
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #61dafb;
+  animation: highlighter 2s infinite;
+  transform-origin: left;
+  z-index: -1;
+}

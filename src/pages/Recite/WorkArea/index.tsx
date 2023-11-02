@@ -5,6 +5,7 @@ import { tStringItem } from "../../../data";
 import { useTranslation } from "react-i18next";
 import { selectEnFont } from "../../../store/slices/settingSlice";
 import { useAppSelector } from "../../../store/hooks";
+import Translation from "./Translation";
 
 interface IWorkAreaProps {
 	item: tStringItem;
@@ -42,9 +43,9 @@ const WorkArea = ({
 		};
 	}, [handleDisplayClick, handleNotClick, handleOkClick]);
 
-	const {t} = useTranslation();
+	const { t } = useTranslation();
 
-	const enFont = useAppSelector(selectEnFont)
+	const enFont = useAppSelector(selectEnFont);
 
 	interface IEnFonts {
 		[key: string]: string;
@@ -69,42 +70,26 @@ const WorkArea = ({
 				)}
 			</div>
 
-			{/* Keys */}
+			{/* Tanslation */}
 			<div className="flex flex-col items-center p-4">
-				<div className="mt-2 flex items-start">
-					<div className="text-slate-300 text-xs min-w-max leading-6">{t('translation')}</div>
-					<div className="text-slate-600 text-base">{item.zh}</div>
-				</div>
+				<Translation string={item.zh} keyText={item.hook?.text} />
 			</div>
 
 			{/* Action Buttons */}
 			<div className="w-full h-72 flex justify-center mt-20">
-				<div className="w-full flex flex-col items-center bg-slate-50 p-10 rounded-tl-[20px] rounded-tr-[20px]">
-					<div className="flex items-center relative">
-						{/* left of the text */}
-						<div className="text-slate-300 text-xs absolute bottom-0 transform -translate-x-full h-full flex items-center w-max">
-							{t('hook')}
-						</div>
-
-						<div className="text-lg">{item.hook?.text}</div>
-					</div>
-
-					<div className="mt-4">
+				<div className="w-full flex flex-col items-center bg-slate-50 p-10 pt-20 rounded-tl-[20px] rounded-tr-[20px]">
+					<div className="">
 						{answerVisible ? (
 							<div className="flex justify-center gap-6">
 								<ReciteButton onClick={handleNotClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">
-											{t('notRemember')}
-										</div>
+										<div className="w-max">{t("notRemember")}</div>
 										<ArrowLeftKey />
 									</div>
 								</ReciteButton>
 								<ReciteButton onClick={handleOkClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">
-											{t('remember')}
-										</div>
+										<div className="w-max">{t("remember")}</div>
 										<ArrowRightKey />
 									</div>
 								</ReciteButton>
@@ -113,9 +98,7 @@ const WorkArea = ({
 							<div className="flex justify-center">
 								<ReciteButton onClick={handleDisplayClick}>
 									<div className="flex items-center gap-1">
-										<div className="w-max">
-											{t('display')}
-										</div>
+										<div className="w-max">{t("display")}</div>
 										<ArrowUpKey />
 									</div>
 								</ReciteButton>
