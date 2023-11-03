@@ -56,6 +56,14 @@ const strings: tStringItem[] = [
     hook: {
       text: '袜子'
     }
+  },
+  {
+    en: 'I love visiting the aquarium to see all the colorful fish and marine animals. 🐠🐙🦈🐬🐳🐟',
+    zh: '我喜欢去水族馆看五颜六色的鱼和海洋动物。🐠🐙🦈🐬🐳🐟',
+    id: 'ed14b6ca-87df-4a61-9cdc-27d471d0aad1',
+    hook: {
+      text: '水族馆'
+    }
   }
 ]
 

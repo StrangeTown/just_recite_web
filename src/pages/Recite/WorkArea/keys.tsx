@@ -71,7 +71,7 @@ const ArrowRight = () => (
 );
 
 const KeyWrapper = ({ children }: { children: React.ReactNode }) => (
-  <div className="p-1 shadow rounded flex justify-center items-center">
+  <div className="p-1 shadow rounded hidden md:flex justify-center items-center">
     {children}
   </div>
 );

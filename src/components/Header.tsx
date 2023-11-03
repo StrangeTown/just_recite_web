@@ -9,7 +9,7 @@ const Header = ({ onSettingsClick, settingsVisible }: HeaderProps) => {
 
   const menuColorCls = settingsVisible ? "md:text-slate-500" : "md:text-slate-300";
 	return (
-		<div className="flex justify-end px-4 py-2 border-b">
+		<div className="flex justify-end px-4 py-3">
 			<div
 				className={`flex items-center gap-2 text-slate-500 ${menuColorCls}`}
 				onClick={() => {

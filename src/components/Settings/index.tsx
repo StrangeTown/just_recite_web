@@ -57,14 +57,14 @@ const Settings = ({ onClose }: ISettingsProps) => {
 
 	return (
 		<div
-			className={`fixed top-0 right-0 h-full w-full flex z-10 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
+			className={`fixed top-0 right-0 h-full w-full flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
 			onClick={handleBackdropClick}
 		>
 			{contactModalVisible && (
 				<ContactModal onClose={() => setContactModalVisible(false)} />
 			)}
 			<div
-				className={`w-1/2 h-full bg-white ${contentTranslateX} transition-all duration-500`}
+				className={`w-2/3 h-full bg-white ${contentTranslateX} transition-all duration-500`}
 			>
 				<SettingsItem
 					options={languageArr}
