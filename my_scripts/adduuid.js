@@ -1,634 +1,542 @@
-const data = [
-	{
-		zh: "好像我很闲似的",
-    en: "Like I've nothing better to do."
-	},
-	{
-		zh: "我也不在意",
-    en: "Won't matter to me"
-	},
-	{
-		zh: "他们越来越喜欢我",
-    en: "They're really taken a liking to me."
-	},
-	{
-		zh: "你应该过去打个招呼.",
-    en: "You should stop by and say hi."
-	},
-	{
-		zh: "我老是朝着好的方面想",
-    en: "I keep seeing it the good way."
-	},
-	{
-		zh: "看我遇见谁了",
-    en: "Look who I ran into."
-	},
-	{
-		zh: "我们去走走",
-    en: "Let's take a walk."
-	},
-	{
-		zh: "我已经学到教训了",
-    en: "I've learned my lesson."
-	},
-	{
-		zh: "你不是被开除了吗",
-    en: "Don't you get fired?"
-	},
-	{
-		zh: "你吃了那么多苦",
-    en: "You've been through so much"
-	},
-	{
-		zh: "我对你的损失深表遗憾",
-    en: "I’m sorry for your loss"
-	},
-	{
-		zh: "我没有收到留言.所以不算",
-    en: "I didn't get that message.So this doesn't count"
-	},
-	{
-		zh: "你干嘛转移话题？",
-    en: "Why are you changing the subject？"
-	},
-	{
-		zh: "真希望我可以做点什么让你好过点",
-    en: "I wish there were something I could do to make you feel better."
-	},
-	{
-		zh: "谢谢你替我挺身而出",
-    en: "I did appreciate you standing up for me"
-	},
-	{
-		zh: "不过我想我该走了",
-    en: "But I think I'm about to leave"
-	},
-	{
-		zh: "我马上出去",
-    en: "I'll be out in a second"
-	},
-	{
-		zh: "这说明什么",
-    en: "What does that tell you？"
-	},
-	{
-		zh: "让我们补偿你",
-    en: "Let us make it up to you."
-	},
-	{
-		zh: "我看就先这样吧",
-    en: "I think that's enough for now"
-	},
-	{
-		zh: "别再自责了",
-    en: "Stop beating yourself up"
-	},
-	{
-		zh: "别抱太大希望",
-    en: "Don't get your hopes up"
-	},
-	{
-		zh: "举个例子",
-    en: "Name one"
-	},
-	{
-		zh: "你们两个慢慢聊",
-    en: "I'll let you two guys acquainted"
-	},
-	{
-		zh: "承认吧",
-    en: "Let's face it"
-	},
-	{
-		zh: "我终于自食恶果了",
-    en: "I have tasted my own medicine and it is bitter."
-	},
-	{
-		zh: "我受够了",
-    en: "I have had enough of this"
-	},
-	{
-		zh: "抱歉打断你",
-    en: "Don't mean to interrupt."
-	},
-	{
-		zh: "我要求的不多",
-    en: "I'm not asking for a lot"
-	},
-	{
-		zh: "我们交往过",
-    en: "We used to date"
-	},
-	{
-		zh: "过去的事就别提了",
-    en: "Water under the bridge. Forget it."
-	},
-	{
-		zh: "他回绝了",
-    en: "He blew us off."
-	},
-	{
-		zh: "难道我犯了大错？",
-    en: "Did I just make a huge mistake？"
-	},
-	{
-		zh: "没什么大不了的",
-    en: "No big deal"
-	},
-	{
-		zh: "你真是个大好人",
-    en: "You're a wonderful human being."
-	},
-	{
-		zh: "我就知道你会一猜即中",
-    en: "I knew you would get it on the first guess."
-	},
-	{
-		zh: "所以是谁并不重要,对吧？",
-    en: "So it doesn’t really matter who gets credit,right?"
-	},
-	{
-		zh: "你不能就这么算了",
-    en: "You can't let him get away with that ."
-	},
-	{
-		zh: "微笑能让你无往不胜",
-    en: "A smile goes a long way."
-	},
-	{
-		zh: "别跟我使眼色",
-    en: "Don't wink at me"
-	},
-	{
-		zh: "别想左右她",
-    en: "Don't try to sway her."
-	},
-	{
-		zh: "我已经词穷了",
-    en: "I’m out of words."
-	},
-	{
-		zh: "这句话很难说",
-    en: "It's a really hard word to say."
-	},
-	{
-		zh: "反正你也得独立",
-    en: "You've needed to get out on your own way."
-	},
-	{
-		zh: "拜托,你真以为我会上当？",
-    en: "Oh, come on, you really think that's gonna work on me."
-	},
-	{
-		zh: "我有事要忙",
-    en: "I’m gonna run a couple of errands."
-	},
-	{
-		zh: "你最近在干嘛",
-    en: "What is going on with you？"
-	},
-	{
-		zh: "我不知道你在说什么",
-    en: "I have no idea what you're talking about."
-	},
-	{
-		zh: "谢谢你替我打气",
-    en: "Thanks for trying to cheer me up."
-	},
-	{
-		zh: "我们多久没见面了",
-    en: "How long's it been since we've seen each other?"
-	},
-	{
-		zh: "你能帮我个忙吗",
-    en: "Look, will you do me a favor?"
-	},
-	{
-		zh: "说真的，兄弟，你太需要这个了",
-    en: "Honestly, man, you raelly need this"
-	},
-	{
-		zh: "你也要保重",
-    en: "You take care too"
-	},
-	{
-		zh: "你知道我想要什么吗",
-    en: "You know what I really wanted?"
-	},
-	{
-		zh: "多谢你能过来",
-    en: "Thank you so much for coming"
-	},
-	{
-		zh: "我只会浪费你的时间",
-    en: "I'm just wasting your time"
-	},
-	{
-		zh: "我们终于有了共识",
-    en: "Finally something we agree on"
-	},
-	{
-		zh: "你说得倒容易",
-    en: "That's easy for you to say"
-	},
-	{
-		zh: "因为你搞砸了一切",
-    en: "Because you blow everything"
-	},
-	{
-		zh: "没有别的办法",
-    en: "There is no other way!"
-	},
-	{
-		zh: "那是什么意思",
-    en: "What the hell is that supposed to mean?"
-	},
-	{
-		zh: "这次有点太过了",
-    en: "This is way over the line"
-	},
-	{
-		zh: "想都别想",
-    en: "Don't even think it."
-	},
-	{
-		zh: "可以和你谈一下吗",
-    en: "Can I just talk to you for just a second ？"
-	},
-	{
-		zh: "只有你自己在意",
-    en: "No body cares about this except you"
-	},
-	{
-		zh: "这会让他心碎",
-    en: "It's gonna break his heart"
-	},
-	{
-		zh: "应该随时会到",
-    en: "They'll be here in any minute"
-	},
-	{
-		zh: "你实在太过分了",
-    en: "You have so crossed a line"
-	},
-	{
-		zh: "想象一下",
-    en: "Just think about how would it feel"
-	},
-	{
-		zh: "你太疯狂了",
-    en: "You're a wild man."
-	},
-	{
-		zh: "能不能别再拖延了，快回答我问题",
-    en: "Can you just stop stalling and answer the question? "
-	},
-	{
-		zh: "但奇怪的是…",
-    en: "But the strange thing is..."
-	},
-	{
-		zh: "我们在所有事情上都意见相左",
-    en: "We disagreed about literally everything, my father and I"
-	},
-	{
-		zh: "我们要开放思想去接受宇宙的无限可能",
-    en: "We have to open our minds to the infinite possibilities of what the cosmos has to offer"
-	},
-	{
-		zh: "没有你我哪也不去",
-    en: "I'm not going anywhere without you"
-	},
-	{
-		zh: "我也在想",
-    en: "I'm still figuring that out"
-	},
-	{
-		zh: "很抱歉不得不走到这一步",
-    en: "I'm sorry to have to take this step"
-	},
-	{
-		zh: "你想开车去悬崖那边吗",
-    en: "Would you like to drive out to the cliffs?"
-	},
-	{
-		zh: "还是让专业的来吧",
-    en: "Leave it to the professionals"
-	},
-	{
-		zh: "大家都会没事的",
-    en: "Everyone's gonna be okay"
-	},
-	{
-		zh: "我要搬出去了,房租就给你缴了",
-    en: "I'm gonna be moving out ,so you're gonna be in charge of paying the rent."
-	},
-	{
-		zh: "我真是一刻也不得闲",
-    en: "I can't get a minute of peace"
-	},
-	{
-		zh: "这就对了. 这样不是好多了？",
-    en: "There you go. Doesn't everyone feel better？"
-	},
-	{
-		zh: "你们对对方太刻薄",
-    en: "You're just mean to each other . "
-	},
-	{
-		zh: "我还想你去哪了呢",
-    en: "I was wondering where you went."
-	},
-	{
-		zh: "你以为我是白痴吗",
-    en: "What kind of idiot do you take me for ？"
-	},
-	{
-		zh: "就再等一秒",
-    en: "Wait just one more second."
-	},
-	{
-		zh: "等等, 你都讲完了",
-    en: "Wait a minute.You just take all the words. "
-	},
-	{
-		zh: "我要绑鞋带,你先跑,我就来",
-    en: "I have to tie my shoes, so you go ahead, I'll catch up."
-	},
-	{
-		zh: "为啥不对她坦白 和她说实话呢？",
-    en: "Why don't you just be straight with her ？Tell her the truth."
-	},
-	{
-		zh: "天呐,你差点把我吓出心脏病.",
-    en: "Oh, my god, you almost gave me a heart attack"
-	},
-	{
-		zh: "烂透了.什么事都得我自己来",
-    en: "Terrible.If I wait something done right,I have to do it myself."
-	},
-	{
-		zh: "我们就挑明了吧",
-    en: "Let's just get this out in the open"
-	},
-	{
-		zh: "你不要在意别人的目光",
-    en: "You don't care if people are staring"
-	},
-	{
-		zh: "我们不干了",
-    en: "We are done."
-	},
-	{
-		zh: "你怀疑我说谎时，总是这样看我",
-    en: "That's the look you give me when you think I'm lying"
-	},
-	{
-		zh: "我可以进来吗",
-    en: "Is it okay for me to come in now？"
-	},
-	{
-		zh: "你在怕我吗？",
-    en: "Are you afraid of me or something ？"
-	},
-	{
-		zh: "情况完全不同",
-    en: "A totally different situation. "
-	},
-	{
-		zh: "何帮我们安排一下？",
-    en: "Why don't you set us up ？"
-	},
-	{
-		zh: "上班去吧",
-    en: "Let's head off to work. "
-	},
-	{
-		zh: "你真的对我有信心",
-    en: "You really have faith in me."
-	},
-	{
-		zh: "你是怎么搞的？",
-    en: "What's the matter with you ？"
-	},
-	{
-		zh: "我对他完全改变了看法.",
-    en: "It's making me look at him totally differently."
-	},
-	{
-		zh: "只剩下这个可行的方法",
-    en: "This is the only thing left that has a shot at working. "
-	},
-	{
-		zh: "别在催我了",
-    en: "You have to stop rushing me. "
-	},
-	{
-		zh: "不是你说了什么. 是你的口气",
-    en: "It’s not what you said .It's the way you said it."
-	},
-	{
-		zh: "谢谢你的谅解",
-    en: "Thanks for being so understanding."
-	},
-	{
-		zh: "你的（名字）是我第一个蹦到我脑子里的名字",
-    en: "Yours was the first name that popped into my head ."
-	},
-	{
-		zh: "你笑什么笑？",
-    en: "What are you laughing at ？"
-	},
-	{
-		zh: "我看出来为啥很难抗拒",
-    en: "I can see why that's hard to resist. "
-	},
-	{
-		zh: "他们对我很重要",
-    en: "They mean so much to me."
-	},
-	{
-		zh: "别这么小气吧",
-    en: "You gotta loosen the purse strings a little."
-	},
-	{
-		zh: "她为什么不想陪我们？",
-    en: "Why doesn't she want to hang out with us？"
-	},
-	{
-		zh: "别那么孩子气",
-    en: "Don't be a baby."
-	},
-	{
-		zh: "听起来很棒！我们一定要试一试",
-    en: "That sounds like a great idea! Let's definitely give it a try."
-	},
-	{
-		zh: "不断上升的海平面",
-    en: "rising sea levels"
-	},
-	{
-		zh: "随着海平面上升，预计未来几年这些岛屿中的许多将消失",
-    en: "With rising sea levels, it's predicted that many of these islands will simply disappear "
-	},
-	{
-		zh: "气候变化的影响使这些岛屿社区现在的生活变得困难",
-    en: "the effects of climate change are making life difficult for these island communities "
-	},
-	{
-		zh: "我们有什么共同点",
-    en: "What do we have in common?"
-	},
-	{
-		zh: "我以为电影会好看，结果根本不是",
-    en: "I thought the movie was going to be good, but it turns out it is far from it."
-	},
-	{
-		zh: "她对学习的热情，加上她天生的好奇心和对探索的热爱，使她成为一名优秀的学生",
-    en: "Her passion for learning, added to her natural curiosity and love of exploration, makes "
-	},
-	{
-		zh: "我起晚了 像往常一样",
-    en: "I woke up late as usual."
-	},
-	{
-		zh: "我试着不吃糖果，但它们太诱人了!",
-    en: "I'm trying to keep away from the sweets, but they're just so tempting!"
-	},
-	{
-		zh: "我现在得回去工作了，不过我们以后再叙叙旧吧!",
-    en: "I need to get back to work now, but let's catch up later!"
-	},
-	{
-		zh: "看到这些美丽的花让我想起了我在山上徒步旅行的时候。",
-    en: "Seeing all these beautiful flowers reminds me of the time I went hiking in the "
-	},
-	{
-		zh: "“我想知道音乐会什么时候开始。”",
-    en: "I need to find out what time the concert starts."
-	},
-	{
-		zh: "“我刚刚完成了作业。”",
-    en: "I finished my homework just now."
-	},
-	{
-		zh: "“美元和加元的价值大致相当。”",
-    en: "The American dollar and the Canadian dollar are roughly equivalent in value."
-	},
-	{
-		zh: "“为了通过考试，我需要努力学习。”",
-    en: "I need to study hard in order to pass the exam."
-	},
-	{
-		zh: "“今晚我宁愿呆在家里看电影，也不愿出去社交。”",
-    en: "I prefer to stay in and watch a movie rather than go out and socialize tonight."
-	},
-	{
-		zh: "“我想今晚我要吃鸡肉而不吃牛排。”",
-    en: "I think I'll have the chicken instead of the steak for dinner tonight."
-	},
-	{
-		zh: "“要是我用功一点，就不会不及格了。”",
-    en: "If only I had studied harder for the test, I wouldn't have failed it."
-	},
-	{
-		zh: "“尽管我很忙，我还是设法完成了这个项目。”",
-    en: "I managed to finish the project somehow, even though I was so busy."
-	},
-	{
-		zh: "“幸运的是，当我的车坏了，我需要付拖车的钱时，我身上有一些多余的现金。”",
-    en: "Fortunately, I had some extra cash on me when my car broke down and I needed to pay for "
-	},
-	{
-		zh: "考虑到情况，你感到不知所措完全可以理解。",
-    en: "Considering the situation, it's entirely understandable that you feel overwhelmed."
-	},
-	{
-		zh: "在得出结论之前，收集更多信息也许会有帮助",
-    en: "Maybe it would be helpful to gather more information before reaching a conclusion"
-	},
-	{
-		zh: "今天绝对是个美好的一天，天空湛蓝，微风轻拂",
-    en: "It's definitely a beautiful day outside, with clear blue skies and a gentle breeze."
-	},
-	{
-		zh: "让你的想象力驰骋，创造一些令人惊叹的东西!",
-    en: "Let your imagination run wild and create something amazing!"
-	},
-	{
-		zh: "“如今的时尚趋势变得越来越奇怪。🤪👗”",
-    en: "Today's fashion trends are getting really weird. 🤪👗"
-	},
-	{
-		zh: "一方面，技术已经彻底改变了沟通方式，使其比以往任何时候都更快捷、更方便。",
-    en: "On the one hand, technology has revolutionized communication, making it faster and more "
-	},
-	{
-		zh: "“终于到达了我梦想的目的地!”🌍✈️”",
-    en: "Finally reached my dream destination! 🌍✈️"
-	},
-	{
-		zh: "“当你玩得开心时，时间过得很快!”⌛️😄”",
-    en: "Time flies when you're having fun! ⌛️😄"
-	},
-	{
-		zh: "“当我走进拥挤的电梯时，我总是感到既兴奋又紧张。🤩😬”",
-    en: "I always feel a mix of excitement and nervousness when stepping into a crowded elevator. "
-	},
-	{
-		zh: "这位建筑师设计了一座令人惊叹的建筑，在城市的天际线中脱颖而出。🏢🌆”",
-    en: "The architect designed a stunning building that stands out in the city skyline. 🏢🌆"
-	},
-	{
-		zh: "“有时候，最好的解决办法就是深呼吸，放松。😌”",
-    en: "Sometimes, the best solution is simply to take a deep breath and relax. 😌"
-	},
-	{
-		zh: "“我喜欢手机彻底改变了我们沟通和获取信息的方式。📱💬”",
-    en: "I love how mobile phones have revolutionized the way we communicate and access "
-	},
-	{
-		zh: "“我需要定期锻炼来保持身材和健康。💪🏋️",
-    en: "I need to work out regularly to stay fit and healthy. 💪🏋️"
-	},
-	{
-		zh: "“永远不要放弃你的梦想，因为曾经看似不可能的事情，只要有决心和努力，都可以成为可能。”🌟🙌”",
-    en: "Never give up on your dreams, for what once seemed impossible can become possible with "
-	},
-	{
-		zh: "“我很高兴能搬到一个新的城市，开始我生活的新篇章。🚚🏙️”",
-    en: "I'm excited to move to a new city and start a fresh chapter in my life. 🚚🏙️"
-	},
-	{
-		zh: "我在找一家软件开发公司的工作",
-    en: "I'm looking for a job at a software development firm"
-	},
-	{
-		zh: "“今天早上我错过了🚌，所以我不得不打车去上班。”",
-    en: "I missed the bus this morning, so I had to take a taxi to work."
-	},
-	{
-		zh: '"我用纸巾擦鼻子。"',
-    en: "I used a tissue to wipe my nose."
-	},
-	{
-		zh: "我把碗装满了美味的汤。",
-    en: "I filled the bowl with delicious soup."
-	},
-	{
-		zh: "我要洗衣服，所以我要把衣服扔进洗衣机。💦👕👖🧦🧼🌪️",
-    en: "I need to do laundry, so I'm going to throw my clothes in the washing machine. 💦👕👖🧦🧼🌪️"
-	},
-];
 
+const data = [
+  {
+    en: 'Yes, I need a ticket to the game tonight.',
+    zh: '是的，我需要一张今晚的比赛门票。',
+    id: '21c2f893-bb43-4963-90f6-97013c9254af',
+    hook: {
+      text: '门票'
+    }
+  },
+  {
+    en: 'Both Ben and his husband like watching movies.',
+    zh: 'Ben和他的丈夫都喜欢看电影。',
+    id: '95a9b9a8-3d90-4af1-b470-1f486179aced',
+    hook: {
+      text: '电影'
+    }
+  },
+  {
+    en: 'Ben doesn\'t like listening to the radio.',
+    zh: 'Ben不喜欢听收音机。',
+    id: 'f0c393d9-a0e0-41d1-9049-52a3fabf243b',
+    hook: {
+      text: '收音机'
+    }
+  },
+  {
+    en: 'The food at this restaurant is really bad.',
+    zh: '这家餐厅的食物真的很糟糕。',
+    id: 'ec6c03ff-e4cf-40d5-bb12-23ad1c9d10eb',
+    hook: {
+      text: '餐厅'
+    }
+  },
+  {
+    en: 'Anna likes this small town.',
+    zh: '安娜喜欢这个小镇。',
+    id: '31e3ca98-8601-4a82-9b21-38eccb445c89',
+    hook: {
+      text: '小镇'
+    }
+  },
+  {
+    en: 'My mom is angry at me.',
+    zh: '我妈妈生我的气。',
+    id: '129e736d-c985-47f5-b02a-93cc22cec21b',
+    hook: {
+      text: '生气'
+    }
+  },
+  {
+    en: 'That bus stop is very close to the museum.',
+    zh: '那个公交车站离博物馆很近。',
+    id: 'f460ce21-c3c4-4622-96ce-653b6a77321b',
+    hook: {
+      text: '公交车站'
+    }
+  },
+  {
+    en: 'Who will get married next winter?',
+    zh: '谁会在明年冬天结婚？',
+    id: 'd5679d81-977b-47da-a407-6068e52be508',
+    hook: {
+      text: '结婚'
+    }
+  },
+  {
+    en: 'My cell phone is not in its box.',
+    zh: '我的手机不在盒子里。',
+    id: '02b248fc-c249-485e-a103-b754cbad0187',
+    hook: {
+      text: '手机'
+    }
+  },
+  {
+    en: 'Will Aunt Emma invite them to the picnic?',
+    zh: '艾玛姨妈会邀请他们去野餐吗？',
+    id: '',
+    hook: {
+      text: '野餐'
+    }
+  },
+  {
+    en: 'Tom can\'t find the key to his car.',
+    zh: '汤姆找不到他车的钥匙。',
+    id: '',
+    hook: {
+      text: '钥匙'
+    }
+  },
+  {
+    en: 'Lisa will be in the office the day after tomorrow.',
+    zh: '丽莎后天会在办公室。',
+    id: '',
+    hook: {
+      text: '办公室'
+    }
+  },
+  {
+    en: 'They\'ll have a dance party on September second.',
+    zh: '他们将在9月2日举行舞会。',
+    id: '',
+    hook: {
+      text: '舞会'
+    }
+  },
+  {
+    en: 'I don\'t know the date of her birthday.',
+    zh: '我不知道她生日的日期。',
+    id: '',
+    hook: {
+      text: '生日'
+    }
+  },
+  {
+    en: 'Will Mom come home on December fourth?',
+    zh: '妈妈会在12月4日回家吗？',
+    id: '',
+    hook: {
+      text: '回家'
+    }
+  },
+  {
+    en: 'Can you buy me some eggs?',
+    zh: '你能给我买些鸡蛋吗？',
+    id: '',
+    hook: {
+      text: '鸡蛋'
+    }
+  },
+  {
+    en: 'Emma waited at the train station for an hour.',
+    zh: '艾玛在火车站等了一个小时。',
+    id: '',
+    hook: {
+      text: '火车站'
+    }
+  },
+  {
+    en: 'We arrived in London last Friday at about seven o\'clock.',
+    zh: '我们上周五大约七点到达伦敦。',
+    id: '',
+    hook: {
+      text: '伦敦' 
+    }
+  },
+  {
+    en: 'We saw an ad for this clothes store.',
+    zh: '我们看到了这家服装店的广告。',
+    id: '',
+    hook: {
+      text: '服装店'
+    }
+  },
+  {
+    en: 'Does Emma take piano lessons?',
+    zh: '艾玛上钢琴课吗？',
+    id: '',
+    hook: {
+      text: '钢琴课'
+    }
+  },
+  {
+    en: 'Ben spends an hour running every day.',
+    zh: 'Ben每天花一个小时跑步。',
+    id: '',
+    hook: {
+      text: '跑步'
+    }
+  },
+  {
+    en: 'The country has fresh air and blue skies.',
+    zh: '这个国家有新鲜的空气和蓝天。',
+    id: '',
+    hook: {
+      text: '空气'
+    }
+  },
+  {
+    en: 'Can I take this elevator to the third floor?',
+    zh: '我可以乘这个电梯到三楼吗？',
+    id: '',
+    hook: {
+      text: '电梯'
+    }
+  },
+  {
+    en: 'We\'re waiting for our flight at the gate now.',
+    zh: '我们现在在候机厅等待我们的航班。',
+    id: '',
+    hook: {
+      text: '候机厅'
+    }
+  },
+  {
+    en: 'My cat looks nice in that suit.',
+    zh: '我的猫穿那件衣服看起来很好看。',
+    id: '',
+    hook: {
+      text: '衣服'
+    }
+  },
+  {
+    en: 'This red envelope is for her grandchild.',
+    zh: '这个红包是给她的孙子的。',
+    id: '',
+    hook: {
+      text: '红包'
+    }
+  },
+  {
+    en: 'Ben wants to try on those black shoes.',
+    zh: 'Ben想试穿那些黑色的鞋子。',
+    id: '',
+    hook: {
+      text: '试穿'
+    }
+  },
+  {
+    en: 'Ben got his brother a new scarf.',
+    zh: 'Ben给他哥哥买了一条新围巾。',
+    id: '',
+    hook: {
+      text: '围巾'
+    }
+  },
+  {
+    en: 'I want to return the pants that I bought yesterday.',
+    zh: '我想退掉昨天买的裤子。',
+    id: '',
+    hook: {
+      text: '退掉'
+    }
+  },
+  {
+    en: 'She needs these shoes in a smaller size.',
+    zh: '她需要这些鞋子的尺码更小一点。',
+    id: '',
+    hook: {
+      text: '尺码'
+    }
+  },
+  {
+    en: 'I\'m waiting in line now.',
+    zh: '我现在正在排队等候。',
+    id: '',
+    hook: {
+      text: '排队'
+    }
+  },
+  {
+    en: 'While I was shopping, someone stole my car!',
+    zh: '当我在购物时，有人偷了我的车！',
+    id: '',
+    hook: {
+      text: '购物'
+    }
+  },
+  {
+    en: 'If I have enough time, I\'ll have dim sum for lunch.',
+    zh: '如果我有足够的时间，我会吃点心作为午餐。',
+    id: '',
+    hook: {
+      text: '午餐'
+    }
+  },
+  {
+    en: 'Ben\'s lunch break is only half an hour.',
+    zh: 'Ben的午餐时间只有半小时。',
+    id: '',
+    hook: {
+      text: '午餐时间'
+    }
+  },
+  {
+    en: 'An hour and a half is a long lunch break!',
+    zh: '一个半小时是一个很长的午餐时间！',
+    id: '',
+    hook: {
+      text: '午餐时间'
+    }
+  },
+  {
+    en: 'Would you like some vegetable fried rice for lunch?',
+    zh: '你想吃一些蔬菜炒饭吗？',
+    id: '',
+    hook: {
+      text: '炒饭'
+    }
+  },
+  {
+    en: 'Does this meal come with fries?',
+    zh: '这顿饭有薯条吗？',
+    id: '',
+    hook: {
+      text: '薯条'
+    }
+  },
+  {
+    en: 'You can order any food that\'s on the menu.',
+    zh: '你可以点任何在菜单上的食物。',
+    id: '',
+    hook: {
+      text: '菜单'
+    }
+  },
+  {
+    en: 'I\'d like to order some egg fried rice.',
+    zh: '我想点一些蛋炒饭。',
+    id: '',
+    hook: {
+      text: '炒饭'
+    }
+  },
+  {
+    en: 'She threw the ball to someone else.',
+    zh: '她把球扔给了别人。',
+    id: '',
+    hook: {
+      text: '扔'
+    }
+  },
+  {
+    en: 'How did the big game go last night?',
+    zh: '昨晚的比赛怎么样了？',
+    id: '',
+    hook: {
+      text: '比赛'
+    }
+  },
+  {
+    en: 'The game went OK last night.',
+    zh: '昨晚的比赛还不错。',
+    id: '',
+    hook: {
+      text: '比赛'
+    }
+  },
+  {
+    en: 'You can choose any pizza that\'s on the menu.',
+    zh: '你可以选择任何在菜单上的披萨。',
+    id: '',
+    hook: {
+      text: '披萨'
+    }
+  },
+  {
+    en: 'This British actor has always been so funny.',
+    zh: '这个英国演员一直都很有趣。',
+    id: '',
+    hook: {
+      text: '演员'
+    }
+  },
+  {
+    en: 'Is there a bookcase in the bedroom?',
+    zh: '卧室里有书柜吗？',
+    id: '',
+    hook: {
+      text: '书柜'
+    }
+  },
+  {
+    en: 'That rap star is famous for the clothes that he wears.',
+    zh: '那个说唱明星以他穿的衣服而闻名。',
+    id: '',
+    hook: {
+      text: '衣服'
+    }
+  },
+  {
+    en: 'His lunch break is in an hour and a half.',
+    zh: '他的午餐时间是一个半小时后。',
+    id: '',
+    hook: {
+      text: '午餐时间'
+    }
+  },
+  {
+    en: 'The museum looks beautiful in the sun.',
+    zh: '博物馆在阳光下看起来很漂亮。',
+    id: '',
+    hook: {
+      text: '博物馆'
+    }
+  },
+  {
+    en: 'Is there a can of milk in the fridge?',
+    zh: '冰箱里有一罐牛奶吗？',
+    id: '',
+    hook: {
+      text: '冰箱'
+    }
+  },
+  {
+    en: 'Is the tea on the shelf above the milk?',
+    zh: '茶在牛奶的上面的架子上吗？',
+    id: '',
+    hook: {
+      text: '架子'
+    }
+  },
+  {
+    en: 'Take the cake out of the oven.',
+    zh: '把蛋糕从烤箱里拿出来。',
+    id: '',
+    hook: {
+      text: '烤箱'
+    }
+  },
+  {
+    en: 'Put the chopsticks on the table.',
+    zh: '把筷子放在桌子上。',
+    id: '',
+    hook: {
+      text: '筷子'
+    }
+  },
+  {
+    en: 'If you set the table, I\'ll wash the dishes.',
+    zh: '如果你摆好桌子，我就洗碗。',
+    id: '',
+    hook: {
+      text: '洗碗'
+    }
+  },
+  {
+    en: 'He talked to people in the store.',
+    zh: '他在商店里和人们交谈。',
+    id: '',
+    hook: {
+      text: '商店'
+    }
+  },
+  {
+    en: 'We live across from NYU.',
+    zh: '我们住在纽约大学的对面。',
+    id: '',
+    hook: {
+      text: '对面'
+    }
+  },
+  {
+    en: 'I\'m picking up my luggage now, and then I\'ll come outside.',
+    zh: '我现在正在取行李，然后我就出来。',
+    id: '',
+    hook: {
+      text: '行李'
+    }
+  },
+  {
+    en: 'There\'s a grocery store across from our apartment.',
+    zh: '我们公寓的对面有一家杂货店。',
+    id: '',
+    hook: {
+      text: '杂货店'
+    }
+  },
+  {
+    en: 'I\'m sure we can go ice skating in Central Park.',
+    zh: '我相信我们可以在中央公园滑冰。',
+    id: '',
+    hook: {
+      text: '滑冰'
+    }
+  },
+  {
+    en: 'Central Park is across from Fifth Avenue.',
+    zh: '中央公园在第五大道的对面。',
+    id: '',
+    hook: {
+      text: '对面'
+    }
+  },
+  {
+    en: 'There are various ways to get to Times Square.',
+    zh: '有很多种方法可以到时代广场。',
+    id: '',
+    hook: {
+      text: '时代广场'
+    }
+  },
+  {
+    en: 'There\'s a nice cafe on Twenty-Third Street.',
+    zh: '在第23街上有一家很好的咖啡馆。',
+    id: '',
+    hook: {
+      text: '咖啡馆'
+    }
+  },
+  {
+    en: 'What do you like about Fifth Avenue in New York?',
+    zh: '你喜欢纽约第五大道的什么？',
+    id: '',
+    hook: {
+      text: '第五大道'
+    }
+  },
+  {
+    en: 'The baseball game went well yesterday.',
+    zh: '昨天的棒球比赛进行得很顺利。',
+    id: '',
+    hook: {
+      text: '棒球比赛'
+    }
+  },
+  {
+    en: 'The best thing about Chinatown is the amazing food!',
+    zh: '唐人街最好的事情就是美味的食物！',
+    id: '',
+    hook: {
+      text: '唐人街'
+    }
+  },
+  {
+    en: 'Do you need a fork or chopsticks?',
+    zh: '你需要叉子还是筷子？',
+    id: '',
+    hook: {
+      text: '叉子'
+    }
+  },
+  {
+    en: 'My friend has a baby boy.',
+    zh: '我的朋友有一个男婴。',
+    id: '',
+    hook: {
+      text: '男婴'
+    }
+  },
+]
 const {v4: uuidv4} = require('uuid');
 const fs = require('fs');
 const path = require('path');
 
-const dir = path.join(__dirname, '../scripts/output');
+const dir = path.join(__dirname, '../my_scripts/output');
 
 data.forEach((item) => {
   item.id = uuidv4();
 });
 
-fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(data, null, 2));
+fs.writeFileSync(path.join(dir, 'data_guoqing.json'), JSON.stringify(data, null, 2));

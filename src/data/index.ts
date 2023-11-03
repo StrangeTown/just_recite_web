@@ -1,4 +1,5 @@
 import strings2306 from "./2306";
+import strignsGuoQing from "./guoqing";
 
 export type tStringItem = {
 	id: string;
@@ -109,7 +110,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你干嘛转移话题？",
-		en: "Why are you changing the subject？",
+		en: "Why are you changing the subject?",
 		id: "f2e441fb-e420-423b-b1b5-52748d134d64",
 		hook: {
 			text: "话题",
@@ -149,7 +150,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "这说明什么",
-		en: "What does that tell you？",
+		en: "What does that tell you?",
 		id: "c4c49ed4-cde4-4b51-8c64-c059fb69ba61",
 		hook: {
 			text: "说明",
@@ -269,7 +270,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "难道我犯了大错？",
-		en: "Did I just make a huge mistake？",
+		en: "Did I just make a huge mistake?",
 		id: "f6bcd462-a85b-4243-8b71-869b1649f315",
 		hook: {
 			text: "大错",
@@ -381,7 +382,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你最近在干嘛",
-		en: "What is going on with you？",
+		en: "What is going on with you?",
 		id: "557d9a48-2d87-4656-a88a-2709b2fd909a",
 		hook: {
 			text: "干嘛",
@@ -517,7 +518,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "可以和你谈一下吗",
-		en: "Can I just talk to you for just a second ？",
+		en: "Can I just talk to you for just a second?",
 		id: "542fd776-93a7-4db1-9d9a-3af4bd1022a4",
 		hook: {
 			text: "谈一下",
@@ -669,7 +670,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "这就对了. 这样不是好多了？",
-		en: "There you go. Doesn't everyone feel better？",
+		en: "There you go. Doesn't everyone feel better?",
 		id: "51e61778-a1b5-4009-823d-788b65b73af7",
 		hook: {
 			text: "对了",
@@ -693,7 +694,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你以为我是白痴吗",
-		en: "What kind of idiot do you take me for ？",
+		en: "What kind of idiot do you take me for?",
 		id: "10317ac5-d17a-4562-b18b-86d2fbcdd3fa",
 		hook: {
 			text: "白痴",
@@ -725,7 +726,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "为啥不对她坦白 和她说实话呢？",
-		en: "Why don't you just be straight with her ？Tell her the truth.",
+		en: "Why don't you just be straight with her? Tell her the truth.",
 		id: "13e8e044-7989-4277-b33f-cbda505b7404",
 		hook: {
 			text: "坦白",
@@ -781,7 +782,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "我可以进来吗",
-		en: "Is it okay for me to come in now？",
+		en: "Is it okay for me to come in now?",
 		id: "6e9217b1-2c95-4f16-b712-04ec82210642",
 		hook: {
 			text: "进来",
@@ -789,7 +790,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你在怕我吗？",
-		en: "Are you afraid of me or something ？",
+		en: "Are you afraid of me or something?",
 		id: "c562aca3-aa5e-4e22-99b8-8a814827fca5",
 		hook: {
 			text: "怕",
@@ -805,7 +806,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "何帮我们安排一下？",
-		en: "Why don't you set us up ？",
+		en: "Why don't you set us up?",
 		id: "9c4eb201-28a8-411b-94d0-31d734439910",
 		hook: {
 			text: "安排",
@@ -829,7 +830,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你是怎么搞的？",
-		en: "What's the matter with you ？",
+		en: "What's the matter with you?",
 		id: "78cbc4c8-c78f-4ea0-a961-045496b52b0e",
 		hook: {
 			text: "怎么搞的",
@@ -885,7 +886,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "你笑什么笑？",
-		en: "What are you laughing at ？",
+		en: "What are you laughing at?",
 		id: "41424c0f-d9b4-4ce1-85cf-df205cacc6b5",
 		hook: {
 			text: "笑什么",
@@ -917,7 +918,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "她为什么不想陪我们？",
-		en: "Why doesn't she want to hang out with us？",
+		en: "Why doesn't she want to hang out with us?",
 		id: "0d2ee408-c881-48ed-b334-514ed6b37fce",
 		hook: {
 			text: "陪",
@@ -1365,6 +1366,8 @@ const testData: tStringItem[] = [
 
 let isTest = false;
 // isTest = true;
-const globalStrings = isTest ? testData : [...qingkStrings, ...strings2306];
+const globalStrings = isTest
+	? testData
+	: [...qingkStrings, ...strings2306, ...strignsGuoQing];
 
 export { globalStrings };
