@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowDownKey, ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
+import { ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys";
 import ReciteButton from "./ReciteButton";
 import { tStringItem } from "../../../data";
 import { useTranslation } from "react-i18next";
@@ -46,7 +46,7 @@ const WorkArea = ({
 		return () => {
 			window.removeEventListener("keydown", handleKeyDown);
 		};
-	}, [handleDisplayClick, handleNotClick, handleOkClick]);
+	}, [handleDisplayClick, handleNotClick, handleOkClick, answerVisible]);
 	const { t } = useTranslation();
 	const enFont = useAppSelector(selectEnFont);
 

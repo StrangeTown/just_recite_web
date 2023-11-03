@@ -5,7 +5,7 @@ interface HeaderProps {
   settingsVisible: boolean;
 }
 const Header = ({ onSettingsClick, settingsVisible }: HeaderProps) => {
-	const { t } = useTranslation();
+	useTranslation();
 
   const menuColorCls = settingsVisible ? "md:text-slate-500" : "md:text-slate-300";
 	return (

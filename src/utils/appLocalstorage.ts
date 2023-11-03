@@ -25,10 +25,12 @@ const clear = () => {
   localStorage.clear();
 };
 
-export default {
+const appLocalstorage = {
   keys,
   setItem,
   getItem,
   removeItem,
   clear,
 };
+
+export default appLocalstorage;
