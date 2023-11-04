@@ -1,5 +1,4 @@
 import strings2306 from "./2306";
-import strignsGuoQing from "./guoqing";
 import qingkStrings from "./qingke";
 
 export type tStringItem = {
