@@ -5,6 +5,7 @@ export type tStringItem = {
 	id: string;
 	en: string;
 	zh: string;
+	audio?: string;
 	hook?: {
 		text?: string;
 		imgUrl?: string;
