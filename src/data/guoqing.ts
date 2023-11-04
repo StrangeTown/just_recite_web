@@ -39,6 +39,7 @@ const strings: tStringItem[] = [
 		id: "9c2aa156-0044-40cd-845d-d533ef4c99cb",
 		hook: {
 			text: "小镇",
+      imgUrl: 'https://s1.locimg.com/2023/11/03/57276aa6d7da7.png',
 		},
 	},
 	{
