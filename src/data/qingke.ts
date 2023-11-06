@@ -406,7 +406,7 @@ const qingkStrings: tStringItem[] = [
 		zh: "帮我个忙好吗",
 		id: "a23acc0a-5510-4f89-8aa3-1f5115f1521c",
 		hook: {
-			text: "帮忙",
+			text: "帮我个忙",
 		},
 	},
 	{
@@ -866,8 +866,8 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-		zh: "你的（名字）是我第一个蹦到我脑子里的名字",
 		en: "Yours was the first name that popped into my head .",
+		zh: "你是我想到的第一个人",
 		id: "5fdca6d1-9fc7-40c1-a250-97695ae00eb1",
 		hook: {
 			text: "想到",
@@ -926,7 +926,7 @@ const qingkStrings: tStringItem[] = [
 		en: "That sounds like a great idea! Let's definitely give it a try.",
 		id: "13dc858a-f4e4-43be-be92-11a2646c0844",
 		hook: {
-			text: "试",
+			text: "试一试",
 		},
 	},
 	{

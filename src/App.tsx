@@ -14,7 +14,7 @@ function App() {
 	useEffect(() => {
 		const randomStrings = getRandomStrings(10);
 		dispatch(setRandomStrings(randomStrings));
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<div className="App h-screen flex flex-col">
