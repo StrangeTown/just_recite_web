@@ -6,7 +6,7 @@ interface SettingState {
 }
 
 const initialState: SettingState = {
-  enFont: appLocalstorage.getItem(appLocalstorage.keys.enFont) || 'Satisfy',
+  enFont: appLocalstorage.getItem(appLocalstorage.keys.enFont) || 'Roboto',
 };
 
 const settingSlice = createSlice({
