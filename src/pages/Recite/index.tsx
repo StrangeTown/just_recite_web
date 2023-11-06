@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAppSelector } from "../../store/hooks";
 import { selectRandomStrings } from "../../store/slices/stringSlice";
 import WorkArea from "./WorkArea";
+import Completed from "./Completed";
 
 const Recite = () => {
 	const randomStrings = useAppSelector(selectRandomStrings);
@@ -29,7 +30,7 @@ const Recite = () => {
 	return (
 		<div className="h-full flex items-center justify-center p-0 md:p-3">
 			{isFinished ? (
-				<div>isFinished</div>
+				<Completed />
 			) : (
 				<div className="h-full w-full">
 					<WorkArea
