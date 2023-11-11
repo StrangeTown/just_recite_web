@@ -14,6 +14,7 @@ const resources = {
       'remember': '记得',
       'display': '英文',
       'settigns': '设置',
+      'next': '下一个',
     },
   },
   en: {
@@ -24,6 +25,7 @@ const resources = {
       'remember': 'Remembered',
       'display': 'English',
       'settigns': 'Settings',
+      'next': 'Next',
     },
   },
 };
