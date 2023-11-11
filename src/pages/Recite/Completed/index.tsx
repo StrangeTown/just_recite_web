@@ -12,7 +12,7 @@ const Completed = ({ onCrazyPracticeClick }: CompletedProps) => {
       </div>
       <div className="mt-16">
         <div
-          className="cursor-pointer underline text-slate-500"
+          className="cursor-pointer text-slate-500 px-3 py-2  shadow"
           onClick={() => {
             window.location.reload()
           }}
@@ -20,10 +20,10 @@ const Completed = ({ onCrazyPracticeClick }: CompletedProps) => {
           再来一组
         </div>
         <div
-          className="mt-4 cursor-pointer underline text-slate-500"
+          className="mt-4 cursor-pointer text-slate-500 px-3 py-2 shadow"
           onClick={onCrazyPracticeClick}
         >
-          利用钩子疯狂复习
+          利用<span className="highlighter">钩子</span>疯狂复习
         </div>
       </div>
     </div>
