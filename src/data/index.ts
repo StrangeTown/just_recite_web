@@ -119,7 +119,7 @@ const testData: tStringItem[] = [
 	},
 ];
 
-const data = [...qingkStrings, ...strings2306, ...testData];
+const data = [...qingkStrings, ...strings2306];
 
 let isTest = false;
 // isTest = true;
