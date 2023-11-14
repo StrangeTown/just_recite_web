@@ -11,8 +11,20 @@ function App() {
 	const dispatch = useAppDispatch();
 	const [settingsVisible, setSettingsVisible] = useState(false);
 
+	const preloadImages = (urls: string[]) => {
+		for (const url of urls) {
+			const img = new Image();
+			img.src = url;
+		}
+	};
 	useEffect(() => {
 		const randomStrings = getRandomStrings(10);
+
+		const imageUrls = randomStrings
+			.map((s) => s.hook?.imgUrl)
+			.filter((img) => img) as string[];
+		preloadImages(imageUrls);
+
 		dispatch(setRandomStrings(randomStrings));
 	}, [dispatch]);
 
