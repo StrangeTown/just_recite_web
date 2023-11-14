@@ -22,7 +22,8 @@ const strings: tStringItem[] = [
     zh: '今天这个城市的空气质量真的很差，我们出门的时候应该考虑戴口罩。😷🌫️',
     id: '5d5d1cc8-24a7-4c12-9610-e2cec4c18dac',
     hook: {
-      text: '空气质量'
+      text: '空气质量',
+      imgUrl: 'https://s2.loli.net/2023/11/14/jAuWflhSL5HD9O3.png'
     }
   },
   {

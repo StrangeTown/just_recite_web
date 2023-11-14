@@ -1,5 +1,6 @@
 import strings2306 from "./2306";
 import qingkStrings from "./qingke";
+import guoqingStrings from "./guoqing";
 
 export type tStringItem = {
 	id: string;
@@ -119,7 +120,7 @@ const testData: tStringItem[] = [
 	},
 ];
 
-const data = [...qingkStrings, ...strings2306];
+const data = [...qingkStrings, ...strings2306, ...guoqingStrings];
 
 let isTest = false;
 // isTest = true;

@@ -186,7 +186,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "I'll let you two guys acquainted",
+		en: "I'll let you two guys acquainted",
 		zh: "我让你们两个人认识一下",
 		id: "b626ec51-3993-4e1c-95f9-b8396b62c3f4",
 		hook: {
@@ -218,7 +218,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Don't mean to interrupt.",
+		en: "Don't mean to interrupt.",
 		zh: "不是故意打扰你们",
 		id: "d3beaaa1-ba92-4f3f-a160-c6e1c597d27a",
 		hook: {
@@ -242,7 +242,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Water under the bridge. Forget it.",
+		en: "Water under the bridge. Forget it.",
 		zh: "过去的事就让它过去吧",
 		id: "9b702c94-2897-48e4-9b61-6eeceac677bf",
 		hook: {
@@ -298,7 +298,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "You can't let him get away with that .",
+		en: "You can't let him get away with that .",
 		zh: "你不能让他这么走了",
 		id: "f0ed9e9a-a0fe-4162-9f6a-0aade8706ac9",
 		hook: {
@@ -306,7 +306,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "A smile goes a long way.",
+		en: "A smile goes a long way.",
 		zh: "微笑能让你无往不胜",
 		id: "8421e7d3-bcec-47b9-849f-36e33da8878e",
 		hook: {
@@ -319,6 +319,7 @@ const qingkStrings: tStringItem[] = [
 		id: "10d812ae-04ca-4301-a0b1-ece75672ae1b",
 		hook: {
 			text: "使眼色",
+			imgUrl: "https://i.niupic.com/images/2023/11/14/cqvp.png",
 		},
 	},
 	{
@@ -346,7 +347,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "You've needed to get out on your own way.",
+		en: "You've needed to get out on your own way.",
 		zh: "你需要独立",
 		id: "b8ec8627-685a-432d-a993-f95fc21e7cfb",
 		hook: {
@@ -362,7 +363,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "I’m gonna run a couple of errands.",
+		en: "I’m gonna run a couple of errands.",
 		zh: "我要去办点事",
 		id: "3eabc1fb-fc54-4224-84db-869588eaeebc",
 		hook: {
@@ -402,7 +403,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Look, will you do me a favor?",
+		en: "Look, will you do me a favor?",
 		zh: "帮我个忙好吗",
 		id: "a23acc0a-5510-4f89-8aa3-1f5115f1521c",
 		hook: {
@@ -442,7 +443,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "I'm just wasting your time",
+		en: "I'm just wasting your time",
 		zh: "我只是在浪费你的时间",
 		id: "96ffc603-b901-44f5-8cf5-2f34fe539c11",
 		hook: {
@@ -482,7 +483,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "What the hell is that supposed to mean?",
+		en: "What the hell is that supposed to mean?",
 		zh: "这是什么意思",
 		id: "46b80985-45bc-44ed-b317-6c90980b5b21",
 		hook: {
@@ -527,6 +528,7 @@ const qingkStrings: tStringItem[] = [
 		id: "2c8a8224-a7f1-4c73-b679-c304132110e4",
 		hook: {
 			text: "心碎",
+			imgUrl: 'https://i.niupic.com/images/2023/11/14/cqxl.png'
 		},
 	},
 	{
@@ -546,7 +548,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Just think about how would it feel",
+		en: "Just think about how would it feel",
 		zh: "想想那会是什么感觉",
 		id: "7be0d385-188e-468e-9464-03f6cbae64dc",
 		hook: {
@@ -623,6 +625,7 @@ const qingkStrings: tStringItem[] = [
 		id: "2766ec38-83e4-4384-afea-8f3e2b396999",
 		hook: {
 			text: "悬崖",
+			imgUrl: 'https://i.niupic.com/images/2023/11/14/cqyP.png'
 		},
 	},
 	{
@@ -711,6 +714,7 @@ const qingkStrings: tStringItem[] = [
 		id: "336eb551-b24f-4f9a-8143-ef821ae6667f",
 		hook: {
 			text: "绑鞋带",
+			imgUrl: 'https://s2.loli.net/2023/11/14/nTmiwej8p35YxcI.png'
 		},
 	},
 	{
@@ -730,7 +734,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Terrible.If I wait something done right,I have to do it myself.",
+		en: "Terrible.If I wait something done right,I have to do it myself.",
 		zh: "太糟糕了,如果我想做好一件事,我就得自己动手",
 		id: "71a5774f-bb53-4f59-b9ff-aaef2f94f50d",
 		hook: {
@@ -794,7 +798,7 @@ const qingkStrings: tStringItem[] = [
 		},
 	},
 	{
-    en: "Why don't you set us up?",
+		en: "Why don't you set us up?",
 		zh: "你为什么不介绍我们认识呢",
 		id: "9c4eb201-28a8-411b-94d0-31d734439910",
 		hook: {
@@ -807,6 +811,7 @@ const qingkStrings: tStringItem[] = [
 		id: "6d0f0c43-ab06-47da-b39f-97c1fb6dcbed",
 		hook: {
 			text: "上班",
+			imgUrl: 'https://s2.loli.net/2023/11/14/WzS5gUQRGeKYJ2X.png'
 		},
 	},
 	{
@@ -935,6 +940,7 @@ const qingkStrings: tStringItem[] = [
 		id: "7d42472f-d87a-4df4-bc76-418cbaf8558d",
 		hook: {
 			text: "海平面",
+			imgUrl: 'https://s2.loli.net/2023/11/14/FmD4KxyGcYvMJpe.png'
 		},
 	},
 	{
@@ -1007,6 +1013,7 @@ const qingkStrings: tStringItem[] = [
 		id: "fc20a97d-7463-42b0-9ec0-b869aa27a510",
 		hook: {
 			text: "音乐会",
+			imgUrl: 'https://s2.loli.net/2023/11/14/WuCYHVaMxZRiscd.png'
 		},
 	},
 	{
@@ -1144,6 +1151,7 @@ const qingkStrings: tStringItem[] = [
 		id: "87715440-6288-4aab-8070-2fff799e1aef",
 		hook: {
 			text: "电梯",
+			imgUrl: 'https://s2.loli.net/2023/11/14/pfU7AtC3HhoMzJm.png'
 		},
 	},
 	{
@@ -1216,6 +1224,7 @@ const qingkStrings: tStringItem[] = [
 		id: "6dcec485-d2cc-4631-9c04-ce61be4ad607",
 		hook: {
 			text: "纸巾",
+			imgUrl: 'https://s2.loli.net/2023/11/14/fRHcSZJ5VEXtmhG.png'
 		},
 	},
 	{
@@ -1224,6 +1233,7 @@ const qingkStrings: tStringItem[] = [
 		id: "ebc8ebd6-2e14-45e3-ad33-f6ca87b71336",
 		hook: {
 			text: "碗",
+			imgUrl: 'https://s2.loli.net/2023/11/14/vIuCrqHw4OZPbeV.png'
 		},
 	},
 	{
@@ -1232,6 +1242,7 @@ const qingkStrings: tStringItem[] = [
 		id: "cf0a7318-a282-4f14-bb63-982e260cfa80",
 		hook: {
 			text: "洗衣机",
+			imgUrl: 'https://s2.loli.net/2023/11/14/v2CeHzjBSk6FPEW.png'
 		},
 	},
 ];
