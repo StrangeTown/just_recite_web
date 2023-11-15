@@ -31,7 +31,8 @@ const strings: tStringItem[] = [
     zh: '我必须先洗碗才能放松。🍽️💦',
     id: 'e64f1a60-d8ad-47c3-ad29-b456521468f0',
     hook: {
-      text: '洗碗'
+      text: '洗碗',
+      imgUrl: 'https://wx3.sinaimg.cn/mw690/008wKHM6ly1hjurwu3709j30kq0n4nfu.jpg'
     }
   },
   {
@@ -39,7 +40,8 @@ const strings: tStringItem[] = [
     zh: '今天早上我吃了一碗粥。🍲',
     id: '19fa7292-8909-47ac-b2bb-7df241404c97',
     hook: {
-      text: '粥'
+      text: '粥',
+      imgUrl: 'https://wx2.sinaimg.cn/mw2000/008wKHM6ly1hjus0q7lsdj30f00n8tqf.jpg'
     }
   },
   {
@@ -47,7 +49,8 @@ const strings: tStringItem[] = [
     zh: '我喜欢在早餐的燕麦粥里加入蓝莓，这样既甜美又健康！🫐🥣',
     id: 'c3c8e518-f4c8-4af8-8c2d-802ce8f78542',
     hook: {
-      text: '蓝莓'
+      text: '蓝莓',
+      imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjus2zkmgej30h20nok9r.jpg'
     }
   },
   {
@@ -55,7 +58,8 @@ const strings: tStringItem[] = [
     zh: '我需要为冬天买新袜子',
     id: '450263d5-2b18-4cef-8de0-635b885ea015',
     hook: {
-      text: '袜子'
+      text: '袜子',
+      imgUrl: 'https://wx4.sinaimg.cn/mw690/008wKHM6ly1hjusy7uivzj30hg0le126.jpg'
     }
   },
   {
@@ -63,7 +67,8 @@ const strings: tStringItem[] = [
     zh: '我喜欢去水族馆看五颜六色的鱼和海洋动物。🐠🐙🦈🐬🐳🐟',
     id: 'ed14b6ca-87df-4a61-9cdc-27d471d0aad1',
     hook: {
-      text: '水族馆'
+      text: '水族馆',
+      imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjut0efaeyj30ka0metva.jpg'
     }
   },
   {
@@ -71,7 +76,8 @@ const strings: tStringItem[] = [
     zh: '“我喜欢在冬季喝热巧克力！”🍫❤️️☕️',
     id: '98e87b16-4691-47c3-9710-684ea6a7b6a6',
     hook: {
-      text: '热巧克力'
+      text: '热巧克力',
+      imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjut308tdrj30hy0ngtn4.jpg'
     }
   }
 ]

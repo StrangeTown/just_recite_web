@@ -7,6 +7,7 @@ const strings: tStringItem[] = [
 		id: "37d858bb-3729-4e77-94fc-bcddc5a472c8",
 		hook: {
 			text: "门票",
+			imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjutg7vyf5j30iu0n0wlg.jpg'
 		},
 	},
 	{
@@ -15,6 +16,7 @@ const strings: tStringItem[] = [
 		id: "2f135805-4ffc-4494-9a7a-beaac9afe4de",
 		hook: {
 			text: "电影",
+			imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjutho73klj30j60mok0c.jpg'
 		},
 	},
 	{
@@ -23,6 +25,7 @@ const strings: tStringItem[] = [
 		id: "37521b24-0f96-411f-8ffb-19cc41ca94d5",
 		hook: {
 			text: "收音机",
+			imgUrl: 'https://wx1.sinaimg.cn/mw690/008wKHM6ly1hjvj5cgoogj30ji0u21b9.jpg'
 		},
 	},
 	{
@@ -31,6 +34,7 @@ const strings: tStringItem[] = [
 		id: "386269c0-1fe4-46f8-9e47-ae0deae95179",
 		hook: {
 			text: "餐厅",
+			imgUrl: 'https://wx1.sinaimg.cn/mw690/008wKHM6ly1hjvj82igebj30lk0ty7wh.jpg'
 		},
 	},
 	{
@@ -48,6 +52,7 @@ const strings: tStringItem[] = [
 		id: "24904339-a8ee-421d-ad01-05f4dc66c424",
 		hook: {
 			text: "生气",
+			imgUrl: 'https://wx1.sinaimg.cn/mw690/008wKHM6ly1hjvjb8xsh3j30k40uahaa.jpg'
 		},
 	},
 	{
@@ -56,6 +61,7 @@ const strings: tStringItem[] = [
 		id: "926b05fd-7661-4596-a1f5-38c59f940bc0",
 		hook: {
 			text: "公交车站",
+			imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjvje6133cj30js0o0tsp.jpg'
 		},
 	},
 	{
@@ -64,6 +70,7 @@ const strings: tStringItem[] = [
 		id: "51cdecac-47ee-4048-8943-a0267089c35d",
 		hook: {
 			text: "结婚",
+			imgUrl: 'https://wx4.sinaimg.cn/mw690/008wKHM6ly1hjvjg6xubpj30fu0jo4b6.jpg'
 		},
 	},
 	{
