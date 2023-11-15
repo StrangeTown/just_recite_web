@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/just_recite_web/static/css/main.a9613605.css",
-    "main.js": "/just_recite_web/static/js/main.67a2f73a.js",
+    "main.css": "/just_recite_web/static/css/main.d4bfabb7.css",
+    "main.js": "/just_recite_web/static/js/main.ba07eeca.js",
     "static/js/787.c9d6e812.chunk.js": "/just_recite_web/static/js/787.c9d6e812.chunk.js",
     "static/media/WechatIMG198.jpg": "/just_recite_web/static/media/WechatIMG198.64f37c67401369a39a94.jpg",
     "index.html": "/just_recite_web/index.html",
-    "main.a9613605.css.map": "/just_recite_web/static/css/main.a9613605.css.map",
-    "main.67a2f73a.js.map": "/just_recite_web/static/js/main.67a2f73a.js.map",
+    "main.d4bfabb7.css.map": "/just_recite_web/static/css/main.d4bfabb7.css.map",
+    "main.ba07eeca.js.map": "/just_recite_web/static/js/main.ba07eeca.js.map",
     "787.c9d6e812.chunk.js.map": "/just_recite_web/static/js/787.c9d6e812.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9613605.css",
-    "static/js/main.67a2f73a.js"
+    "static/css/main.d4bfabb7.css",
+    "static/js/main.ba07eeca.js"
   ]
 }
