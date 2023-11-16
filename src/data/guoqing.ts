@@ -79,6 +79,7 @@ const strings: tStringItem[] = [
 		id: "89f1fdd3-6fba-4273-b67c-fd2780bb5450",
 		hook: {
 			text: "手机",
+			imgUrl: 'https://wx3.sinaimg.cn/mw690/008wKHM6ly1hjwowczfr9j30qs0v64qp.jpg'
 		},
 	},
 	{
@@ -87,6 +88,7 @@ const strings: tStringItem[] = [
 		id: "525794dc-5f48-4602-b206-c261f30f67c8",
 		hook: {
 			text: "野餐",
+			imgUrl: 'https://wx1.sinaimg.cn/mw690/008wKHM6ly1hjwozgt9lnj30km0v0b29.jpg'
 		},
 	},
 	{
@@ -95,6 +97,7 @@ const strings: tStringItem[] = [
 		id: "e0272aa5-3850-4ffb-9fcd-429ea6b7e742",
 		hook: {
 			text: "钥匙",
+			imgUrl: 'https://wx4.sinaimg.cn/mw690/008wKHM6ly1hjwp11yrc4j30om0v4dz7.jpg'
 		},
 	},
 	{
@@ -103,6 +106,7 @@ const strings: tStringItem[] = [
 		id: "81f0c095-54a3-43ef-98d6-a8f183dbfd15",
 		hook: {
 			text: "办公室",
+			imgUrl: 'https://wx2.sinaimg.cn/mw690/008wKHM6ly1hjwp2b8q3nj30ig0ooh24.jpg'
 		},
 	},
 	{
@@ -111,6 +115,7 @@ const strings: tStringItem[] = [
 		id: "caaf2eb7-fc59-4121-a241-d7873682ea05",
 		hook: {
 			text: "舞会",
+			imgUrl: 'https://wx4.sinaimg.cn/mw690/008wKHM6ly1hjwp6674ywj30ns0s84qp.jpg'
 		},
 	},
 	{
@@ -119,6 +124,7 @@ const strings: tStringItem[] = [
 		id: "92ddb395-e933-4bd8-b25b-bde47b7535d4",
 		hook: {
 			text: "生日",
+			imgUrl: 'https://wx3.sinaimg.cn/mw690/008wKHM6ly1hjwp9vzhw5j30lg0smx4p.jpg'
 		},
 	},
 	{
@@ -127,6 +133,7 @@ const strings: tStringItem[] = [
 		id: "a6b9a701-e375-4af9-bef6-37aa006713d4",
 		hook: {
 			text: "回家",
+			imgUrl: 'https://wx3.sinaimg.cn/mw690/008wKHM6ly1hjwpcf1x5ij30k20toqk8.jpg'
 		},
 	},
 	{
