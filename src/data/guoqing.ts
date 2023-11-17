@@ -142,6 +142,7 @@ const strings: tStringItem[] = [
 		id: "de177c39-5051-4ead-a379-cc5086cae553",
 		hook: {
 			text: "鸡蛋",
+			imgUrl: 'https://z1.ax1x.com/2023/11/17/pityxUA.png',
 		},
 	},
 	{
