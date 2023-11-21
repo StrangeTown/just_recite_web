@@ -7,7 +7,7 @@ const strings: tStringItem[] = [
 		id: "37d858bb-3729-4e77-94fc-bcddc5a472c8",
 		hook: {
 			text: "门票",
-			imgUrl: 'https://s2.loli.net/2023/11/17/m6neSVMOwjiHqFC.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/m6neSVMOwjiHqFC.png",
 		},
 	},
 	{
@@ -16,7 +16,7 @@ const strings: tStringItem[] = [
 		id: "2f135805-4ffc-4494-9a7a-beaac9afe4de",
 		hook: {
 			text: "电影",
-			imgUrl: 'https://s2.loli.net/2023/11/17/a2mDM6E43yLf15J.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/a2mDM6E43yLf15J.png",
 		},
 	},
 	{
@@ -25,7 +25,7 @@ const strings: tStringItem[] = [
 		id: "37521b24-0f96-411f-8ffb-19cc41ca94d5",
 		hook: {
 			text: "收音机",
-			imgUrl: 'https://s2.loli.net/2023/11/17/CcmVDHSMRKPJLUA.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/CcmVDHSMRKPJLUA.png",
 		},
 	},
 	{
@@ -34,7 +34,7 @@ const strings: tStringItem[] = [
 		id: "386269c0-1fe4-46f8-9e47-ae0deae95179",
 		hook: {
 			text: "餐厅",
-			imgUrl: 'https://s2.loli.net/2023/11/17/iUH2Ka8bNpPfm7c.png',
+			imgUrl: "https://s2.loli.net/2023/11/17/iUH2Ka8bNpPfm7c.png",
 		},
 	},
 	{
@@ -43,7 +43,7 @@ const strings: tStringItem[] = [
 		id: "9c2aa156-0044-40cd-845d-d533ef4c99cb",
 		hook: {
 			text: "小镇",
-      imgUrl: 'https://s1.locimg.com/2023/11/03/57276aa6d7da7.png',
+			imgUrl: "https://s1.locimg.com/2023/11/03/57276aa6d7da7.png",
 		},
 	},
 	{
@@ -52,7 +52,7 @@ const strings: tStringItem[] = [
 		id: "24904339-a8ee-421d-ad01-05f4dc66c424",
 		hook: {
 			text: "生气",
-			imgUrl: 'https://s2.loli.net/2023/11/17/A8nmlpQjqZt5BsD.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/A8nmlpQjqZt5BsD.png",
 		},
 	},
 	{
@@ -61,7 +61,7 @@ const strings: tStringItem[] = [
 		id: "926b05fd-7661-4596-a1f5-38c59f940bc0",
 		hook: {
 			text: "公交车站",
-			imgUrl: 'https://s2.loli.net/2023/11/17/4U6DnQBOpgecZR3.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/4U6DnQBOpgecZR3.png",
 		},
 	},
 	{
@@ -70,7 +70,7 @@ const strings: tStringItem[] = [
 		id: "51cdecac-47ee-4048-8943-a0267089c35d",
 		hook: {
 			text: "结婚",
-			imgUrl: 'https://s2.loli.net/2023/11/17/q8LUD2GyiXJ3khr.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/q8LUD2GyiXJ3khr.png",
 		},
 	},
 	{
@@ -79,7 +79,7 @@ const strings: tStringItem[] = [
 		id: "89f1fdd3-6fba-4273-b67c-fd2780bb5450",
 		hook: {
 			text: "手机",
-			imgUrl: 'https://s3.bmp.ovh/imgs/2023/11/17/69787f0889e4de99.png'
+			imgUrl: "https://s3.bmp.ovh/imgs/2023/11/17/69787f0889e4de99.png",
 		},
 	},
 	{
@@ -88,7 +88,7 @@ const strings: tStringItem[] = [
 		id: "525794dc-5f48-4602-b206-c261f30f67c8",
 		hook: {
 			text: "野餐",
-			imgUrl: 'https://i.niupic.com/images/2023/11/17/cG5z.png'
+			imgUrl: "https://i.niupic.com/images/2023/11/17/cG5z.png",
 		},
 	},
 	{
@@ -97,7 +97,7 @@ const strings: tStringItem[] = [
 		id: "e0272aa5-3850-4ffb-9fcd-429ea6b7e742",
 		hook: {
 			text: "钥匙",
-			imgUrl: 'https://s2.loli.net/2023/11/17/pck8ZwBmV1KgD25.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/pck8ZwBmV1KgD25.png",
 		},
 	},
 	{
@@ -106,7 +106,7 @@ const strings: tStringItem[] = [
 		id: "81f0c095-54a3-43ef-98d6-a8f183dbfd15",
 		hook: {
 			text: "办公室",
-			imgUrl: 'https://s2.loli.net/2023/11/17/qMgRXSceafjWHbQ.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/qMgRXSceafjWHbQ.png",
 		},
 	},
 	{
@@ -115,7 +115,7 @@ const strings: tStringItem[] = [
 		id: "caaf2eb7-fc59-4121-a241-d7873682ea05",
 		hook: {
 			text: "舞会",
-			imgUrl: 'https://s2.loli.net/2023/11/17/zm3kiRO796dNVxy.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/zm3kiRO796dNVxy.png",
 		},
 	},
 	{
@@ -124,7 +124,7 @@ const strings: tStringItem[] = [
 		id: "92ddb395-e933-4bd8-b25b-bde47b7535d4",
 		hook: {
 			text: "生日",
-			imgUrl: 'https://s2.loli.net/2023/11/17/TchBIl8oD9uXxpU.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/TchBIl8oD9uXxpU.png",
 		},
 	},
 	{
@@ -133,7 +133,7 @@ const strings: tStringItem[] = [
 		id: "a6b9a701-e375-4af9-bef6-37aa006713d4",
 		hook: {
 			text: "回家",
-			imgUrl: 'https://s2.loli.net/2023/11/17/gosHpFAqXf45wkV.png'
+			imgUrl: "https://s2.loli.net/2023/11/17/gosHpFAqXf45wkV.png",
 		},
 	},
 	{
@@ -142,7 +142,7 @@ const strings: tStringItem[] = [
 		id: "de177c39-5051-4ead-a379-cc5086cae553",
 		hook: {
 			text: "鸡蛋",
-			imgUrl: 'https://z1.ax1x.com/2023/11/17/pityxUA.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/17/pityxUA.png",
 		},
 	},
 	{
@@ -151,7 +151,7 @@ const strings: tStringItem[] = [
 		id: "b2c046c6-a485-4803-b649-b90415db430a",
 		hook: {
 			text: "火车站",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQ674.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQ674.png",
 		},
 	},
 	{
@@ -160,7 +160,7 @@ const strings: tStringItem[] = [
 		id: "f65da0ff-f26b-4620-9d21-5be5ce024c8c",
 		hook: {
 			text: "伦敦",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQsnU.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQsnU.png",
 		},
 	},
 	{
@@ -169,7 +169,7 @@ const strings: tStringItem[] = [
 		id: "00d50902-99ab-43ab-b9d7-1248cf314333",
 		hook: {
 			text: "服装店",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQBcV.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQBcV.png",
 		},
 	},
 	{
@@ -178,7 +178,7 @@ const strings: tStringItem[] = [
 		id: "6083ae4c-7e27-4179-a68b-6bb4a428d0c7",
 		hook: {
 			text: "钢琴课",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQDXT.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQDXT.png",
 		},
 	},
 	{
@@ -187,7 +187,7 @@ const strings: tStringItem[] = [
 		id: "4d656659-e934-4ac4-a7e0-5c2c438010fe",
 		hook: {
 			text: "跑步",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQyBF.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQyBF.png",
 		},
 	},
 	{
@@ -196,7 +196,7 @@ const strings: tStringItem[] = [
 		id: "2e8e27d6-3c86-4159-baf3-9e0276c39800",
 		hook: {
 			text: "空气",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQ2N9.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQ2N9.png",
 		},
 	},
 	{
@@ -205,7 +205,7 @@ const strings: tStringItem[] = [
 		id: "fe2da0b8-95e1-46f0-923e-c1584e693bdd",
 		hook: {
 			text: "电梯",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQgAJ.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQgAJ.png",
 		},
 	},
 	{
@@ -214,7 +214,7 @@ const strings: tStringItem[] = [
 		id: "747c4812-6e3d-4e52-8e82-df8ba1cb05d4",
 		hook: {
 			text: "候机厅",
-			imgUrl: 'https://z1.ax1x.com/2023/11/18/piNQRhR.png',
+			imgUrl: "https://z1.ax1x.com/2023/11/18/piNQRhR.png",
 		},
 	},
 	{
@@ -231,6 +231,7 @@ const strings: tStringItem[] = [
 		id: "1fc1295b-5740-4382-b041-2eb3164037f6",
 		hook: {
 			text: "红包",
+			imgUrl: "https://z1.ax1x.com/2023/11/21/piaFRpD.png",
 		},
 	},
 	{
@@ -239,6 +240,7 @@ const strings: tStringItem[] = [
 		id: "193f088f-0693-4397-a015-7e7c58999323",
 		hook: {
 			text: "黑色的鞋子",
+			imgUrl: "https://z1.ax1x.com/2023/11/21/piaFgfO.png",
 		},
 	},
 	{
@@ -247,6 +249,7 @@ const strings: tStringItem[] = [
 		id: "f7095fa1-f4b1-450c-b969-8b65d06b10e1",
 		hook: {
 			text: "围巾",
+			imgUrl: "https://z1.ax1x.com/2023/11/21/piaFf6H.png",
 		},
 	},
 	{
@@ -271,6 +274,7 @@ const strings: tStringItem[] = [
 		id: "cf142f91-b38d-41df-ac7f-17b824efd810",
 		hook: {
 			text: "排队",
+			imgUrl: "https://z1.ax1x.com/2023/11/21/piaFhXd.png",
 		},
 	},
 	{
@@ -279,6 +283,7 @@ const strings: tStringItem[] = [
 		id: "55a2fd67-67da-49ff-9a2f-66d0d6073140",
 		hook: {
 			text: "购物",
+			imgUrl: "https://z1.ax1x.com/2023/11/21/piaFW1e.png",
 		},
 	},
 	{
