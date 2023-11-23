@@ -945,7 +945,7 @@ const qingkStrings: tStringItem[] = [
 	},
 	{
 		zh: "气候变化的影响使这些岛屿社区现在的生活变得困难",
-		en: "The effects of climate change are making life difficult for right now",
+		en: "the effects of climate change are making life difficult for these island communities right now",
 		id: "b5584876-0187-44e5-ade2-5028e331ac9e",
 		hook: {
 			text: "气候变化",
