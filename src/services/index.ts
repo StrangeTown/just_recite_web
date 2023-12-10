@@ -1,5 +1,5 @@
 import store from "../store"
-import { setRandomStrings } from "../store/slices/stringSlice"
+import { IStoreStringItem, setRandomStrings } from "../store/slices/stringSlice"
 import appLocalstorage from "../utils/appLocalstorage"
 import { getRandomStrings, getStringById } from "../utils/data"
 const preloadImages = (urls: string[]) => {
@@ -22,7 +22,7 @@ const generateItems = () => {
   const previousIds = getPreviousIds()
   const previousId = previousIds[Math.floor(Math.random() * previousIds.length)]
 
-  const randomStrings = getRandomStrings({
+  const randomStrings: IStoreStringItem[] = getRandomStrings({
     len: 9,
     excludeIds: [previousId],
   })
@@ -30,11 +30,10 @@ const generateItems = () => {
   const stringFromPreviousSession = getStringById(previousId)
   // insert string from previous session to randomStrings in a random position
   if (stringFromPreviousSession) {
-    randomStrings.splice(
-      Math.floor(Math.random() * randomStrings.length),
-      0,
-      stringFromPreviousSession
-    )
+    randomStrings.splice(Math.floor(Math.random() * randomStrings.length), 0, {
+      ...stringFromPreviousSession,
+      fromPrevSession: true,
+    })
   }
 
   const imageUrls = randomStrings

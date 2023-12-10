@@ -1,14 +1,14 @@
 import { useEffect } from "react"
 import { ArrowLeftKey, ArrowRightKey, ArrowUpKey } from "./keys"
 import ReciteButton from "./ReciteButton"
-import { tStringItem } from "../../../data"
 import { useTranslation } from "react-i18next"
 import Translation from "./Translation"
 import Progress from "../Progress"
 import Answer from "./Answer"
+import { IStoreStringItem } from "../../../store/slices/stringSlice"
 
 interface IWorkAreaProps {
-  item?: tStringItem
+  item?: IStoreStringItem
   answerVisible: boolean
   handleDisplayClick: () => void
   handleOkClick: () => void
@@ -77,9 +77,14 @@ const WorkArea = ({
 
       {/* Bottom Section */}
       <div
-        className="-mt-5 w-full h-72 flex flex-col items-center bg-slate-50 p-10 pt-10 rounded-tl-[20px] rounded-tr-[20px] md:rounded-tl-none md:rounded-tr-none"
+        className="relative -mt-5 w-full h-72 flex flex-col items-center bg-slate-50 p-10 pt-10 rounded-tl-[20px] rounded-tr-[20px] md:rounded-tl-none md:rounded-tr-none"
         style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px -1px 12px" }}
       >
+        {item.fromPrevSession && (
+          <div className="absolute top-2 right-6 md:right-2 text-xs text-red-300">
+            REVISIT
+          </div>
+        )}
         {/* Tanslation */}
         <div className="flex flex-col items-center p-4">
           <Translation string={item.zh} keyText={item.hook?.text} />

@@ -1,10 +1,10 @@
-import { tStringItem } from "../../../../data"
 import { useAppSelector } from "../../../../store/hooks"
 import { selectEnFont } from "../../../../store/slices/settingSlice"
+import { IStoreStringItem } from "../../../../store/slices/stringSlice"
 import Audio from "../Audio"
 
 interface IAnswerProps {
-  item: tStringItem
+  item: IStoreStringItem
   answerVisible: boolean
 }
 const Answer = ({ item, answerVisible }: IAnswerProps) => {
