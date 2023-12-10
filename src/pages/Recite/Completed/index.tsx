@@ -4,16 +4,20 @@ import { useEffect } from "react"
 
 interface CompletedProps {
   onCrazyPracticeClick: () => void
+  onRestartClick: () => void
 }
-const Completed = ({ onCrazyPracticeClick }: CompletedProps) => {
-  const reload = () => {
-    window.location.reload()
+const Completed = ({
+  onCrazyPracticeClick,
+  onRestartClick,
+}: CompletedProps) => {
+  const restart = () => {
+    onRestartClick()
   }
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "1") {
-        reload()
+        restart()
       } else if (e.key === "2") {
         onCrazyPracticeClick()
       }
@@ -34,7 +38,7 @@ const Completed = ({ onCrazyPracticeClick }: CompletedProps) => {
         <div
           className="cursor-pointer text-slate-500 px-3 py-2  shadow justify-center flex items-center gap-x-1"
           onClick={() => {
-            reload()
+            restart()
           }}
         >
           再来一组

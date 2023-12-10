@@ -77,7 +77,7 @@ const WorkArea = ({
 
       {/* Bottom Section */}
       <div
-        className="-mt-5 w-full h-72 flex flex-col items-center bg-slate-50 p-10 pt-10 rounded-tl-[20px] rounded-tr-[20px]"
+        className="-mt-5 w-full h-72 flex flex-col items-center bg-slate-50 p-10 pt-10 rounded-tl-[20px] rounded-tr-[20px] md:rounded-tl-none md:rounded-tr-none"
         style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px -1px 12px" }}
       >
         {/* Tanslation */}
