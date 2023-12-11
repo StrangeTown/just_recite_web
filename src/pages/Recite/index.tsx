@@ -3,8 +3,8 @@ import { useAppSelector } from "../../store/hooks"
 import { selectRandomStrings } from "../../store/slices/stringSlice"
 import WorkArea from "./WorkArea"
 import Completed from "./Completed"
-import React from "react"
 import CrazyPractice from "./CrazyPractice"
+import { generateItems, saveIdsToLocalStorage } from "../../services"
 
 const Recite = () => {
   const randomStrings = useAppSelector(selectRandomStrings)
@@ -23,6 +23,8 @@ const Recite = () => {
       setActiveStringIndex(activeStringIndex + 1)
     } else {
       setIsFinished(true)
+      const ids = randomStrings.map((item) => item.id)
+      saveIdsToLocalStorage(ids)
     }
   }
   const handleNotClick = () => {
@@ -31,7 +33,7 @@ const Recite = () => {
   }
 
   return (
-    <div className="h-full flex items-center justify-center p-0 md:p-3">
+    <div className="h-full flex items-center justify-center p-0">
       {crazyPracticeVisible && (
         <CrazyPractice
           onClose={() => {
@@ -44,6 +46,11 @@ const Recite = () => {
         <Completed
           onCrazyPracticeClick={() => {
             setCrazyPracticeVisible(true)
+          }}
+          onRestartClick={() => {
+            generateItems()
+            setIsFinished(false)
+            setActiveStringIndex(0)
           }}
         />
       ) : (

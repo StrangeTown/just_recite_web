@@ -1,29 +1,28 @@
-
 // Localstorage
 
-
 const keys = {
-  language: 'language',
-  enFont: 'en-font',
-};
+  language: "language",
+  enFont: "en-font",
+  ids: "ids",
+} as const
 
-const localStorage = window.localStorage;
+const localStorage = window.localStorage
 
 const setItem = (key: string, value: string) => {
-  localStorage.setItem(key, value);
-};
+  localStorage.setItem(key, value)
+}
 
 const getItem = (key: string) => {
-  return localStorage.getItem(key);
-};
+  return localStorage.getItem(key)
+}
 
 const removeItem = (key: string) => {
-  localStorage.removeItem(key);
-};
+  localStorage.removeItem(key)
+}
 
 const clear = () => {
-  localStorage.clear();
-};
+  localStorage.clear()
+}
 
 const appLocalstorage = {
   keys,
@@ -31,6 +30,6 @@ const appLocalstorage = {
   getItem,
   removeItem,
   clear,
-};
+}
 
-export default appLocalstorage;
+export default appLocalstorage
