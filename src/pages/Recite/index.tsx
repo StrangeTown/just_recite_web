@@ -1,10 +1,16 @@
 import { useState } from "react"
-import { useAppSelector } from "../../store/hooks"
+import { useAppDispatch, useAppSelector } from "../../store/hooks"
 import { selectRandomStrings } from "../../store/slices/stringSlice"
 import WorkArea from "./WorkArea"
 import Completed from "./Completed"
 import CrazyPractice from "./CrazyPractice"
 import { generateItems, saveIdsToLocalStorage } from "../../services"
+import {
+  selectCracyModeVisible,
+  selectCycleModeVisible,
+  setCrazyModeVisible,
+} from "../../store/slices/recitePageSlice"
+import CycleMode from "./CycleMode"
 
 const Recite = () => {
   const randomStrings = useAppSelector(selectRandomStrings)
@@ -12,7 +18,13 @@ const Recite = () => {
   const [answerVisible, setAnswerVisible] = useState(false)
   const [isFinished, setIsFinished] = useState(false)
   const string = randomStrings[activeStringIndex]
-  const [crazyPracticeVisible, setCrazyPracticeVisible] = useState(false)
+  const crazyModeVisible = useAppSelector(selectCracyModeVisible)
+  const cycleModeIsOn = useAppSelector(selectCycleModeVisible)
+  const dispatch = useAppDispatch()
+
+  const toggleCrazyMode = (isOn: boolean) => {
+    dispatch(setCrazyModeVisible(isOn))
+  }
 
   const handleDisplayClick = () => {
     setAnswerVisible(true)
@@ -34,18 +46,20 @@ const Recite = () => {
 
   return (
     <div className="h-full flex items-center justify-center p-0">
-      {crazyPracticeVisible && (
+      {crazyModeVisible && (
         <CrazyPractice
           onClose={() => {
-            setCrazyPracticeVisible(false)
+            toggleCrazyMode(false)
           }}
         />
       )}
 
+      {cycleModeIsOn && <CycleMode />}
+
       {isFinished ? (
         <Completed
           onCrazyPracticeClick={() => {
-            setCrazyPracticeVisible(true)
+            toggleCrazyMode(true)
           }}
           onRestartClick={() => {
             generateItems()
