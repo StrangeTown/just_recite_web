@@ -1,29 +1,15 @@
-
 interface SettingsItemProps {
-  options: string[];
-  current: string;
-  onClick: (option: string) => void;
-}
-const SettingsItem = ({options, current, onClick}: SettingsItemProps) => {
-  return (
-    <div className="flex items-center w-full">
-				{options.map((item, index) => {
-					return (
-						<div
-							key={index}
-							className={`flex-1 flex items-center justify-center w-8 h-8 rounded-full cursor-pointer ${
-								current === item ? "underline" : ""
-							}`}
-							onClick={() => {
-								onClick(item);
-							}}
-						>
-							<div>{item}</div>
-						</div>
-					);
-				})}
-			</div>
-  )
+	onClick: () => void;
+	icon: React.ReactNode;
+	name: string;
 }
 
-export default SettingsItem
+const SettingsItem = ({ onClick, icon, name }: SettingsItemProps) => {
+	return (
+		<div className="flex items-center gap-x-3" onClick={onClick}>
+			{icon}
+			<div className="text-slate-700 text-sm">{name}</div>
+		</div>
+	);
+};
+export default SettingsItem;
