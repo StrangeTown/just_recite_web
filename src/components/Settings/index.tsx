@@ -10,18 +10,19 @@ import {
 	setCycleModeVisible,
 } from "../../store/slices/recitePageSlice";
 import { MdBolt, MdCached, MdOutlineFeedback, MdRefresh } from "react-icons/md";
+import { on } from "events";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
 
 interface ISettingsProps {
 	onClose: () => void;
+	onContactClick?: () => void;
 }
-const Settings = ({ onClose }: ISettingsProps) => {
+const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 	const { i18n } = useTranslation();
 	const dispatch = useAppDispatch();
 	const enFont = useAppSelector(selectEnFont);
-	const [contactModalVisible, setContactModalVisible] = useState(false);
 	const [backdropBgOpacityCls, setBackdropBgOpacityCls] =
 		useState("bg-opacity-0");
 	const [contentTranslateX, setContentTranslateX] =
@@ -63,15 +64,15 @@ const Settings = ({ onClose }: ISettingsProps) => {
 			className={`fixed top-0 right-0 h-full w-full flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
 			onClick={handleBackdropClick}
 		>
-			{contactModalVisible && (
-				<ContactModal onClose={() => setContactModalVisible(false)} />
-			)}
 			<div
-				className={`w-2/3 h-full pt-6 pl-6 bg-white ${contentTranslateX} transition-all duration-500 flex flex-col gap-y-6`}
+				className={`w-2/3 md:w-1/4 h-full pt-6 pl-6 bg-white ${contentTranslateX} transition-all duration-500 flex flex-col gap-y-6`}
 			>
 				<SettingsItem
-					onClick={() => setContactModalVisible(true)}
-					icon={<MdOutlineFeedback />}
+					onClick={() => {
+						onContactClick?.();
+						onClose();
+					}}
+					icon={<MdOutlineFeedback className="text-slate-600" />}
 					name="Contact Us"
 				/>
 
@@ -80,22 +81,24 @@ const Settings = ({ onClose }: ISettingsProps) => {
 					onClick={() => {
 						window.location.reload();
 					}}
-					icon={<MdRefresh />}
+					icon={<MdRefresh className="text-slate-600" />}
 					name="Refresh"
 				/>
 
 				<SettingsItem
 					onClick={() => {
 						dispatch(setCrazyModeVisible(true));
+						onClose();
 					}}
-					icon={<MdBolt />}
+					icon={<MdBolt className="text-slate-600" />}
 					name="Crazy Mode"
 				/>
 				<SettingsItem
 					onClick={() => {
 						dispatch(setCycleModeVisible(true));
+						onClose();
 					}}
-					icon={<MdCached />}
+					icon={<MdCached className="text-slate-600" />}
 					name="Cycle Mode"
 				/>
 			</div>

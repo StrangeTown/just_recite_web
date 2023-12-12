@@ -6,9 +6,14 @@ interface SettingsItemProps {
 
 const SettingsItem = ({ onClick, icon, name }: SettingsItemProps) => {
 	return (
-		<div className="flex items-center gap-x-3" onClick={onClick}>
+		<div
+			className="flex items-center gap-x-3 cursor-pointer group/settingsitem"
+			onClick={onClick}
+		>
 			{icon}
-			<div className="text-slate-700 text-sm">{name}</div>
+			<div className="text-slate-600 text-sm group-hover/settingsitem:text-slate-800">
+				{name}
+			</div>
 		</div>
 	);
 };
