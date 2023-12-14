@@ -84,18 +84,18 @@ const strings: tStringItem[] = [
 		en: "The pizza was divided into eight equal slices.",
 		zh: "比萨被平均分成八片",
 		id: "a83da66f-2bd8-485b-b141-020695d364e1",
-    hook: {
-      text: '分成'
-    }
+		hook: {
+			text: "分成",
+		},
 	},
-  {
-    en: "The construction company estimated that the project would take six months to complete.",
-    zh: '建筑公司估计这项工程需要六个月才能完成',
-    id: '2848410f-645d-42e0-ba4d-8495437b01f4',
-    hook: {
-      text: '估计'
-    }
-  }
+	{
+		en: "The construction company estimated that the project would take six months to complete.",
+		zh: "建筑公司估计这项工程需要六个月才能完成",
+		id: "2848410f-645d-42e0-ba4d-8495437b01f4",
+		hook: {
+			text: "估计",
+		},
+	},
 ];
 
 export default strings;

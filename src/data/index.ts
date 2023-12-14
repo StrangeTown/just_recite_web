@@ -1,4 +1,4 @@
-import strings2306 from "./2306";
+import strings2023 from "./2023";
 import qingkStrings from "./qingke";
 import guoqingStrings from "./guoqing";
 
@@ -20,7 +20,8 @@ const testData: tStringItem[] = [
 		zh: "好像我很闲似的",
 		en: "Like I've nothing better to do.",
 		id: "571c8670-fc21-49e0-8e35-2ecfd7dc81e2",
-		audio: 'https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav',
+		audio:
+			"https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav",
 		hook: {
 			text: "闲",
 			imgUrl: "https://s1.locimg.com/2023/11/03/0bb37b06e6a11.png",
@@ -30,7 +31,8 @@ const testData: tStringItem[] = [
 		zh: "我也不在意",
 		en: "Won't matter to me",
 		id: "15615737-811e-40a3-8c84-a8db99c066c0",
-		audio: 'https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav',
+		audio:
+			"https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav",
 		hook: {
 			text: "不在意",
 			imgUrl: "https://s1.locimg.com/2023/11/03/0bb37b06e6a11.png",
@@ -40,7 +42,8 @@ const testData: tStringItem[] = [
 		zh: "他们越来越喜欢我",
 		en: "They're really taken a liking to me.",
 		id: "ae1f27dd-fad3-4c6e-9e06-fbefdced361a",
-		audio: 'https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav',
+		audio:
+			"https://github.com/StrangeTown/just_recite_web/raw/main/src/assets/audio/Like_I-ve_nothing_better_1.wav",
 		hook: {
 			text: "喜欢",
 			imgUrl: "https://s1.locimg.com/2023/11/03/0bb37b06e6a11.png",
@@ -120,7 +123,7 @@ const testData: tStringItem[] = [
 	},
 ];
 
-const data = [...qingkStrings, ...strings2306, ...guoqingStrings];
+const data = [...qingkStrings, ...strings2023, ...guoqingStrings];
 
 let isTest = false;
 // isTest = true;
