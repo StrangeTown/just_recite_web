@@ -16,6 +16,7 @@
     "@types/react": "^18.2.27",
     "@types/react-dom": "^18.2.12",
     "@types/react-icons": "^3.0.0",
+    "animejs": "^3.2.2",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -96,6 +97,7 @@
     ]
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.12",
     "gh-pages": "^6.0.0",
     "tailwindcss": "^3.3.3"
   },
