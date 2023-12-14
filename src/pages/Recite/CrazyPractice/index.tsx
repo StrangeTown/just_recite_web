@@ -8,6 +8,12 @@ import { useTranslation } from "react-i18next";
 import HookText from "./HookText";
 import ProgressBackground from "./ProgressBg";
 
+const progressGridLength = 600;
+const totalProgressIndexArr = Array.from(
+	{ length: progressGridLength },
+	(_, i) => i
+);
+
 interface CrazyPracticeProps {
 	onClose: () => void;
 }
@@ -16,8 +22,21 @@ const CrazyPractice = ({ onClose }: CrazyPracticeProps) => {
 	const [activeStringIndex, setActiveStringIndex] = useState(0);
 	const [parcticeCount, setParcticeCount] = useState(0);
 	const { t } = useTranslation();
+	const [activeIndexArr, setActiveIndexArr] = useState<number[]>([]);
 
 	const string = strings[activeStringIndex];
+
+	const addActiveIndex = useCallback(() => {
+		const leftProgressIndexArr = totalProgressIndexArr.filter(
+			(item) => !activeIndexArr.includes(item)
+		);
+		const randomIndex = Math.floor(Math.random() * leftProgressIndexArr.length);
+		const newActiveIndexArr = [
+			...activeIndexArr,
+			leftProgressIndexArr[randomIndex],
+		];
+		setActiveIndexArr(newActiveIndexArr);
+	}, [activeIndexArr]);
 
 	const handleNextClick = useCallback(() => {
 		const newRandomIndex = Math.floor(Math.random() * strings.length);
@@ -26,8 +45,9 @@ const CrazyPractice = ({ onClose }: CrazyPracticeProps) => {
 		} else {
 			setActiveStringIndex(newRandomIndex);
 			setParcticeCount(parcticeCount + 1);
+			addActiveIndex();
 		}
-	}, [activeStringIndex, strings, parcticeCount]);
+	}, [activeStringIndex, strings, parcticeCount, addActiveIndex]);
 
 	const hookText = string.hook?.text || "";
 	// const translationElement =
@@ -53,7 +73,10 @@ const CrazyPractice = ({ onClose }: CrazyPracticeProps) => {
 	return (
 		<div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
 			<div className="absolute inset-x-0 bottom-0 p-1">
-				<ProgressBackground />
+				<ProgressBackground
+					len={progressGridLength}
+					activeIndexArr={activeIndexArr}
+				/>
 			</div>
 			<div className="absolute top-0 right-0 p-4">
 				<AiOutlineClose
@@ -65,7 +88,7 @@ const CrazyPractice = ({ onClose }: CrazyPracticeProps) => {
 			</div>
 			<div className="flex flex-col items-center">
 				{/* Count */}
-				<div className="text-sm text-slate-500 mb-6">{countString}</div>
+				{/* <div className="text-sm text-slate-500 mb-6">{countString}</div> */}
 
 				{/* Hook Text */}
 				<HookText key={hookText} hookText={hookText} string={string.zh} />

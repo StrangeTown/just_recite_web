@@ -49,7 +49,7 @@ const CycleMode = () => {
 	return (
 		<div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
 			<div className="absolute top-0 left-0 w-full">
-				<div ref={progressCube} className="w-[2px] h-[2px] bg-slate-300"></div>
+				<div ref={progressCube} className="w-[2px] h-[3px] bg-slate-300"></div>
 			</div>
 			<div className="absolute top-4 right-4">
 				<AiOutlineClose
