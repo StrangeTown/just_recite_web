@@ -4,6 +4,7 @@ import { setCycleModeVisible } from "../../../store/slices/recitePageSlice";
 import { selectRandomStrings } from "../../../store/slices/stringSlice";
 import { useEffect, useRef, useState } from "react";
 import anime from "animejs";
+import LightButton from "./Light";
 
 const CycleMode = () => {
 	const dispatch = useAppDispatch();
@@ -12,6 +13,7 @@ const CycleMode = () => {
 	const [activeStringIndex, setActiveStringIndex] = useState(0);
 	const interval = useRef<number | null>(null);
 	const progressCube = useRef<HTMLDivElement | null>(null);
+	const [isDarkMode, setIsDarkMode] = useState(false);
 
 	useEffect(() => {}, []);
 
@@ -46,11 +48,24 @@ const CycleMode = () => {
 		};
 	}, [stringsLength]);
 
+	const pageBgCls = isDarkMode ? "bg-slate-900" : "bg-white";
 	return (
-		<div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
+		<div
+			className={`fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center ${pageBgCls}`}
+		>
 			<div className="absolute top-0 left-0 w-full">
 				<div ref={progressCube} className="w-[2px] h-[3px] bg-slate-300"></div>
 			</div>
+
+			<div className="absolute right-3 bottom-3">
+				<LightButton
+					onClick={() => {
+						setIsDarkMode(!isDarkMode);
+					}}
+					isLight={!isDarkMode}
+				/>
+			</div>
+
 			<div className="absolute top-4 right-4">
 				<AiOutlineClose
 					className="text-2xl text-slate-500 cursor-pointer"
