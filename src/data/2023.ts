@@ -96,6 +96,78 @@ const strings: tStringItem[] = [
 			text: "估计",
 		},
 	},
+	{
+		en: "Could you please tell me the current time?",
+		zh: "你能告诉我现在的时间吗?",
+		id: "54833156-db6c-4a9f-9dc3-2b74bc47df10",
+		hook: {
+			text: "时间",
+		},
+	},
+	{
+		en: "I'm not sure",
+		zh: "我不知道",
+		id: "55526d4d-bc75-4fa2-a3fd-39b86b56e703",
+		hook: {
+			text: "不知道",
+		},
+	},
+	{
+		en: "What time do you usually go to sleep?",
+		zh: "你通常几点睡觉?",
+		id: "50c9d758-19cf-4b49-8ac4-3bf325dfbdb8",
+		hook: {
+			text: "睡觉",
+		},
+	},
+	{
+		en: "It's already 11 PM now.",
+		zh: "现在已经晚上11点了",
+		id: "657f2221-2ad4-4710-b318-9f5ae75cf3f3",
+		hook: {
+			text: "晚上",
+		},
+	},
+	{
+		en: "Maybe around midnight",
+		zh: "大概在午夜时分",
+		id: "30d91320-8367-4ece-a0fb-c68512ac9af4",
+		hook: {
+			text: "午夜",
+		},
+	},
+	{
+		en: "How is the weather?",
+		zh: "天气怎么样?",
+		id: "39660cd5-7e60-42d0-95a6-9b29af826315",
+		hook: {
+			text: "天气",
+		},
+	},
+	{
+		en: "Where are you currently located?",
+		zh: "你目前在哪里?",
+		id: "0e186d72-27f2-447c-a4d0-6bbfd375e2bc",
+		hook: {
+			text: "哪里",
+		},
+	},
+	{
+		en: "What do you do for a living?",
+		zh: "你是做什么的?",
+		id: "87f8f45a-6a49-4a35-90f5-da8c140913da",
+		hook: {
+			text: "做什么",
+		},
+	},
+	{
+		en: "What kind of technology are you using?",
+		zh: "你在使用什么样的技术?",
+		id: "243d6b10-a344-4250-83d1-6b895762a1a9",
+		hook: {
+			text: "技术",
+		},
+	},
 ];
 
 export default strings;
