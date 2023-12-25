@@ -1,6 +1,8 @@
 import { MdDone } from "react-icons/md";
 import { OneKey, ThreeKey, TwoKey } from "../WorkArea/keys";
 import { useEffect } from "react";
+import { useAppDispatch } from "../../../store/hooks";
+import { setContactUsVisible } from "../../../store/slices/settingSlice";
 
 interface CompletedProps {
 	onCrazyPracticeClick: () => void;
@@ -12,6 +14,11 @@ const Completed = ({
 	onRestartClick,
 	onResetClick,
 }: CompletedProps) => {
+	const dispatch = useAppDispatch();
+	const contactUs = () => {
+		dispatch(setContactUsVisible(true));
+	};
+
 	const restart = () => {
 		onRestartClick();
 	};
@@ -64,6 +71,14 @@ const Completed = ({
 				>
 					重新背记
 					<ThreeKey />
+				</div>
+				<div
+					className="mt-6 cursor-pointer text-slate-400 px-3 py-2 justify-center flex items-center gap-x-1 text-xs underline"
+					onClick={() => {
+						contactUs();
+					}}
+				>
+					有任何问题或建议，请与我联系
 				</div>
 			</div>
 		</div>

@@ -1,16 +1,25 @@
 import "./App.css";
 import Home from "./pages/Home";
-import { useAppDispatch } from "./store/hooks";
+import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { useEffect, useState } from "react";
 import Settings from "./components/Settings";
 import Header from "./components/Header";
 import { generateItems } from "./services";
 import ContactModal from "./components/Settings/ContactModal";
+import {
+	selectContactUsVisible,
+	setContactUsVisible,
+} from "./store/slices/settingSlice";
 
 function App() {
 	const dispatch = useAppDispatch();
 	const [settingsVisible, setSettingsVisible] = useState(false);
-	const [contactModalVisible, setContactModalVisible] = useState(false);
+	// const [contactModalVisible, setContactModalVisible] = useState(false);
+	const contactModalVisible = useAppSelector(selectContactUsVisible);
+
+	const changeContactUsVisiblity = (visible: boolean) => {
+		dispatch(setContactUsVisible(visible));
+	};
 
 	useEffect(() => {
 		generateItems();
@@ -35,7 +44,7 @@ function App() {
 								setSettingsVisible(false);
 							}}
 							onContactClick={() => {
-								setContactModalVisible(true);
+								changeContactUsVisiblity(true);
 							}}
 						/>
 					)}
@@ -43,7 +52,7 @@ function App() {
 			</div>
 
 			{contactModalVisible && (
-				<ContactModal onClose={() => setContactModalVisible(false)} />
+				<ContactModal onClose={() => changeContactUsVisiblity(false)} />
 			)}
 		</>
 	);
