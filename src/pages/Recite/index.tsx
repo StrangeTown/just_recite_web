@@ -62,6 +62,10 @@ const Recite = () => {
 						toggleCrazyMode(true);
 					}}
 					onRestartClick={() => {
+						setIsFinished(false);
+						setActiveStringIndex(0);
+					}}
+					onResetClick={() => {
 						generateItems();
 						setIsFinished(false);
 						setActiveStringIndex(0);
