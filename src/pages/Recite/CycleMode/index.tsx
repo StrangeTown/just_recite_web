@@ -57,7 +57,7 @@ const CycleMode = () => {
 				<div ref={progressCube} className="w-[2px] h-[3px] bg-slate-300"></div>
 			</div>
 
-			<div className="absolute right-3 bottom-3">
+			<div className="absolute right-3 bottom-4">
 				<LightButton
 					onClick={() => {
 						setIsDarkMode(!isDarkMode);
