@@ -296,6 +296,146 @@ const strings: tStringItem[] = [
 			text: "目前",
 		},
 	},
+	{
+		en: "AFAIK",
+		id: "a286bf74-1ec1-4a9e-999b-88841ceec728",
+		zh: "据我所知（as far as I know）",
+	},
+	{
+		en: "BTW",
+		id: "9060f410-64fe-4a3f-852d-c2a79590da02",
+		zh: "顺便，顺便提及（By The Way）",
+	},
+	{
+		en: "BRB",
+		zh: "马上回来(be right back)",
+		id: "ec7fa4fa-a020-4128-879c-b4edc7f3c2ab",
+	},
+	{
+		id: "216c2fad-5119-432f-89f2-c3c07c170958",
+		en: "FWIW",
+		zh: "无论价值如何（是 for what it's worth ）",
+	},
+	{
+		id: "1bb44d41-4109-49d8-9b16-68bbb5be134d",
+		en: "FYI",
+		zh: "供参考（for your information）",
+	},
+	{
+		id: "6b6712bc-11ac-466b-a54f-90fd6aac05b0",
+		en: "GG",
+		zh: "好游戏（good game）",
+	},
+	{
+		id: "d2328c43-e422-4c61-a633-4330902789a2",
+		en: "IDK",
+		zh: "我不知道（I don't know）",
+	},
+	{
+		id: "4853d8a9-c258-4d72-9f86-377971a0fc3a",
+		en: "IMHO",
+		zh: "依我看（in my humble opinion）",
+	},
+	{
+		id: "ec3ec1f4-bbec-443b-a221-9b19d91954b6",
+		en: "IMO",
+		zh: "依我看（in my opinion）",
+	},
+	{
+		id: "73d356e3-071d-41bf-95f5-89aabfeaf0e1",
+		en: "J/K",
+		zh: "开玩笑（just kidding）",
+	},
+	{
+		id: "3d300ec8-072d-47b8-9ab6-240e9f7b2391",
+		en: "LMAO",
+		zh: "笑的屁滚尿流(Laughing My Ass Off) ",
+	},
+	{
+		id: "3a2db074-ed70-4aa1-8826-1f26be777d11",
+		en: "LOL",
+		zh: "大声笑（Laugh Out Loud）",
+	},
+	{
+		id: "247ea196-ade2-4fb6-8f46-75b018c61d05",
+		en: "NBD",
+		zh: "没什么大不了（no big deal）",
+	},
+	{
+		id: "8df9bd44-4191-49d0-898a-e5833409be82",
+		en: "NM",
+		zh: "不介意（neer mind）",
+	},
+	{
+		id: "9d945f37-4cab-4763-82ec-1100f5f666f5",
+		en: "OMG",
+		zh: "我的天啊（oh my god）",
+	},
+	{
+		id: "f8c780e5-1c93-48f6-ad7f-c2b4b9d8eda4",
+		en: "OTW",
+		zh: "在路上（on the way）",
+	},
+	{
+		id: "8a531adc-eb00-442e-b27f-8b12680360b7",
+		en: "POV",
+		zh: "视角（point of view）",
+	},
+	{
+		id: "931e5756-566e-4325-9e3d-905e6ce4e43c",
+		en: "ROFL",
+		zh: "笑死了（rolling on the floor laughing）",
+	},
+	{
+		id: "4e7109c6-2f1c-49a3-9fd8-4948999d4bd3",
+		en: "RSVP",
+		zh: "请回复（please respond）",
+	},
+	{
+		id: "819ea751-23de-4fb0-a4ab-5f435ae8b66f",
+		en: "SFW",
+		zh: "适合上班（safe for work）",
+	},
+	{
+		id: "678ff272-bff0-4571-8263-9962818e188a",
+		en: "SMH",
+		zh: "摇头（shaking my head）",
+	},
+	{
+		id: "08b7b08b-1c9c-4548-82f8-2e85bc8e2399",
+		en: "TBH",
+		zh: "说实话（to be honest）",
+	},
+	{
+		id: "6c51c27e-3d99-4fca-a25a-6feecd9449bb",
+		en: "TTYL",
+		zh: "待会聊（talk to you later）",
+	},
+	{
+		id: "37671012-5691-4434-8cae-db025a4ae1e8",
+		en: "TY",
+		zh: "谢谢（thank you）",
+	},
+	{
+		id: "57d67f8a-319d-4a22-a368-17e3b4b22228",
+		en: "TGIF",
+		zh: "感谢上帝，周五了（thank goodness it's Friday）",
+	},
+	{
+		id: "8da720ae-bca9-42c7-8405-2caffa26d741",
+		en: "WKND",
+		zh: "周末（weekend）",
+	},
+	{
+		id: "3ad440c7-20fd-46fe-87d0-29c4fe570e82",
+		en: "YOLO",
+		zh: "你只活一次（you only live once）",
+	},
+	{
+		id: "2b8769d7-67cf-4e83-b0cd-e2e0dce909c3",
+		en: "ZOMG",
+		zh: "OMG的强调（extra emphasis on OMG）",
+	},
 ];
 
 export default strings;
