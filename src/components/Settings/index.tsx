@@ -4,21 +4,11 @@ import SettingsItem from "./SettingsItem";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { selectEnFont, setEnFont } from "../../store/slices/settingSlice";
 import { useEffect, useState } from "react";
-import ContactModal from "./ContactModal";
 import {
 	setCrazyModeVisible,
 	setCycleModeVisible,
 } from "../../store/slices/recitePageSlice";
-import {
-	MdBolt,
-	MdCached,
-	MdOutlineFeedback,
-	MdOutlineFullscreen,
-	MdOutlineFullscreenExit,
-	MdRefresh,
-} from "react-icons/md";
-import { on } from "events";
-import { goFullScreen } from "../../utils";
+import { MdBolt, MdCached, MdOutlineFeedback, MdRefresh } from "react-icons/md";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -28,7 +18,6 @@ interface ISettingsProps {
 	onContactClick?: () => void;
 }
 const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
-	const [isFullScreen, setIsFullScreen] = useState(false);
 	const { i18n } = useTranslation();
 	const dispatch = useAppDispatch();
 	const enFont = useAppSelector(selectEnFont);
@@ -36,16 +25,6 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 		useState("bg-opacity-0");
 	const [contentTranslateX, setContentTranslateX] =
 		useState("translate-x-full");
-
-	useEffect(() => {
-		const handleFullScreenChange = () => {
-			setIsFullScreen(document.fullscreenElement !== null);
-		};
-		document.addEventListener("fullscreenchange", handleFullScreenChange);
-		return () => {
-			document.removeEventListener("fullscreenchange", handleFullScreenChange);
-		};
-	}, []);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -111,7 +90,7 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 						onClose();
 					}}
 					icon={<MdBolt className="text-slate-600" />}
-					name="Crazy Mode"
+					name="Hook Mode"
 				/>
 				<SettingsItem
 					onClick={() => {
@@ -120,19 +99,6 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 					}}
 					icon={<MdCached className="text-slate-600" />}
 					name="Cycle Mode"
-				/>
-				<SettingsItem
-					onClick={() => {
-						goFullScreen();
-					}}
-					icon={
-						isFullScreen ? (
-							<MdOutlineFullscreenExit className="text-slate-600" />
-						) : (
-							<MdOutlineFullscreen className="text-slate-600" />
-						)
-					}
-					name={isFullScreen ? "Exit Fullscreen" : "Fullscreen"}
 				/>
 			</div>
 		</div>

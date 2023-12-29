@@ -5,6 +5,8 @@ import { selectRandomStrings } from "../../../store/slices/stringSlice";
 import { useEffect, useRef, useState } from "react";
 import anime from "animejs";
 import LightButton from "./Light";
+import FontSizeButton from "./FontSize";
+import Fullscreen from "./Fullscreen";
 
 const CycleMode = () => {
 	const dispatch = useAppDispatch();
@@ -14,6 +16,7 @@ const CycleMode = () => {
 	const interval = useRef<number | null>(null);
 	const progressCube = useRef<HTMLDivElement | null>(null);
 	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isLargeFont, setIsLargeFont] = useState(false);
 
 	useEffect(() => {}, []);
 
@@ -57,7 +60,14 @@ const CycleMode = () => {
 				<div ref={progressCube} className="w-[2px] h-[3px] bg-slate-300"></div>
 			</div>
 
-			<div className="absolute right-3 bottom-4">
+			<div className="absolute right-3 bottom-4 flex-row flex gap-x-1">
+				<Fullscreen isLight={!isDarkMode} />
+				<FontSizeButton
+					onClick={() => {
+						setIsLargeFont(!isLargeFont);
+					}}
+					isLight={!isDarkMode}
+				/>
 				<LightButton
 					onClick={() => {
 						setIsDarkMode(!isDarkMode);
@@ -76,7 +86,13 @@ const CycleMode = () => {
 			</div>
 			<div className="flex flex-col items-center w-full px-3">
 				{/* <div className="text-2xl text-slate-500">{string.en}</div> */}
-				<div className="text-2xl text-slate-500">{string.zh}</div>
+				<div
+					className={`${
+						isLargeFont ? "text-6xl font-semibold" : "text-2xl"
+					} text-slate-500`}
+				>
+					{string.zh}
+				</div>
 			</div>
 		</div>
 	);
