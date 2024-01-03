@@ -1,4 +1,5 @@
 import strings2023 from "./2023";
+import strings2024 from "./2024";
 import qingkStrings from "./qingke";
 import guoqingStrings from "./guoqing";
 
@@ -123,7 +124,12 @@ const testData: tStringItem[] = [
 	},
 ];
 
-const data = [...qingkStrings, ...strings2023, ...guoqingStrings];
+const data = [
+	...qingkStrings,
+	...strings2023,
+	...guoqingStrings,
+	...strings2024,
+];
 
 let isTest = false;
 // isTest = true;
