@@ -8,7 +8,13 @@ import {
 	setCrazyModeVisible,
 	setCycleModeVisible,
 } from "../../store/slices/recitePageSlice";
-import { MdBolt, MdCached, MdOutlineFeedback, MdRefresh } from "react-icons/md";
+import {
+	MdBolt,
+	MdCached,
+	MdOutlineFeedback,
+	MdOutlineShare,
+	MdRefresh,
+} from "react-icons/md";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -18,6 +24,7 @@ interface ISettingsProps {
 	onContactClick?: () => void;
 }
 const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
+	const [copied, setCopied] = useState(false);
 	const { i18n } = useTranslation();
 	const dispatch = useAppDispatch();
 	const enFont = useAppSelector(selectEnFont);
@@ -58,6 +65,15 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 		}, 500);
 	};
 
+	const copyLink = () => {
+		const link = window.location.href;
+		navigator.clipboard.writeText(link);
+		setCopied(true);
+		setTimeout(() => {
+			setCopied(false);
+		}, 3000);
+	};
+
 	return (
 		<div
 			className={`fixed top-0 right-0 h-full w-full flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
@@ -66,24 +82,6 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 			<div
 				className={`w-2/3 md:w-1/4 h-full pt-6 pl-6 bg-white ${contentTranslateX} transition-all duration-500 flex flex-col gap-y-6`}
 			>
-				<SettingsItem
-					onClick={() => {
-						onContactClick?.();
-						onClose();
-					}}
-					icon={<MdOutlineFeedback className="text-slate-600" />}
-					name="Contact Us"
-				/>
-
-				{/* <Refresh /> */}
-				<SettingsItem
-					onClick={() => {
-						window.location.reload();
-					}}
-					icon={<MdRefresh className="text-slate-600" />}
-					name="Refresh"
-				/>
-
 				<SettingsItem
 					onClick={() => {
 						dispatch(setCrazyModeVisible(true));
@@ -99,6 +97,32 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 					}}
 					icon={<MdCached className="text-slate-600" />}
 					name="Cycle Mode"
+				/>
+
+				{/* <Refresh /> */}
+				<SettingsItem
+					onClick={() => {
+						window.location.reload();
+					}}
+					icon={<MdRefresh className="text-slate-600" />}
+					name="Refresh"
+				/>
+
+				<SettingsItem
+					onClick={() => {
+						copyLink();
+					}}
+					icon={<MdOutlineShare className="text-slate-600" />}
+					name={copied ? "Link Copied! 🎉🔗" : "Share"}
+				/>
+
+				<SettingsItem
+					onClick={() => {
+						onContactClick?.();
+						onClose();
+					}}
+					icon={<MdOutlineFeedback className="text-slate-600" />}
+					name="Contact Us"
 				/>
 			</div>
 		</div>
