@@ -43,4 +43,8 @@ const getStringById = (id: string): tStringItem | undefined => {
   return undefined
 }
 
-export { getRandomStrings, getStringById }
+const getTotalLength = () => {
+	return globalStrings.length;
+};
+
+export { getRandomStrings, getStringById, getTotalLength };
