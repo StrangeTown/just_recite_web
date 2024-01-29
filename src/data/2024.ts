@@ -137,6 +137,142 @@ const strings: tStringItem[] = [
 			text: "轨道",
 		},
 	},
+	{
+		id: "a0332c16-3f87-45a7-be2f-221920e5f2ca",
+		en: "He didn't deserve to be treated like that",
+		zh: "他不应该被那样对待",
+		hook: {
+			text: "对待",
+		},
+	},
+	{
+		id: "6e2e1e9a-95b1-4e63-97be-07e77b9703b7",
+		en: "Based on the information you provided, I think you are a good fit for the position",
+		zh: "根据你提供的信息，我认为你很适合这个职位",
+		hook: {
+			text: "适合",
+		},
+	},
+	{
+		id: "a2a85a62-9f0f-43e3-b576-cad4dc8ad956",
+		en: "That's probably OK with him, since he's not a big fan of parties",
+		zh: "对他来说可能没问题，因为他不是聚会的忠实粉丝",
+		hook: {
+			text: "粉丝",
+		},
+	},
+	{
+		id: "d890153d-f20a-46df-8ebb-d4bb14c70e77",
+		en: "I'm going back to my hometown for the Spring Festival",
+		zh: "我要回老家过春节",
+		hook: {
+			text: "老家",
+		},
+	},
+	{
+		id: "7a9eb4f5-f50e-43c0-a949-9ab6fbee339f",
+		en: "It doesn't matter if you don't have a specific plan",
+		zh: "如果你没有具体的计划也没关系",
+		hook: {
+			text: "具体",
+		},
+	},
+	{
+		id: "bd877e40-d3b6-498f-8e30-ce8dfed2f122",
+		en: "He makes the team tough to beat, and he's a great leader",
+		zh: "他让球队难以击败，他是一个伟大的领导者",
+		hook: {
+			text: "领导者",
+		},
+	},
+	{
+		id: "8b1aff6d-99ab-4934-9422-964a62f6c39e",
+		en: "If you feel like you are not making progress, you can always ask for help",
+		zh: "如果你觉得自己没有进步，你可以随时寻求帮助",
+		hook: {
+			text: "进步",
+		},
+	},
+	{
+		id: "204b683a-ae59-4bac-bb71-3a2167fa85a2",
+		en: "It might be worth talking to your boss about it",
+		zh: "和你的老板谈谈这件事可能是值得的",
+		hook: {
+			text: "值得",
+		},
+	},
+	{
+		id: "e2844ee7-629d-408c-ac15-1edfe5fc7562",
+		en: "Try to make time for things that you enjoy outside of work",
+		zh: "尽量抽出时间做你喜欢的事情",
+		hook: {
+			text: "喜欢",
+		},
+	},
+	{
+		id: "eb6fcf2a-1d59-4d87-b2fd-52018b1ead78",
+		en: "It will reduce your stress levels and make you feel more fulfilled",
+		zh: "这将降低你的压力水平，让你感到更加充实",
+		hook: {
+			text: "充实",
+		},
+	},
+	{
+		id: "4cfe8a7b-624a-4b90-9139-46d5cf737dc9",
+		en: "It can also help improve your performance at work",
+		zh: "它还可以帮助你提高工作表现",
+		hook: {
+			text: "表现",
+		},
+	},
+	{
+		id: "a7982f08-84df-4ee3-96a4-d1dae70021da",
+		en: "Watching football can be a great way to relax",
+		zh: "看足球是放松的好方法",
+		hook: {
+			text: "放松",
+		},
+	},
+	{
+		id: "ab1b3373-ade5-4399-ad69-b7a138f53486",
+		en: "Reading is not only a great way to relax, but it can also help you learn new things",
+		zh: "阅读不仅是放松的好方法，还可以帮助你学习新知识",
+		hook: {
+			text: "阅读",
+		},
+	},
+	{
+		id: "9e53cc32-42d6-486c-acd0-378efc929f7f",
+		en: "What types of books do you like to read?",
+		zh: "你喜欢读什么类型的书？",
+		hook: {
+			text: "类型",
+		},
+	},
+	{
+		id: "ac543ab3-713e-4ded-888c-f6fd1fa42713",
+		en: "It's no wonder this book has been on the bestseller list for so long",
+		zh: "难怪这本书在畅销书榜上呆了这么久",
+		hook: {
+			text: "畅销",
+		},
+	},
+	{
+		id: "97a36eeb-4d31-4a6d-9107-9e961e72a3f3",
+		en: "Harry Potter is one of the most popular books of all time",
+		zh: "《哈利·波特》是有史以来最受欢迎的书之一",
+		hook: {
+			text: "受欢迎",
+		},
+	},
+	{
+		id: "42e8dc39-66e9-4234-a256-5f0ab226c743",
+		en: "What do you like most about it?",
+		zh: "你最喜欢它的什么？",
+		hook: {
+			text: "喜欢",
+		},
+	},
 ];
 
 export default strings;
