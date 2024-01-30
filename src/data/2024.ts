@@ -273,6 +273,94 @@ const strings: tStringItem[] = [
 			text: "喜欢",
 		},
 	},
+	{
+		id: "5a8baaf8-41d2-4f49-a217-34cce9e2c397",
+		en: "The wildlife in the area is very diverse",
+		zh: "该地区的野生动物非常多样化",
+		hook: {
+			text: "野生动物",
+		},
+	},
+	{
+		id: "9b77b2bd-2ed9-4785-bf1c-8b58ca4bc717",
+		en: "I have long been searching for a place where I can relax",
+		zh: "我一直在寻找一个可以放松的地方",
+		hook: {
+			text: "放松",
+		},
+	},
+	{
+		id: "8b23972d-1cef-4fdf-8753-9c4084a22913",
+		en: "I still remember the first-ever glimpse of the sea",
+		zh: "我仍然记得第一次看到大海的样子",
+		hook: {
+			text: "第一次",
+		},
+	},
+	{
+		id: "ce206d1d-307c-4e25-8482-6e74c4810bb8",
+		en: "The island is located several hundred meters off the coast",
+		zh: "该岛位于海岸线数百米处",
+		hook: {
+			text: "数百米",
+		},
+	},
+	{
+		id: "3f5a9514-19d1-4335-b621-d66b2361bf5d",
+		en: "It could be mistaken for a paradise",
+		zh: "它可能被误认为是天堂",
+		hook: {
+			text: "天堂",
+		},
+	},
+	{
+		id: "aa3b3323-3d41-4961-b6e0-1300384f8761",
+		en: "The fish cannot be confused for anything other than a shark",
+		zh: "这条鱼不可能是鲨鱼以外的任何东西",
+		hook: {
+			text: "鲨鱼",
+		},
+	},
+	{
+		id: "5cd79332-ed38-41f1-9bc0-7764d16fd5f3",
+		en: "The weather in New York is typically cold in the winter",
+		zh: "纽约的冬天天气通常很冷",
+		hook: {
+			text: "通常",
+		},
+	},
+	{
+		id: "cebe2280-e120-4f76-9eda-ee60f3843fcc",
+		en: "The news came just days before the election",
+		zh: "这则消息是在选举前几天传出的",
+		hook: {
+			text: "几天",
+		},
+	},
+	{
+		id: "85a6ce26-cb0c-41b6-a361-a0819100465d",
+		en: "The red dress stood out among the crowd",
+		zh: "红色的裙子在人群中脱颖而出",
+		hook: {
+			text: "脱颖而出",
+		},
+	},
+	{
+		id: "cf45df0d-2be2-4ee3-b15e-a4e1589f7b4a",
+		en: "Not long afterwards, the police arrived",
+		zh: "不久之后，警察就来了",
+		hook: {
+			text: "不久之后",
+		},
+	},
+	{
+		id: "eda2376e-246c-4fea-b0c4-4eb4a7c13729",
+		en: "I deduced that he was not telling the truth",
+		zh: "我推断他没有说实话",
+		hook: {
+			text: "推断",
+		},
+	},
 ];
 
 export default strings;
