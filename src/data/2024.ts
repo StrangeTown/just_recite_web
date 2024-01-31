@@ -361,6 +361,159 @@ const strings: tStringItem[] = [
 			text: "推断",
 		},
 	},
+	// does such a great job of
+	{
+		id: "0e2d6cbb-c53b-4a27-8922-050258a1d08f",
+		en: "I think it does such a great job of showing how people can be so different and yet so similar",
+		zh: "我认为它做得非常好，展示了人们如何如此不同，但又如此相似",
+		hook: {
+			text: "如此",
+		},
+	},
+	// get lost in
+	{
+		id: "40920280-040b-43a4-bbc7-c17a928db9f6",
+		en: "I can get lost in the story and forget about everything else",
+		zh: "我可以沉浸在故事中，忘记其他一切",
+		hook: {
+			text: "沉浸",
+		},
+	},
+	// who wouldn't want to
+	{
+		id: "489daa2d-bf84-4c7a-8600-df6447cb2213",
+		en: "Who wouldn't want to be able to fly?",
+		zh: "谁不想能飞呢？",
+		hook: {
+			text: "谁不想",
+		},
+	},
+	// is quite the feat
+	{
+		id: "97d48dd6-c461-46a6-85db-b7cc67eee486",
+		en: "It's quite the feat to be able to write a book",
+		zh: "能写一本书是一件了不起的事",
+		hook: {
+			text: "了不起",
+		},
+	},
+	// I imagine being able to
+	{
+		id: "84c8310a-0108-4e0f-8f54-ad59c1103389",
+		en: "I imagine being able to walk on the moon would be an incredible experience",
+		zh: "我想象能在月球上行走会是一种难以置信的经历",
+		hook: {
+			text: "想象",
+		},
+	},
+	// went all-out with
+	{
+		id: "d1c09915-3311-4271-9e38-afb29100a5f2",
+		en: "I went all-out with the details and made sure everything was perfect",
+		zh: "我在细节上全力以赴，确保一切都是完美的",
+		hook: {
+			text: "全力以赴",
+		},
+	},
+	// It must have been amazing to
+	{
+		id: "f4efe0a4-df50-49e5-976e-e385404d719d",
+		en: "It must have been amazing to be able to see the world from that perspective",
+		zh: "能够从那个角度看到世界一定很棒",
+		hook: {
+			text: "一定很棒",
+		},
+	},
+	// in person
+	{
+		id: "6db7a29e-4f4a-40b1-b0e4-a6d36fe816aa",
+		en: "I've never met him in person",
+		zh: "我从未见过他本人",
+		hook: {
+			text: "本人",
+		},
+	},
+	// Did you get a chance to
+	{
+		id: "814f4655-f046-4a8b-99cd-33e5c2cad36b",
+		en: "Did you get a chance to try the new restaurant?",
+		zh: "你有机会去试试新餐厅吗？",
+		hook: {
+			text: "有机会",
+		},
+	},
+	// any of the
+	{
+		id: "1373a03e-dd39-4dde-a0f1-2bdd3cc50197",
+		en: "Have you ever been to any of the countries in South America?",
+		zh: "你去过南美洲的哪个国家吗？",
+		hook: {
+			text: "哪个",
+		},
+	},
+	// Sounds like
+	{
+		id: "9f51139e-8445-4123-8117-2da264886534",
+		en: "Sounds like you had a great time",
+		zh: "听起来你玩得很开心",
+		hook: {
+			text: "听起来",
+		},
+	},
+	// a truly memorable experience
+	{
+		id: "863de4e5-3dc4-40c4-aac9-a9c04855b87f",
+		en: "It was a truly memorable experience",
+		zh: "这是一次难忘的经历",
+		hook: {
+			text: "难忘",
+		},
+	},
+	// I'm sure it was pretty cool to
+	{
+		id: "9747261c-9cb2-497e-8499-bb0446dab08b",
+		en: "I'm sure it was pretty cool to see the pyramids that up close",
+		zh: "我相信近距离看金字塔一定很酷",
+		hook: {
+			text: "我相信",
+		},
+	},
+	// Did you get to explore
+	{
+		id: "d733d304-6b90-4ec2-8f58-a151c1fb11d5",
+		en: "Did you get to explore the city at all?",
+		zh: "你有没有去探索过这个城市？",
+		hook: {
+			text: "有没有",
+		},
+	},
+	// Did you notice
+	{
+		id: "2bf18d8c-eb0f-40bf-a4db-c477df18856c",
+		en: "Did you notice any differences between the two cities?",
+		zh: "你注意到两个城市之间有什么不同吗？",
+		hook: {
+			text: "有什么不同",
+		},
+	},
+	// By the way
+	{
+		id: "7e335a51-1dd3-47c2-b195-322d5f22af8e",
+		en: "By the way, I heard you got a promotion",
+		zh: "顺便说一下，我听说你升职了",
+		hook: {
+			text: "顺便说一下",
+		},
+	},
+	// it's not always easy to
+	{
+		id: "ac0a6c52-bcb3-4b81-b101-50522d6b6e9c",
+		en: "I know it's not always easy to find time to exercise",
+		zh: "我知道找时间锻炼并不总是容易的",
+		hook: {
+			text: "并不总是",
+		},
+	},
 ];
 
 export default strings;
