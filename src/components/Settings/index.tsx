@@ -107,6 +107,10 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 					{/* <Refresh /> */}
 					<SettingsItem
 						onClick={() => {
+							const appLoading = document.getElementById("app_loading");
+							if (appLoading) {
+								appLoading.style.display = "flex";
+							}
 							window.location.reload();
 						}}
 						icon={<MdRefresh className="text-slate-600" />}

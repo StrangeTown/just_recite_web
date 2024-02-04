@@ -514,6 +514,114 @@ const strings: tStringItem[] = [
 			text: "并不总是",
 		},
 	},
+	// When it comes to
+	{
+		id: "8f18c910-6b0e-4129-af3c-2a4613aa2c0d",
+		en: "When it comes to finding a job, it can be tough",
+		zh: "说到找工作，这可能很困难",
+		hook: {
+			text: "说到",
+		},
+	},
+	// ask ... to do the same
+	{
+		id: "2e94e106-c494-41bc-89cd-c8312481fc85",
+		en: "I asked him to do the same",
+		zh: "我要求他做同样的事",
+		hook: {
+			text: "要求",
+		},
+	},
+	// Reach out to
+	{
+		id: "30e6b58e-0ec9-4371-95df-bc5147c8ad18",
+		en: "I think you should reach out to him and ask for his advice",
+		zh: "我认为你应该联系他，向他请教",
+		hook: {
+			text: "联系",
+		},
+	},
+	// Keep in mind that
+	{
+		id: "b4c93cac-5ab2-4c94-bd27-770b0af52e76",
+		en: "Keep in mind that building a business takes time",
+		zh: "记住，建立一个企业需要时间",
+		hook: {
+			text: "记住",
+		},
+	},
+	// That's great to hear
+	{
+		id: "37aec80c-7331-4667-883c-c1d6c7563238",
+		en: "That's great to hear. I'm happy for you",
+		zh: "听到这个消息很高兴。我为你感到高兴",
+		hook: {
+			text: "很高兴",
+		},
+	},
+	// Rome wasn't built in a day
+	{
+		id: "fe6fc54e-d899-4b2e-8660-17b4aa3469c7",
+		en: "Rome wasn't built in a day, and the same goes for your business",
+		zh: "罗马不是一天建成的，你的企业也是如此",
+		hook: {
+			text: "不是一天",
+		},
+	},
+	// And don't be afraid to
+	{
+		id: "dc36df9d-f545-40ac-821c-d98778a5ab01",
+		en: "And don't be afraid to ask for help if you need it",
+		zh: "如果需要，不要害怕寻求帮助",
+		hook: {
+			text: "不要害怕",
+		},
+	},
+	// you never know what might work and what might not
+	{
+		id: "61b6b3f1-f572-4021-8f7c-e97dfd57646d",
+		en: "You never know what might work and what might not",
+		zh: "你永远不知道什么会奏效，什么不会",
+		hook: {
+			text: "你永远不知道",
+		},
+	},
+	// Another thing you could try
+	{
+		id: "1679b4a4-951b-40e2-9d9d-2a285e25eb1d",
+		en: "Another thing you could try is to reach out to your network and ask for advice",
+		zh: "你可以尝试的另一件事是联系你的人际网络，寻求建议",
+		hook: {
+			text: "尝试",
+		},
+	},
+	// It might be helpful to
+	{
+		id: "8b977f1f-39b5-4a93-acb7-9f17f4b23063",
+		en: "It might be helpful to take a step back and look at the situation from a different perspective",
+		zh: "退一步，换个角度看看情况可能会有所帮助",
+		hook: {
+			text: "可能会有所帮助",
+		},
+	},
+	// You could even
+	{
+		id: "f85b7984-43e4-46a3-800e-cfdca1c28be9",
+		en: "You could even ask for feedback from your customers",
+		zh: "你甚至可以向你的顾客要求反馈",
+		hook: {
+			text: "甚至可以",
+		},
+	},
+	// That way
+	{
+		id: "3fec0582-e66d-4f40-8e67-db7da7101a41",
+		en: "That way, you can get a better understanding of what they want",
+		zh: "这样，你可以更好地了解他们想要什么",
+		hook: {
+			text: "这样",
+		},
+	},
 ];
 
 export default strings;
