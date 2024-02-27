@@ -16,6 +16,7 @@ import {
 	MdRefresh,
 } from "react-icons/md";
 import { getCurrentProgress } from "../../services";
+import { isLargeScreen } from "../../utils";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -80,11 +81,11 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 
 	return (
 		<div
-			className={`fixed top-0 right-0 h-full w-full flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
+			className={`fixed lg:relative lg:border-l-2 lg:border-l-slate-100 top-0 right-0 h-full w-full lg:w-auto flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
 			onClick={handleBackdropClick}
 		>
 			<div
-				className={`w-2/3 md:w-1/4 h-full pt-6 pl-6 pb-3 bg-white ${contentTranslateX} transition-all duration-500 flex flex-col justify-between`}
+				className={`w-2/3 md:w-1/4 lg:w-52 h-full pt-6 pl-6 pb-3 bg-white lg:bg-slate-300 ${contentTranslateX} transition-all lg:transform-none duration-500 flex flex-col justify-between`}
 			>
 				<div className=" flex flex-col gap-y-6">
 					<SettingsItem
