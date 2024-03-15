@@ -622,6 +622,299 @@ const strings: tStringItem[] = [
 			text: "这样",
 		},
 	},
+	// good to be here
+	{
+		id: "5af9e535-842d-4374-8f57-5e47e6b8e168",
+		en: "It's good to be here",
+		zh: "很高兴来到这里",
+		hook: {
+			text: "很高兴",
+		},
+	},
+	// maybe you should
+	{
+		id: "80de0e01-151f-40c2-9026-48057fb03e44",
+		en: "Maybe you should take a break and come back to it later",
+		zh: "也许你应该休息一下，稍后再回来",
+		hook: {
+			text: "也许",
+		},
+	},
+	// you're telling me that
+	{
+		id: "b3b74fd9-55e4-43ee-b87d-19ede648fbcf",
+		en: "You're telling me that you've never been to the beach?",
+		zh: "你告诉我你从未去过海滩？",
+		hook: {
+			text: "告诉我",
+		},
+	},
+	// I kind of feel like
+	{
+		id: "914e6303-34aa-4554-b5bd-3a54408f34be",
+		en: "I kind of feel like I've been there before",
+		zh: "我有点觉得我以前去过那里",
+		hook: {
+			text: "有点觉得",
+		},
+	},
+	// Even though you don't want
+	{
+		id: "9f15042f-484d-44ab-9630-62aff96c2bb3",
+		en: "Even though you don't want anyone to know it, You secretly love it",
+		zh: "尽管你不想让任何人知道，你暗地里喜欢它",
+		hook: {
+			text: "尽管",
+		},
+	},
+	// as you know
+	{
+		id: "471d7c21-4484-45fb-92a1-6d5947e5c868",
+		en: "As you know, I've been working on this project for a while",
+		zh: "你知道，我已经在这个项目上工作了一段时间",
+		hook: {
+			text: "你知道",
+		},
+	},
+	// That's actually
+	{
+		id: "19c002c7-06a3-4396-b851-20c48183894f",
+		en: "That's actually a great idea",
+		zh: "这实际上是个好主意",
+		hook: {
+			text: "实际上",
+		},
+	},
+	// Have you considered
+	{
+		id: "8ddea09f-9926-43a7-a6e7-5805e15a7589",
+		en: "Have you considered asking for help?",
+		zh: "你有没有考虑过寻求帮助？",
+		hook: {
+			text: "考虑",
+		},
+	},
+	{
+		id: "366f8b21-b808-4ce5-b81e-0d7d5f1b6bf6",
+		en: "I will call you in a week",
+		zh: "我会在一周后给你打电话",
+		hook: {
+			text: "一周后",
+		},
+	},
+	// It works on
+	{
+		id: "e4708616-dda5-4c98-b8a6-cc9b77703250",
+		en: "It works on both Windows and Mac",
+		zh: "它在Windows和Mac上都可以使用",
+		hook: {
+			text: "可以使用",
+		},
+	},
+	// it takes a lot ... to ...
+	{
+		id: "1cbc251f-12c4-4992-bf4f-f9f9565dfb8a",
+		en: "It takes a lot of beer to get him drunk",
+		zh: "他喝很多啤酒才会醉",
+		hook: {
+			text: "很多",
+		},
+	},
+	// need to talk
+	{
+		id: "a769856e-1a72-4c3d-b942-0073da025712",
+		en: "We need to have a talk",
+		zh: "我们需要谈谈",
+		hook: {
+			text: "需要",
+		},
+	},
+	// check out the ... guy
+	{
+		id: "9c111855-7f39-4bca-945c-ad97614d1aaa",
+		en: "Check out the guy over there",
+		zh: "看看那边的那个人",
+		hook: {
+			text: "看看",
+		},
+	},
+	// not crazy about
+	{
+		id: "5a00d1ca-707a-4862-b9bc-43d0e1419f2f",
+		en: "I am not crazy about the bread",
+		zh: "我不太喜欢这个面包",
+		hook: {
+			text: "不太喜欢",
+		},
+	},
+	{
+		id: "12410ed0-6278-4fa9-8f54-bf13971d382b",
+		en: "Can you please just listen for a second",
+		zh: "你能不能请听我说一下",
+		hook: {
+			text: "请听",
+		},
+	},
+	// here we go
+	{
+		id: "b65e695b-2306-4fab-91fd-a83d48c277fc",
+		en: "Here we go again",
+		zh: "又来了",
+		hook: {
+			text: "又来了",
+		},
+	},
+	// check
+	{
+		id: "9a0efc0e-cf49-4ea4-8d28-ec4f9c28d4f6",
+		en: "Could we please have the check? Thank you",
+		zh: "我们可以结账吗？谢谢",
+		hook: {
+			text: "结账",
+		},
+	},
+	{
+		id: "1c7dd414-4fdf-41ab-a066-aad77d760ad4",
+		en: "What kind of headline is that?",
+		zh: "这算哪门子标题？",
+		hook: {
+			text: "哪门子",
+		},
+	},
+	{
+		id: "87c133df-5192-4ca7-b7b1-cfc327e50e63",
+		en: "I pride myself on being a good listener",
+		zh: "我以自己是一个好倾听者为傲",
+		hook: {
+			text: "为傲",
+		},
+	},
+	// What were we talking about
+	{
+		id: "ed375a08-96af-473e-8b5c-838645f07d11",
+		en: "What were we talking about again?",
+		zh: "我们刚才在谈什么？",
+		hook: {
+			text: "刚才",
+		},
+	},
+	// You haven't even met him
+	{
+		id: "d8ddd113-dc42-4fd5-a65c-d8b8bb9eaa7c",
+		en: "You haven't even met him",
+		zh: "你甚至没有见过他",
+		hook: {
+			text: "甚至",
+		},
+	},
+	// You own me a
+	{
+		id: "38f1093a-3f4f-4d64-98d4-c99b544d5997",
+		en: "You own me a favor",
+		zh: "你欠我一个人情",
+		hook: {
+			text: "欠我",
+		},
+	},
+	// hand it off
+	{
+		id: "16e5cdad-6431-4850-8f3d-49ef49ea0539",
+		en: "I will hand it off to you",
+		zh: "我会把它交给你",
+		hook: {
+			text: "交给",
+		},
+	},
+	// we did everything we could
+	{
+		id: "f8845809-605e-4791-a59e-c48879ba8198",
+		en: "We did everything we could",
+		zh: "我们尽了全力",
+		hook: {
+			text: "尽了全力",
+		},
+	},
+	// What do you mean he is
+	{
+		id: "c7a25837-0cb7-4feb-b08d-67aa13e9e6d3",
+		en: "What do you mean he is not coming?",
+		zh: "他不来是什么意思？",
+		hook: {
+			text: "什么意思",
+		},
+	},
+	// make a living
+	{
+		id: "1f236523-34df-48e6-b76d-3507c81c5339",
+		en: "I need to make a living",
+		zh: "我需要谋生",
+		hook: {
+			text: "谋生",
+		},
+	},
+	// take it easy
+	{
+		id: "9a5c6e01-808a-401d-ace3-921e78c7943d",
+		en: "Take it easy",
+		zh: "放松点",
+		hook: {
+			text: "放松",
+		},
+	},
+	// I can try
+	{
+		id: "2ac22dda-bff0-4dc9-bb60-e8497a1946ed",
+		en: "I can try to help you",
+		zh: "我可以试着帮你",
+		hook: {
+			text: "试着",
+		},
+	},
+	// I totally hear what you are saying
+	{
+		id: "69f2cf80-05ea-49fe-a707-fc2672654714",
+		en: "I totally hear what you are saying",
+		zh: "我完全理解你在说什么",
+		hook: {
+			text: "完全理解",
+		},
+	},
+	// Who are all these people
+	{
+		id: "a2db0bff-e239-41dc-9615-89ecc40eea82",
+		en: "Who are all these people?",
+		zh: "这些人都是谁？",
+		hook: {
+			text: "都是谁",
+		},
+	},
+	// I find that ... offensive
+	{
+		id: "9974164a-358a-4898-9594-2e98b2329796",
+		en: "I find that kind of language offensive",
+		zh: "我觉得这种语言很冒犯",
+		hook: {
+			text: "很冒犯",
+		},
+	},
+	// kidding around
+	{
+		id: "a088543b-5895-40ff-80dc-fe55f1647c0b",
+		en: "I was just kidding around",
+		zh: "我只是在开玩笑",
+		hook: {
+			text: "开玩笑",
+		},
+	},
+	// I get kind of awkward
+	{
+		id: "41bb743e-2609-4a6a-9fc4-5b4ae8de07fa",
+		en: "I get kind of awkward around new people",
+		zh: "我在新人面前有点尴尬",
+		hook: {
+			text: "有点尴尬",
+		},
+	},
 ];
 
 export default strings;
