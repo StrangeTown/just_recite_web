@@ -915,6 +915,266 @@ const strings: tStringItem[] = [
 			text: "有点尴尬",
 		},
 	},
+	// Have you tried
+	{
+		id: "5fae5cc6-2a48-4872-b62c-d53bd4291d55",
+		en: "Have you tried turning it off and on again?",
+		zh: "你试过关掉再打开吗？",
+		hook: {
+			text: "试过",
+		},
+	},
+	// uncertain economic times
+	{
+		id: "9cc614fa-f5ad-45fc-9499-747eff0a49b5",
+		en: "I know it can be tough to find a job in uncertain economic times",
+		zh: "我知道在经济不确定时期找工作可能很困难",
+		hook: {
+			text: "经济不确定",
+		},
+	},
+	// That's definitely
+	{
+		id: "4d14c5ee-e9c4-4251-9cf1-c693e38ace71",
+		en: "That's definitely something to think about",
+		zh: "这绝对是值得考虑的事情",
+		hook: {
+			text: "值得考虑",
+		},
+	},
+	// frustrating
+	{
+		id: "394e67b4-c386-4aa7-a359-59caac5d8c88",
+		en: "I know it can be frustrating",
+		zh: "我知道这可能令人沮丧",
+		hook: {
+			text: "沮丧",
+		},
+	},
+	// struggling
+	{
+		id: "d90d7a6d-710a-45ef-84a4-a77abfc3dcbe",
+		en: "Everyone is struggling right now",
+		zh: "现在每个人都在挣扎",
+		hook: {
+			text: "挣扎",
+		},
+	},
+	// But it's important to remember that
+	{
+		id: "95b87816-afce-4f9e-a8bb-8e047080ce89",
+		en: "But it's important to remember that things will get better",
+		zh: "但重要的是要记住事情会变得更好",
+		hook: {
+			text: "记住",
+		},
+	},
+	// job market
+	{
+		id: "b35779a0-0a7e-49bd-8c1d-0f09f9c683df",
+		en: "The job market is tough right now",
+		zh: "现在的就业市场很困难",
+		hook: {
+			text: "就业市场",
+		},
+	},
+	// turn around
+	{
+		id: "89b50329-a5a6-4d79-9c4e-7b0f942fc626",
+		en: "Things will turn around eventually",
+		zh: "事情最终会好转的",
+		hook: {
+			text: "好转",
+		},
+	},
+	// In the meantime
+	{
+		id: "79208f89-01ad-4a41-bbf3-090039d19612",
+		en: "In the meantime, you can always look for other opportunities",
+		zh: "与此同时，你总是可以寻找其他机会",
+		hook: {
+			text: "与此同时",
+		},
+	},
+	// it might be helpful to
+	{
+		id: "db13372b-1291-4cbf-9ff1-4fb7bfda9e08",
+		en: "It might be helpful to reach out to your network and ask for advice",
+		zh: "联系你的人际网络并寻求建议可能会有所帮助",
+		hook: {
+			text: "可能会有所帮助",
+		},
+	},
+	// Do you have any areas where you'd like to improve your skills or knowledge?
+	{
+		id: "6f8e5473-2234-48a2-b5a2-4ae1fefcb887",
+		en: "Do you have any areas where you'd like to improve your skills or knowledge?",
+		zh: "你有哪些领域想要提高技能或知识？",
+		hook: {
+			text: "想要",
+		},
+	},
+	// can be a great way to
+	{
+		id: "a9350290-5524-4ecd-9d90-0c0ab3e54f96",
+		en: "Learning from others can be a great way to improve your skills",
+		zh: "向他人学习是提高技能的好方法",
+		hook: {
+			text: "好方法",
+		},
+	},
+	// If you're interested in
+	{
+		id: "07b31c14-d848-4a57-bc50-ba38eca5bc74",
+		en: "If you're interested in painting, you might consider taking a class",
+		zh: "如果你对绘画感兴趣，你可以考虑上课",
+		hook: {
+			text: "感兴趣",
+		},
+	},
+	// practice their pronunciation
+	{
+		id: "d1b033d3-4324-404b-a7f3-0ac4bbaed0ff",
+		en: "One way to improve your language skills is to practice your pronunciation",
+		zh: "提高语言技能的一种方法是练习发音",
+		hook: {
+			text: "一种方法",
+		},
+	},
+	// make learning more interactive and fun
+	{
+		id: "8255b2b9-1f68-4d1b-b92e-bb6a168b6c30",
+		en: "Using games and quizzes can make learning more interactive and fun",
+		zh: "使用游戏和测验可以使学习更加互动和有趣",
+		hook: {
+			text: "更加",
+		},
+	},
+	// but unfortunately
+	{
+		id: "ec2e88d9-b83c-4ca7-8971-e45763b9ceb8",
+		en: "I would love to help, but unfortunately I am busy",
+		zh: "我很想帮忙，但不幸的是我很忙",
+		hook: {
+			text: "不幸的是",
+		},
+	},
+	// varies widely
+	{
+		id: "8752d185-8dbd-42ee-a414-f809153c21d2",
+		en: "The cost of living varies widely depending on where you live",
+		zh: "生活成本因居住地而异",
+		hook: {
+			text: "因而",
+		},
+	},
+	// different factors
+	{
+		id: "5460d5e1-1181-4ce1-99e6-d07d19cf1c12",
+		en: "There are many different factors to consider when choosing a college",
+		zh: "选择大学时有许多不同的因素要考虑",
+		hook: {
+			text: "不同的",
+		},
+	},
+	// a good rule of thumb
+	{
+		id: "69dd45ef-f26c-4d07-a1fa-5ad5f15913d4",
+		en: "A good rule of thumb is to save at least 10% of your income",
+		zh: "一个好的经验法则是至少存下你收入的10%",
+		hook: {
+			text: "经验法则",
+		},
+	},
+	// exposure
+	{
+		id: "17cc0095-6495-4c7e-9802-6f34c8daaa91",
+		en: "Traveling is a great way to get exposure to different cultures",
+		zh: "旅行是了解不同文化的好方法",
+		hook: {
+			text: "了解",
+		},
+	},
+	// passive skills
+	{
+		id: "6715c4eb-ba2e-4799-932c-f075603819d1",
+		en: "Listening and reading are considered passive skills",
+		zh: "听和读被认为是被动技能",
+		hook: {
+			text: "被认为",
+		},
+	},
+	// require more effort and practice
+	{
+		id: "bf4509ca-3564-4294-8b33-58991ccc72c3",
+		en: "Speaking and writing require more effort and practice",
+		zh: "说和写需要更多的努力和练习",
+		hook: {
+			text: "需要更多",
+		},
+	},
+	// get used to
+	{
+		id: "b2865c99-7d4e-4168-9107-d8cb6da7107d",
+		en: "It takes time to get used to a new language",
+		zh: "适应一门新语言需要时间",
+		hook: {
+			text: "需要时间",
+		},
+	},
+	// either in person or online
+	{
+		id: "2b675688-54f2-49e4-8e65-f3d681317e31",
+		en: "You can take classes either in person or online",
+		zh: "你可以选择线下或线上上课",
+		hook: {
+			text: "可以选择",
+		},
+	},
+	{
+		id: "cbdff099-ca3c-468a-8241-91b5eb25b896",
+		en: "One thing that might help is to incorporate English into your daily routine",
+		zh: "一个可能有帮助的方法是将英语融入你的日常生活",
+		hook: {
+			text: "可能有帮助",
+		},
+	},
+	// while you're commuting or doing chores
+	{
+		id: "afb21356-f573-47aa-b1ab-8eb0d5365f45",
+		en: "You can listen to English podcasts while you're commuting or doing chores",
+		zh: "你可以在通勤或做家务时听英语播客",
+		hook: {
+			text: "可以在",
+		},
+	},
+	// a regular part of
+	{
+		id: "d3e1adac-f61c-4b6d-819e-23c5757c4fb3",
+		en: "Working out has become a regular part of my daily routine",
+		zh: "锻炼已经成为我日常生活的一个固定部分",
+		hook: {
+			text: "固定部分",
+		},
+	},
+	// Even small steps can add up over time
+	{
+		id: "e7ad7972-7c8c-4e76-8784-d23be98d2e12",
+		en: "Even small steps can add up over time",
+		zh: "即使是小步骤，随着时间的推移也会累积起来",
+		hook: {
+			text: "即使是",
+		},
+	},
+	// Just keep practicing and pushing yourself to improve, and before you know it, you'll be speaking English like a pro!
+	{
+		id: "5c5b1e5a-5220-4c15-be50-c0cbb41217c1",
+		en: "Just keep practicing and pushing yourself to improve, and before you know it, you'll be speaking English like a pro!",
+		zh: "继续练习并努力提高自己，不知不觉中，你会像专业人士一样说英语！",
+		hook: {
+			text: "不知不觉",
+		},
+	},
 ];
 
 export default strings;
