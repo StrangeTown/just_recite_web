@@ -11,6 +11,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+// hide #app_loading
+const appLoading = document.getElementById('app_loading');
+if (appLoading) {
+  appLoading.style.display = 'none';
+}
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>

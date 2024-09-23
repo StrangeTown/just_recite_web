@@ -4,7 +4,7 @@ import { selectRandomStrings } from "../../store/slices/stringSlice";
 import WorkArea from "./WorkArea";
 import Completed from "./Completed";
 import CrazyPractice from "./CrazyPractice";
-import { generateItems, saveIdsToLocalStorage } from "../../services";
+import { generateItems, saveIdsToHistory } from "../../services";
 import {
 	selectCracyModeVisible,
 	selectCycleModeVisible,
@@ -36,7 +36,7 @@ const Recite = () => {
 		} else {
 			setIsFinished(true);
 			const ids = randomStrings.map((item) => item.id);
-			saveIdsToLocalStorage(ids);
+			saveIdsToHistory(ids);
 		}
 	};
 	const handleNotClick = () => {

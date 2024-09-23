@@ -11,7 +11,7 @@ const SettingsItem = ({ onClick, icon, name }: SettingsItemProps) => {
 			onClick={onClick}
 		>
 			{icon}
-			<div className="text-slate-600 text-sm group-hover/settingsitem:text-slate-800">
+			<div className="text-slate-600 text-sm group-hover/settingsitem:text-slate-900">
 				{name}
 			</div>
 		</div>

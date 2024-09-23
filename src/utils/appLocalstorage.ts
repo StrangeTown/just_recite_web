@@ -1,10 +1,10 @@
 // Localstorage
 
 const keys = {
-  language: "language",
-  enFont: "en-font",
-  ids: "ids",
-} as const
+	language: "language",
+	enFont: "en-font",
+	history: "history",
+} as const;
 
 const localStorage = window.localStorage
 

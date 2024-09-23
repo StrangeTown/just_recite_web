@@ -319,7 +319,6 @@ const qingkStrings: tStringItem[] = [
 		id: "10d812ae-04ca-4301-a0b1-ece75672ae1b",
 		hook: {
 			text: "使眼色",
-			imgUrl: "https://i.niupic.com/images/2023/11/14/cqvp.png",
 		},
 	},
 	{
@@ -528,7 +527,7 @@ const qingkStrings: tStringItem[] = [
 		id: "2c8a8224-a7f1-4c73-b679-c304132110e4",
 		hook: {
 			text: "心碎",
-			imgUrl: 'https://i.niupic.com/images/2023/11/14/cqxl.png'
+			imgUrl: "https://i.niupic.com/images/2023/11/14/cqxl.png",
 		},
 	},
 	{
@@ -625,7 +624,6 @@ const qingkStrings: tStringItem[] = [
 		id: "2766ec38-83e4-4384-afea-8f3e2b396999",
 		hook: {
 			text: "悬崖",
-			imgUrl: 'https://i.niupic.com/images/2023/11/14/cqyP.png'
 		},
 	},
 	{
@@ -714,7 +712,7 @@ const qingkStrings: tStringItem[] = [
 		id: "336eb551-b24f-4f9a-8143-ef821ae6667f",
 		hook: {
 			text: "绑鞋带",
-			imgUrl: 'https://s2.loli.net/2023/11/14/nTmiwej8p35YxcI.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/nTmiwej8p35YxcI.png",
 		},
 	},
 	{
@@ -811,7 +809,7 @@ const qingkStrings: tStringItem[] = [
 		id: "6d0f0c43-ab06-47da-b39f-97c1fb6dcbed",
 		hook: {
 			text: "上班",
-			imgUrl: 'https://s2.loli.net/2023/11/14/WzS5gUQRGeKYJ2X.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/WzS5gUQRGeKYJ2X.png",
 		},
 	},
 	{
@@ -940,7 +938,7 @@ const qingkStrings: tStringItem[] = [
 		id: "7d42472f-d87a-4df4-bc76-418cbaf8558d",
 		hook: {
 			text: "海平面",
-			imgUrl: 'https://s2.loli.net/2023/11/14/FmD4KxyGcYvMJpe.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/FmD4KxyGcYvMJpe.png",
 		},
 	},
 	{
@@ -1013,7 +1011,7 @@ const qingkStrings: tStringItem[] = [
 		id: "fc20a97d-7463-42b0-9ec0-b869aa27a510",
 		hook: {
 			text: "音乐会",
-			imgUrl: 'https://s2.loli.net/2023/11/14/WuCYHVaMxZRiscd.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/WuCYHVaMxZRiscd.png",
 		},
 	},
 	{
@@ -1151,7 +1149,7 @@ const qingkStrings: tStringItem[] = [
 		id: "87715440-6288-4aab-8070-2fff799e1aef",
 		hook: {
 			text: "电梯",
-			imgUrl: 'https://s2.loli.net/2023/11/14/pfU7AtC3HhoMzJm.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/pfU7AtC3HhoMzJm.png",
 		},
 	},
 	{
@@ -1224,7 +1222,7 @@ const qingkStrings: tStringItem[] = [
 		id: "6dcec485-d2cc-4631-9c04-ce61be4ad607",
 		hook: {
 			text: "纸巾",
-			imgUrl: 'https://s2.loli.net/2023/11/14/fRHcSZJ5VEXtmhG.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/fRHcSZJ5VEXtmhG.png",
 		},
 	},
 	{
@@ -1233,7 +1231,7 @@ const qingkStrings: tStringItem[] = [
 		id: "ebc8ebd6-2e14-45e3-ad33-f6ca87b71336",
 		hook: {
 			text: "碗",
-			imgUrl: 'https://s2.loli.net/2023/11/14/vIuCrqHw4OZPbeV.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/vIuCrqHw4OZPbeV.png",
 		},
 	},
 	{
@@ -1242,7 +1240,7 @@ const qingkStrings: tStringItem[] = [
 		id: "cf0a7318-a282-4f14-bb63-982e260cfa80",
 		hook: {
 			text: "洗衣机",
-			imgUrl: 'https://s2.loli.net/2023/11/14/v2CeHzjBSk6FPEW.png'
+			imgUrl: "https://s2.loli.net/2023/11/14/v2CeHzjBSk6FPEW.png",
 		},
 	},
 ];

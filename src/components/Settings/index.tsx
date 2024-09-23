@@ -8,7 +8,15 @@ import {
 	setCrazyModeVisible,
 	setCycleModeVisible,
 } from "../../store/slices/recitePageSlice";
-import { MdBolt, MdCached, MdOutlineFeedback, MdRefresh } from "react-icons/md";
+import {
+	MdBolt,
+	MdCached,
+	MdOutlineFeedback,
+	MdOutlineShare,
+	MdRefresh,
+} from "react-icons/md";
+import { getCurrentProgress } from "../../services";
+import { isLargeScreen } from "../../utils";
 
 const languageArr = ["en", "zh"];
 const enFontArr = ["Satisfy", "Roboto"];
@@ -18,6 +26,8 @@ interface ISettingsProps {
 	onContactClick?: () => void;
 }
 const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
+	const progress = getCurrentProgress();
+	const [copied, setCopied] = useState(false);
 	const { i18n } = useTranslation();
 	const dispatch = useAppDispatch();
 	const enFont = useAppSelector(selectEnFont);
@@ -58,48 +68,74 @@ const Settings = ({ onClose, onContactClick }: ISettingsProps) => {
 		}, 500);
 	};
 
+	const copyLink = () => {
+		const link = window.location.href;
+		navigator.clipboard.writeText(link);
+		setCopied(true);
+		setTimeout(() => {
+			setCopied(false);
+		}, 3000);
+	};
+
+	const progressString = `${progress.current} / ${progress.total}`;
+
 	return (
 		<div
-			className={`fixed top-0 right-0 h-full w-full flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
+			className={`fixed lg:relative lg:border-l-2 lg:border-l-slate-100 top-0 right-0 h-full w-full lg:w-auto flex z-100 bg-black ${backdropBgOpacityCls} transition-all duration-500 flex justify-end`}
 			onClick={handleBackdropClick}
 		>
 			<div
-				className={`w-2/3 md:w-1/4 h-full pt-6 pl-6 bg-white ${contentTranslateX} transition-all duration-500 flex flex-col gap-y-6`}
+				className={`w-2/3 md:w-1/4 lg:w-52 h-full pt-6 pl-6 pb-3 bg-white lg:bg-slate-300 ${contentTranslateX} transition-all lg:transform-none duration-500 flex flex-col justify-between`}
 			>
-				<SettingsItem
-					onClick={() => {
-						onContactClick?.();
-						onClose();
-					}}
-					icon={<MdOutlineFeedback className="text-slate-600" />}
-					name="Contact Us"
-				/>
+				<div className=" flex flex-col gap-y-6">
+					<SettingsItem
+						onClick={() => {
+							dispatch(setCrazyModeVisible(true));
+							onClose();
+						}}
+						icon={<MdBolt className="text-slate-600" />}
+						name="Hook Mode"
+					/>
+					<SettingsItem
+						onClick={() => {
+							dispatch(setCycleModeVisible(true));
+							onClose();
+						}}
+						icon={<MdCached className="text-slate-600" />}
+						name="Cycle Mode"
+					/>
 
-				{/* <Refresh /> */}
-				<SettingsItem
-					onClick={() => {
-						window.location.reload();
-					}}
-					icon={<MdRefresh className="text-slate-600" />}
-					name="Refresh"
-				/>
+					{/* <Refresh /> */}
+					<SettingsItem
+						onClick={() => {
+							const appLoading = document.getElementById("app_loading");
+							if (appLoading) {
+								appLoading.style.display = "flex";
+							}
+							window.location.reload();
+						}}
+						icon={<MdRefresh className="text-slate-600" />}
+						name="Refresh"
+					/>
 
-				<SettingsItem
-					onClick={() => {
-						dispatch(setCrazyModeVisible(true));
-						onClose();
-					}}
-					icon={<MdBolt className="text-slate-600" />}
-					name="Hook Mode"
-				/>
-				<SettingsItem
-					onClick={() => {
-						dispatch(setCycleModeVisible(true));
-						onClose();
-					}}
-					icon={<MdCached className="text-slate-600" />}
-					name="Cycle Mode"
-				/>
+					<SettingsItem
+						onClick={() => {
+							copyLink();
+						}}
+						icon={<MdOutlineShare className="text-slate-600" />}
+						name={copied ? "Link Copied! 🎉🔗" : "Share"}
+					/>
+
+					<SettingsItem
+						onClick={() => {
+							onContactClick?.();
+							onClose();
+						}}
+						icon={<MdOutlineFeedback className="text-slate-600" />}
+						name="Contact Us"
+					/>
+				</div>
+				<div className="text-sm text-slate-600">{progressString}</div>
 			</div>
 		</div>
 	);

@@ -5,3 +5,5 @@ export const goFullScreen = () => {
 		document.documentElement.requestFullscreen();
 	}
 };
+
+export const isLargeScreen = () => window.innerWidth > 1024;
