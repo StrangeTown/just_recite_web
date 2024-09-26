@@ -1207,6 +1207,222 @@ const strings: tStringItem[] = [
 			text: "不知不觉",
 		},
 	},
+	{
+		id: "e496ed99-0560-46ec-bfd7-0966a1194332",
+		en: "Wow, that's a brilliant idea for our project!",
+		zh: "哇，这是我们项目的一个绝妙主意！",
+		hook: {
+			text: "绝妙主意",
+		},
+	},
+	{
+		id: "a12c1a6c-8c08-4bb2-8b13-2afe35a9ebd2",
+		en: "Let's make a list of all the items we need for the party.",
+		zh: "让我们列一个我们聚会需要的所有物品清单。",
+		hook: {
+			text: "列一个",
+		},
+	},
+	{
+		id: "0de2e2d5-0994-4895-9c4e-a547da9bc1d7",
+		en: "I need to plan out my week to make sure I get everything done.",
+		zh: "我需要计划一下我的一周，确保我完成所有事情。",
+		hook: {
+			text: "计划一下",
+		},
+	},
+	{
+		id: "fb95bc44-33a7-40bf-9080-0158a973b310",
+		en: "The teacher has to keep the students engaged during the lecture.",
+		zh: "老师在讲课时必须让学生保持兴趣。",
+		hook: {
+			text: "保持兴趣",
+		},
+	},
+	{
+		id: "25b494df-5471-4ca6-979a-8e0bf15cc07a",
+		en: "Adding interactive elements to the website will definitely boost user engagement.",
+		zh: "为网站添加互动元素肯定会提高用户参与度。",
+		hook: {
+			text: "互动元素",
+		},
+	},
+	{
+		id: "78d01c01-5d7b-4982-ba63-e0ea16f7c542",
+		en: "I've got a great team to support my new business venture.",
+		zh: "我有一个很棒的团队来支持我的新业务冒险。",
+		hook: {
+			text: "来支持",
+		},
+	},
+	{
+		id: "ecae407b-3f6e-4b20-8504-f7f6b26fd001",
+		en: "We're facing substantial expenses to cover for the renovation of the office.",
+		zh: "我们面临着巨大的费用来支付办公室的装修。",
+		hook: {
+			text: "巨大的费用",
+		},
+	},
+	{
+		id: "f85cbb14-b617-4ed9-9416-6dc4480eb5e4",
+		en: "We're looking for team members who can work overtime during the busy season.",
+		zh: "我们正在寻找在旺季能加班工作的团队成员。",
+		hook: {
+			text: "加班工作",
+		},
+	},
+	{
+		id: "fd40c96a-591b-4042-bfcd-5fae6b51d2f7",
+		en: "I prefer the slightly older model of the phone; it has a better battery life.",
+		zh: "我更喜欢这款手机的稍旧型号；它的电池寿命更好。",
+		hook: {
+			text: "稍旧",
+		},
+	},
+	{
+		id: "2f641971-729f-48b8-bc00-718fbf9b7e66",
+		en: "Being bilingual should be considered a major advantage for this job position.",
+		zh: "对于这个工作职位来说，会双语应该被视为一个重要优势。",
+		hook: {
+			text: "被视为",
+		},
+	},
+	{
+		id: "105e3956-b27e-43f5-8000-3cf31fdccb25",
+		en: "Due to family commitments, she had to decline the job offer that required relocation.",
+		zh: "由于家庭责任，她不得不拒绝需要搬迁的工作邀约。",
+		hook: {
+			text: "家庭责任",
+		},
+	},
+	{
+		id: "c3a545ab-f2f1-43d9-9592-41957996f354",
+		en: "To succeed in this project, we need to be fully dedicated to our tasks.",
+		zh: "要在这个项目中取得成功，我们需要全身心投入到我们的任务中。",
+		hook: {
+			text: "全身心投入",
+		},
+	},
+	{
+		id: "2295c798-7670-4bfd-aec4-c26a6f6f60f0",
+		en: "Considering his lack of experience, he might be considered a less ideal candidate for the managerial position.",
+		zh: "考虑到他缺乏经验，他可能被认为不是这个管理职位的理想人选",
+		hook: {
+			text: "理想人选",
+		},
+	},
+	{
+		id: "09cd2165-8fa6-4a71-b77a-6ebf700889b2",
+		en: "I completely agree with your suggestion to start the meeting earlier.",
+		zh: "我完全同意你提议早点开始会议。",
+		hook: {
+			text: "完全同意",
+		},
+	},
+	{
+		id: "382fdd8f-71bc-4f9f-8382-9e041b8f17af",
+		en: "I promise to put forth my best effort to complete this project on time.",
+		zh: "我承诺尽最大努力按时完成这个项目。",
+		hook: {
+			text: "尽最大努力",
+		},
+	},
+	{
+		id: "08f68e06-6f86-4142-ad88-baed7ff090bb",
+		en: "If you're looking for someone who can handle this task, you should definitely take me on.",
+		zh: "如果你正在寻找一个能够处理这项任务的人，你应该毫不犹豫地选择我。",
+		hook: {
+			text: "选择我",
+		},
+	},
+	{
+		id: "7f21bb5b-6e36-41dc-aceb-74f0b3261090",
+		en: "We're running out of options, so we need to consider this alternative solution seriously.",
+		zh: "我们的选择越来越少，所以我们需要认真考虑这个替代方案。",
+		hook: {
+			text: "选择越来越少",
+		},
+	},
+	{
+		id: "80dd658a-bab9-4ab6-a80a-95e3a8cf9934",
+		en: "I've never tried ice climbing before, but I'm willing to give it a shot.",
+		zh: "我以前从未尝试过攀冰，但我愿意试一试。",
+		hook: {
+			text: "试一试",
+		},
+	},
+	{
+		id: "aff79a02-b246-4295-a75e-b41d042f2da9",
+		en: "In order to grow the business, we need to explore new avenues for revenue.",
+		zh: "为了发展业务，我们需要探索新的收入途径。",
+		hook: {
+			text: "新的收入途径",
+		},
+	},
+	{
+		id: "f3ea8877-8644-4a2c-bc47-fa4572e802f5",
+		en: "To build up my strength, I've been performing push-ups daily.",
+		zh: "为了增强体力，我每天都在做俯卧撑。",
+		hook: {
+			text: "每天都在做",
+		},
+	},
+	{
+		id: "c433385f-9bc4-4c7f-8313-6a7dbf16be2f",
+		en: "If we buy this software, we might end up using it more than we expected.",
+		zh: "如果我们买了这个软件，我们最终使用它的时间可能会超出预期",
+		hook: {
+			text: "最终",
+		},
+	},
+	{
+		id: "ddf0cd6d-e9ab-493b-8801-ec6fb807ecd9",
+		en: "There are plenty of solid choices on the menu, so take your time deciding what to order.",
+		zh: "菜单上有很多不错的选择，所以慢慢考虑你要点什么。",
+		hook: {
+			text: "不错的选择",
+		},
+	},
+	{
+		id: "6a34f0f5-a9f5-4f78-a083-f76eaeb3672a",
+		en: "We plan to incorporate more sustainable materials into our product line.",
+		zh: "我们计划将更多可持续材料融入我们的产品线。",
+		hook: {
+			text: "计划",
+		},
+	},
+	{
+		id: "a2911374-16f7-4b1d-abf1-34644ef78bd5",
+		en: "For the time being, let's just focus on finishing this phase of the project.",
+		zh: "暂时，让我们专注于完成项目的这个阶段。",
+		hook: {
+			text: "暂时",
+		},
+	},
+	{
+		id: "09511c39-35f1-4769-a973-d59e2d6c2854",
+		en: "Remembering to proofread your work is a crucial step in ensuring the quality of your writing.",
+		zh: "记得校对你的作品是确保你的写作质量的关键步骤。",
+		hook: {
+			text: "关键步骤",
+		},
+	},
+	{
+		id: "a0447b95-6794-463e-9e1f-87e87046eced",
+		en: "I could potentially help you with that, but I need more details about the task.",
+		zh: "我可能可以帮你处理这个问题，但我需要更多关于任务的细节。",
+		hook: {
+			text: "可能可以",
+		},
+	},
+	{
+		id: "add0996d-d8be-423f-acc9-9d381c28768e",
+		en: "What content should focus on for our social media campaign to attract more followers?",
+		zh: "我们的社交媒体宣传应该关注哪些内容以吸引更多粉丝？",
+		hook: {
+			text: "关注",
+		},
+	},
 ];
 
 export default strings;
