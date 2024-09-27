@@ -1423,6 +1423,238 @@ const strings: tStringItem[] = [
 			text: "关注",
 		},
 	},
+	{
+		id: "7c609711-68a1-4383-b751-57973de7647b",
+		en: "I need to find a quiet spot for studying, this noisy cafe is driving me crazy.",
+		zh: "我需要找一个安静的地方学习，这个吵闹的咖啡馆让我发疯。",
+		hook: {
+			text: "一个安静的地方",
+		},
+	},
+	{
+		id: "7211f731-fddd-46ae-b874-acfbc9afc66f",
+		en: "This location is too loud for a romantic dinner, let's find somewhere more intimate.",
+		zh: "这个地方对于浪漫晚餐来说太吵了，我们找个更私密的地方吧。",
+		hook: {
+			text: "太吵了",
+		},
+	},
+	{
+		id: "f946a375-d270-4838-8a02-907b3699af29",
+		en: "I need to conduct my interview for the job tomorrow, wish me luck!",
+		zh: "我明天需要进行工作面试，祝我好运！",
+		hook: {
+			text: "进行工作面试",
+		},
+	},
+	{
+		id: "6930df2a-d3fc-463e-a4c7-a956bb78ee1d",
+		en: "Hey, did you hear that noise coming from the basement? It's been bothering me all night.",
+		zh: "嘿，你听到地下室传来的声音了吗？整晚都在困扰我。",
+		hook: {
+			text: "传来的声音",
+		},
+	},
+	{
+		id: "373e8532-0b41-478d-851d-8defff752aca",
+		en: "I've been trying to come up with a name for my new startup, I should call it 'Innovatech'... or what?",
+		zh: "我一直在为我的新创业公司想一个名字，我应该叫它'Innovatech'... 还是什么？",
+		hook: {
+			text: "叫它",
+		},
+	},
+	{
+		id: "5db0ec5e-0e0b-4c4e-8be7-9c321019136a",
+		en: "I need to locate a suitable place for my new business, any suggestions?",
+		zh: "我需要找一个适合我新业务的地方，有什么建议吗？",
+		hook: {
+			text: "适合",
+		},
+	},
+	{
+		id: "26fdaaf1-efd1-48b2-a928-449fccea996a",
+		en: "It's a bit of a hike to the top of the mountain, but the view is totally worth it.",
+		zh: "到山顶有点远，但风景绝对值得。",
+		hook: {
+			text: "有点远",
+		},
+	},
+	{
+		id: "0c5d7cc6-cc39-4b5c-9baf-a19f8cda8f4b",
+		en: "That means you've got a whole weekend to finish your project, so no more procrastinating!",
+		zh: "这意味着你有整个周末来完成你的项目，所以不要再拖延了！",
+		hook: {
+			text: "这意味着",
+		},
+	},
+	{
+		id: "f68ccbe9-d813-4759-a512-e8af907426ba",
+		en: "I'm just about wrapped up with work for today, so I can finally relax and watch that movie I've been wanting to see.",
+		zh: "我今天的工作快要完成了，所以我终于可以放松一下，看我一直想看的电影了。",
+		hook: {
+			text: "完成",
+		},
+	},
+	{
+		id: "934039d8-ba55-4def-825a-e02981ff5e9c",
+		en: "I'm crossing my fingers that I get the job offer, I really need it.",
+		zh: "我祈祷我能得到这份工作，我真的很需要。",
+		hook: {
+			text: "我祈祷",
+		},
+	},
+	{
+		id: "08d13253-cf10-41d2-b3c8-8cd8a219d57b",
+		en: "I'm working hard on this project, hoping to get the outcome I'm aiming for.",
+		zh: "我在努力工作这个项目，希望得到我想要的结果。",
+		hook: {
+			text: "结果",
+		},
+	},
+	{
+		id: "eea8fdb2-8e70-4e84-b13d-e77618d55fa2",
+		en: "I've really enjoyed chatting with you, let's catch up more often!",
+		zh: "我真的很喜欢和你聊天，我们要更经常联系！",
+		hook: {
+			text: "和你聊天",
+		},
+	},
+	{
+		id: "fe3ba148-7880-49b1-a1a8-254db6eeb962",
+		en: "What I'm up to right now is trying to decide what to order for dinner.",
+		zh: "我现在正在做的是决定晚餐要点什么。",
+		hook: {
+			text: "现在正在做的",
+		},
+	},
+	{
+		id: "98747887-18c9-475e-bb47-d29f7b59fd3b",
+		en: "After work, I'm just going to do some quick shopping, buy the things I need, and head home to relax.",
+		zh: "下班后，我只是要快速购物，买我需要的东西，然后回家放松。",
+		hook: {
+			text: "回家",
+		},
+	},
+	{
+		id: "f1fb1a27-b7f3-4e25-99fc-858d51607518",
+		en: "The trip was amazing, I saw so many beautiful sights that I'll never forget.",
+		zh: "这次旅行太棒了，我看到了很多美丽的景色，我永远不会忘记。",
+		hook: {
+			text: "美丽的景色",
+		},
+	},
+	{
+		id: "988ad62b-7286-496c-b942-4f2442df4ec1",
+		en: "This new coffee shop down the street is quite nice; you should check it out sometime.",
+		zh: "街上的这家新咖啡店很不错，你应该有时间去看看。",
+		hook: {
+			text: "很不错",
+		},
+	},
+	{
+		id: "6196b0ba-4b10-4916-8b74-6d5929926f9b",
+		en: "I love sitting at the park on a sunny day, just watching life unfold around me.",
+		zh: "我喜欢在阳光明媚的日子里坐在公园里，看着生活在我周围展开。",
+		hook: {
+			text: "生活在我周围展开",
+		},
+	},
+	{
+		id: "9f9fdc16-d41f-4f96-b88c-6b2ad8e765d4",
+		en: "Listening to the rain at night really brings a sense of peace to my mind.",
+		zh: "晚上听雨声真的让我的心灵感到平静。",
+		hook: {
+			text: "感到平静",
+		},
+	},
+	{
+		id: "f7a1e23b-6241-4e05-904a-7bbb3fbec3e9",
+		en: "Every person you meet has their own unique story to tell, it's fascinating to listen and learn from them.",
+		zh: "你遇到的每个人都有自己独特的故事要讲，倾听并从他们身上学习是很有趣的。",
+		hook: {
+			text: "很有趣",
+		},
+	},
+	{
+		id: "1f8f833a-0e19-4328-9d40-207a6e4f99b4",
+		en: "When I mentioned the challenges of the job, I wasn't referring to the workload, but rather the tight deadlines.",
+		zh: "当我提到工作的挑战时，我指的不是工作量，而是紧迫的截止日期。",
+		hook: {
+			text: "指的不是",
+		},
+	},
+	{
+		id: "fbba1b4e-1463-4e92-960f-bfc695a69cc8",
+		en: "I'm more focused on the quality of our products rather than just increasing the quantity.",
+		zh: "我更关注我们产品的质量，而不仅仅是增加数量。",
+		hook: {
+			text: "更关注",
+		},
+	},
+	{
+		id: "b77a612f-f605-4cc1-8e6a-6b84f78a325a",
+		en: "I appreciate each and every one of them for their hard work and dedication to the project.",
+		zh: "我感激他们每一个人为项目的努力和奉献。",
+		hook: {
+			text: "每一个人",
+		},
+	},
+	{
+		id: "a885893d-8eb7-49d0-9732-0743874050c4",
+		en: "I find it really enjoyable to be conversing with someone who shares the same interests as me.",
+		zh: "我发现和一个有相同兴趣的人交谈真的很有趣。",
+		hook: {
+			text: "交谈",
+		},
+	},
+	{
+		id: "221142a2-a2b5-4f32-8a4e-d3e498083271",
+		en: "Having a large circle of friends means there's always someone to hang out with on weekends.",
+		zh: "有一个庞大的朋友圈意味着周末总有人可以一起出去玩。",
+		hook: {
+			text: "庞大的朋友圈",
+		},
+	},
+	{
+		id: "b7b43609-653c-41b3-9a27-9b211f624616",
+		en: "I feel like I can really confide in you, you're such a good listener.",
+		zh: "我感觉我真的可以信任你，你是一个很好的倾听者。",
+		hook: {
+			text: "信任",
+		},
+	},
+	{
+		id: "420e38c4-ff3f-4405-8ab0-9b7d94195b71",
+		en: "Thanks for being so patient, I appreciate that you're genuinely trying to understand what I'm saying.",
+		zh: "谢谢你的耐心，我感激你真诚地试图理解我在说什么。",
+		hook: {
+			text: "真诚地试图理解",
+		},
+	},
+	{
+		id: "fa6c1ffc-7e8e-4b41-a7d3-f24198797ad8",
+		en: "I've never really opened up to anyone before, but with you, it feels different.",
+		zh: "我以前从未向任何人敞开心扉，但和你在一起，感觉不一样。",
+		hook: {
+			text: "敞开心扉",
+		},
+	},
+	{
+		id: "ae338c2f-9aff-421c-8983-988acf41534b",
+		en: "I don't usually chat with just anyone, but there's something about our conversations that I really enjoy.",
+		zh: "我通常不会和任何人聊天，但我们的对话中有一些东西我真的很喜欢。",
+		hook: {
+			text: "不会和任何人聊天",
+		},
+	},
+	{
+		id: "88e19ead-c08d-499e-a3ab-55acff8e9a77",
+		en: "I like to take things slow and steady, that's my approach to most challenges in life.",
+		zh: "我喜欢慢慢来，这是我面对生活中大多数挑战的方式。",
+		hook: {
+			text: "方式",
+		},
+	},
 ];
 
 export default strings;
