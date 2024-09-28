@@ -1655,6 +1655,174 @@ const strings: tStringItem[] = [
 			text: "方式",
 		},
 	},
+	{
+		id: "ec3bd1e9-1805-4c23-b345-26f8b5f1e878",
+		en: "It's nighttime, let's go for a walk under the stars.",
+		zh: "现在是晚上，让我们一起在星空下散步。",
+		hook: {
+			text: "晚上",
+		},
+	},
+	{
+		id: "06e89d85-08b4-4183-92c5-09a4a7205579",
+		en: "I refuse to give up on my dreams, no matter how hard it gets.",
+		zh: "无论多么困难，我都拒绝放弃我的梦想。",
+		hook: {
+			text: "拒绝放弃",
+		},
+	},
+	{
+		id: "defdfbfb-8424-4753-96d9-a7a9622d9295",
+		en: "My friends always encourage me to pursue my passion for music.",
+		zh: "我的朋友总是鼓励我追求我对音乐的热情。",
+		hook: {
+			text: "鼓励",
+		},
+	},
+	{
+		id: "878185d1-246c-4c97-9101-0328493b0592",
+		en: "Before you leave, take a bite of this delicious homemade cake I baked.",
+		zh: "在你离开之前，尝一口我烤的这个美味的自制蛋糕。",
+		hook: {
+			text: "尝一口",
+		},
+	},
+	{
+		id: "71ad69e1-cc0a-4e86-b54e-ea2961ffcbf0",
+		en: "I've been thinking the same thing, I'm on board with that plan to start our own business.",
+		zh: "我一直在考虑同样的事情，我赞成我们开始自己的生意的计划。",
+		hook: {
+			text: "赞成",
+		},
+	},
+	{
+		id: "b2525eaa-30e1-4b7b-9246-ed379b95b425",
+		en: "Perhaps we should consider taking a break before diving into the next project.",
+		zh: "也许我们应该考虑在开始下一个项目之前休息一下。",
+		hook: {
+			text: "也许",
+		},
+	},
+	{
+		id: "ee873c7a-66ba-4dd9-8fce-895b0c3958fd",
+		en: "My little brother loves playing with his toy cars all afternoon.",
+		zh: "我弟弟整个下午都喜欢玩他的玩具车。",
+		hook: {
+			text: "玩具车",
+		},
+	},
+	{
+		id: "24899606-4366-4829-a976-1aa2ca1fd08e",
+		en: "I'll finish my homework later on, but first, I need to grab a snack.",
+		zh: "我会稍后完成我的作业，但首先，我需要拿点零食。",
+		hook: {
+			text: "稍后",
+		},
+	},
+	{
+		id: "22d49bdc-8547-44d9-97c1-c7f3f9814903",
+		en: "Skipping breakfast wouldn't be ideal, especially since you have a big test today.",
+		zh: "今天有重要考试，所以最好不要不吃早餐。",
+		hook: {
+			text: "最好不要",
+		},
+	},
+	{
+		id: "34b99485-af94-44fc-aa28-26a1916bfeef",
+		en: "For the dinner party, I'd pair the red wine with the steak and the white with the fish.",
+		zh: "晚宴上，我会搭配红酒和牛排，白酒和鱼。",
+		hook: {
+			text: "搭配",
+		},
+	},
+	{
+		id: "d8bc1e07-dbb9-4282-bf89-e21613179caf",
+		en: "It might sound unusual, but I find doing yoga helps me focus better at work.",
+		zh: "这听起来可能有点不同寻常，但我发现做瑜伽有助于我更好地专注于工作。",
+		hook: {
+			text: "有点不同寻常",
+		},
+	},
+	{
+		id: "7118bc52-f7ad-4917-a520-487fad0577e5",
+		en: "I'm curious about the new restaurant that just opened downtown, want to check it out together?",
+		zh: "我对刚刚在市中心开业的新餐厅很好奇，想一起去看看吗？",
+		hook: {
+			text: "很好奇",
+		},
+	},
+	{
+		id: "3a657183-e04d-4b95-b944-f04568ef9767",
+		en: "My grandmother is fond of gardening, and her yard is a beautiful array of flowers.",
+		zh: "我奶奶喜欢园艺，她的院子里种满了各种美丽的花。",
+		hook: {
+			text: "喜欢",
+		},
+	},
+	{
+		id: "eeb94443-5a21-4103-a3f7-e1fe7cb21341",
+		en: "Definitely, we should meet up more often – it's been too long since we last caught up!",
+		zh: "当然，我们应该更经常见面——自上次我们见面以来已经太久了！",
+		hook: {
+			text: "当然",
+		},
+	},
+	{
+		id: "449ec290-5f43-4290-ba12-fb8962094646",
+		en: "The chef at our favorite restaurant is experimenting with fusion cuisine, blending Asian and Italian flavors.",
+		zh: "我们最喜欢的餐厅的厨师正在尝试融合烹饪，融合亚洲和意大利风味。",
+		hook: {
+			text: "正在尝试",
+		},
+	},
+	{
+		id: "68214ccd-a5c4-49a3-8d7a-04300e358698",
+		en: "At the concert last night, I snapped a ton of photos, I can't wait to show you!",
+		zh: "昨晚在音乐会上，我拍了很多照片，我迫不及待想给你看！",
+		hook: {
+			text: "拍了很多照片",
+		},
+	},
+	{
+		id: "b2302db8-b0d5-4de9-bf81-5d675243b589",
+		en: "I reckon those luxury cars are out of reach for most people, but it's fun to dream, right?",
+		zh: "我认为那些豪华车对大多数人来说是遥不可及的，但做梦总是很有趣，对吧？",
+		hook: {
+			text: "遥不可及",
+		},
+	},
+	{
+		id: "c9d6ab7a-36aa-4091-aca1-d08173e83b24",
+		en: "The new restaurant in town seems to be catering more to the wealthier crowd, with prices that are a bit steep for my budget.",
+		zh: "镇上的新餐厅似乎更多地迎合富人，价格对我的预算来说有点高。",
+		hook: {
+			text: "价格对我的预算来说有点高",
+		},
+	},
+	{
+		id: "8cc032c4-7ca2-40f8-949d-75cfba1fc6f3",
+		en: "That designer handbag might be beautiful, but it's quite costly and not really worth the investment for me.",
+		zh: "那个设计师手袋可能很漂亮，但价格相当昂贵，对我来说不值得投资。",
+		hook: {
+			text: "价格相当昂贵",
+		},
+	},
+	{
+		id: "cca49a64-45ee-4014-8769-c4969aa54a0d",
+		en: "Cacti are easy to care for, which makes them a perfect choice for someone new to gardening.",
+		zh: "仙人掌易于照料，这使得它们成为对园艺新手来说的完美选择。",
+		hook: {
+			text: "易于照料",
+		},
+	},
+	{
+		id: "fd26746a-4803-41e7-9e6a-a92495780c81",
+		en: "We're planning a vacation next summer, and I can't wait to see what the rest of the family thinks about it.",
+		zh: "我们计划明年夏天度假，我迫不及待想看看家里其他人对此有什么看法。",
+		hook: {
+			text: "家里其他人",
+		},
+	},
 ];
 
 export default strings;
