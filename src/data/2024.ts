@@ -1823,6 +1823,182 @@ const strings: tStringItem[] = [
 			text: "家里其他人",
 		},
 	},
+	{
+		id: "6f518299-f714-496d-b363-ee596285c185",
+		en: "Hey, we're planning a charity event to raise money for the local animal shelter.",
+		zh: "嘿，我们正在策划一场慈善活动，为当地的动物收容所筹集资金。",
+		hook: {
+			text: "筹集资金",
+		},
+	},
+	{
+		id: "c8d5b893-e144-448a-9bfc-d8b6b7725163",
+		en: "The new policy was intended to be a win-win for both the employees and the company.",
+		zh: "新政策旨在使员工和公司双赢。",
+		hook: {
+			text: "旨在",
+		},
+	},
+	{
+		id: "049a2425-017e-41a6-9278-759c488b02ce",
+		en: "Starting your own business is a long and hard journey ahead of you, but it's definitely worth the effort if you're passionate about it.",
+		zh: "创业是一条漫长而艰难的道路，但如果你对此充满激情，那么付出的努力绝对是值得的。",
+		hook: {
+			text: "漫长而艰难的道路",
+		},
+	},
+	{
+		id: "d81f181b-23d0-43a2-a806-e24f0a863ff9",
+		en: "Recent graduates often face a tough job market, so it's crucial to stand out with a strong portfolio and networking skills.",
+		zh: "应届毕业生经常面临严峻的就业市场，因此拥有强大的作品集和人际网络技能至关重要。",
+		hook: {
+			text: "应届毕业生",
+		},
+	},
+	{
+		id: "46ed5769-50e3-4989-b4f6-f55cc2c85094",
+		en: "As a freelance graphic designer, I need to work quickly and handle late hours to meet tight deadlines for my clients.",
+		zh: "作为一名自由平面设计师，我需要快速工作并加班处理工作以满足客户的紧迫截止日期。",
+		hook: {
+			text: "快速工作并加班处理工作",
+		},
+	},
+	{
+		id: "1aacdeb0-06e7-403b-af16-e789a59a4165",
+		en: "I also enjoy playing the guitar in my free time, it's a great way to relax after a busy day at work.",
+		zh: "我也喜欢在空闲时间弹吉他，这是在工作一天后放松的好方法。",
+		hook: {
+			text: "也喜欢",
+		},
+	},
+	{
+		id: "aea81cc5-1945-4c5a-8d73-a77c10cf0738",
+		en: "It really boils down to how much effort you're willing to put in to achieve your goals.",
+		zh: "这实际上取决于你愿意为实现目标付出多少努力。",
+		hook: {
+			text: "取决于",
+		},
+	},
+	{
+		id: "8e17083b-c203-4b99-92cb-d2b1db6159e9",
+		en: "Unlike me, my brother is a morning person and loves to wake up early to exercise.",
+		zh: "与我不同，我弟弟是个早起的人，喜欢早起锻炼。",
+		hook: {
+			text: "与我不同",
+		},
+	},
+	{
+		id: "152de3b7-2356-42bb-8917-f55898841453",
+		en: "I've recently started learning Spanish, and it's been a fun challenge!",
+		zh: "我最近开始学习西班牙语，这是一个有趣的挑战！",
+		hook: {
+			text: "最近",
+		},
+	},
+	{
+		id: "478601ab-3c3d-449e-aaa3-3046f4d22a51",
+		en: "Hey, are you looking for the new restaurant downtown? It's just a block away from here.",
+		zh: "嘿，你在找市中心的新餐厅吗？离这里只有一个街区。",
+		hook: {
+			text: "在找",
+		},
+	},
+	{
+		id: "e9d87f54-2a00-49c3-8456-90f7313519b1",
+		en: "In my next position, I'm hoping to find a company that values work-life balance as much as I do.",
+		zh: "在我下一个职位上，我希望找到一个和我一样重视工作与生活平衡的公司。",
+		hook: {
+			text: "下一个职位",
+		},
+	},
+	{
+		id: "4db3709e-3465-4092-9a42-d01e03a2d2c9",
+		en: "I'm working on a long-term plan to save up for a house, so I've been budgeting and cutting back on expenses.",
+		zh: "我正在制定一个长期计划来存钱买房，所以我一直在预算和削减开支。",
+		hook: {
+			text: "长期计划",
+		},
+	},
+	{
+		id: "a882dea3-6780-4fdf-be8e-f0be107373b6",
+		en: "If I were to invest in stocks, I'd definitely do my research first to minimize the risk.",
+		zh: "如果我要投资股票，我肯定会先做好研究以降低风险。",
+		hook: {
+			text: "如果我",
+		},
+	},
+	{
+		id: "5134b278-4c33-4dcf-b0ff-dbc24df064c3",
+		en: "I sometimes struggle to stay motivated on long projects, so I set small goals to keep myself going.",
+		zh: "我有时很难保持对长期项目的动力，所以我设定小目标来保持前进。",
+		hook: {
+			text: "很难",
+		},
+	},
+	{
+		id: "fce6dc80-0f18-40b1-93a3-35a968b49549",
+		en: "The new community center could serve as a hub for local artists to showcase their work.",
+		zh: "新社区中心可以作为本地艺术家展示作品的中心。",
+		hook: {
+			text: "作为",
+		},
+	},
+	{
+		id: "9d2c1e73-ccaf-44d5-a6d6-663626422bb2",
+		en: "If the weather doesn't improve, our backup plan is to have the picnic indoors.",
+		zh: "如果天气没有好转，我们的备用计划是在室内野餐。",
+		hook: {
+			text: "备用计划",
+		},
+	},
+	{
+		id: "3b3fca96-6b45-4110-a4e1-697b7c983b9b",
+		en: "I've got a surprise for you tonight – I'm taking you to that Italian restaurant you've been wanting to try!",
+		zh: "今晚我有个惊喜给你——我带你去你一直想尝试的那家意大利餐厅！",
+		hook: {
+			text: "我有",
+		},
+	},
+	{
+		id: "b6e963a9-7658-415d-b21c-a5bbec9272e4",
+		en: "My biggest challenge at work right now is managing the tight deadlines while maintaining quality.",
+		zh: "我现在工作中最大的挑战是在保持质量的同时管理紧迫的截止日期。",
+		hook: {
+			text: "最大的挑战",
+		},
+	},
+	{
+		id: "8f6c1483-fa71-4824-932f-e3c8900d585c",
+		en: "The key to our event's success is getting the word out to as many people as possible.",
+		zh: "我们活动成功的关键是让尽可能多的人知道。",
+		hook: {
+			text: "知道",
+		},
+	},
+	{
+		id: "4cd9b3fd-3cb3-44c8-82fa-91e319968eee",
+		en: "We've allocated a portion of our budget specifically for funds for advertising to boost our product launch.",
+		zh: "我们专门为广告经费拨出了预算的一部分，以提高我们的产品发布。",
+		hook: {
+			text: "提高",
+		},
+	},
+	{
+		id: "1fd1ad65-3946-4f39-b099-dae63e491965",
+		en: "How can we improve our customer service to make sure everyone has a great experience?",
+		zh: "我们如何改进我们的客户服务，以确保每个人都有一个很好的体验？",
+		hook: {
+			text: "我们如何",
+		},
+	},
+	{
+		id: "1acc8a3a-ef19-4b5c-a6f3-557288d0403e",
+		en: "I'll give it some thought and get back to you tomorrow with my decision.",
+		zh: "我会考虑一下，明天再告诉你我的决定。",
+		hook: {
+			text: "考虑一下",
+		},
+	},
 ];
 
 export default strings;
