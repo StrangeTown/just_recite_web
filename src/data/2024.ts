@@ -1999,6 +1999,62 @@ const strings: tStringItem[] = [
 			text: "考虑一下",
 		},
 	},
+	{
+		id: "52608437-ab38-4c33-90c3-62666efe6d68",
+		en: "The level of innovation in this new smartphone has never been seen before in the industry.",
+		zh: "这款新智能手机的创新水平在行业中前所未有。",
+		hook: {
+			text: "前所未有",
+		},
+	},
+	{
+		id: "0fa33a10-d353-4067-ba6c-a419b5ea17f3",
+		en: "I discovered this great coffee shop by accident when I got lost on my way to the library.",
+		zh: "我在去图书馆的路上迷路时无意中发现了这家很棒的咖啡店。",
+		hook: {
+			text: "无意中发现",
+		},
+	},
+	{
+		id: "fa71b77b-4c2f-4300-83a9-203c4bf3f68b",
+		en: "I showed them to my friends, and they were all amazed at the quality of the photos.",
+		zh: "我把它们给朋友看，他们都对照片的质量感到惊讶。",
+		hook: {
+			text: "给朋友看",
+		},
+	},
+	{
+		id: "99de1310-616e-4bcb-8857-48c59ad66933",
+		en: "They are often considered the best team in the league, but we're hoping to give them a run for their money this season.",
+		zh: "他们经常被认为是联盟中最好的球队，但我们希望本赛季能给他们制造麻烦。",
+		hook: {
+			text: "被认为是",
+		},
+	},
+	{
+		id: "1f70d710-2b06-4b4c-969d-5e0ee9e62fc5",
+		en: "Some of the most memorable moments of my life have been the spontaneous trips I've taken with friends.",
+		zh: "我生活中一些最难忘的时刻是我和朋友一起进行的那些即兴之旅。",
+		hook: {
+			text: "一些最难忘的时刻",
+		},
+	},
+	{
+		id: "2a83be1c-934a-49df-b78d-bfde796929e6",
+		en: "The ancient ruins are believed to be over a thousand years old, and they're still standing strong.",
+		zh: "古代遗迹被认为有一千多年的历史，但它们仍然屹立不倒。",
+		hook: {
+			text: "被认为有",
+		},
+	},
+	{
+		id: "30b33cc5-022c-465a-810a-b1b19da07d6c",
+		en: "The old oak tree in the park is one of the remaining few that survived the storm last year.",
+		zh: "公园里的那棵老橡树是去年风暴中幸存下来的为数不多的几棵之一。",
+		hook: {
+			text: "幸存下来的",
+		},
+	},
 ];
 
 export default strings;
