@@ -2055,6 +2055,46 @@ const strings: tStringItem[] = [
 			text: "幸存下来的",
 		},
 	},
+	{
+		id: "ab73f647-7bc0-4d9d-858c-70cd1d1c5fea",
+		en: "After analyzing all the data, the team comes to the conclusion that the new marketing strategy is working.",
+		zh: "在分析了所有数据之后，团队得出结论，新的营销策略正在起作用。",
+		hook: {
+			text: "得出结论",
+		},
+	},
+	{
+		id: "819e4a06-7025-4d4b-9022-a2c7f08b4992",
+		en: "After reading the book, I had these deep insights about human behavior that I never considered before.",
+		zh: "读完这本书后，我对人类行为有了深刻的见解，这是我以前从未考虑过的。",
+		hook: {
+			text: "深刻的见解",
+		},
+	},
+	{
+		id: "07c3a037-d996-4648-9f35-f4543f7acbcd",
+		en: "Prior to the meeting, I'd like to review the financial reports to be fully prepared.",
+		zh: "在会议之前，我想要审查财务报告以做好充分准备。",
+		hook: {
+			text: "之前",
+		},
+	},
+	{
+		id: "c1dc6c5e-2a76-4f34-9d10-bfed26b00161",
+		en: "In the discussion, your opinion carried weight because of your extensive experience in the field.",
+		zh: "在讨论中，由于你在这个领域的丰富经验，你的意见具有重要性。",
+		hook: {
+			text: "具有重要性",
+		},
+	},
+	{
+		id: "4436c8cf-2b08-4323-bb5a-d75b49700f76",
+		en: "Generally speaking, I prefer to work in the mornings when I'm most focused and productive.",
+		zh: "一般来说，我更喜欢在早上工作，那时我最专注和高效。",
+		hook: {
+			text: "一般来说",
+		},
+	},
 ];
 
 export default strings;
