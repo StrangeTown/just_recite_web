@@ -1149,7 +1149,6 @@ const qingkStrings: tStringItem[] = [
 		id: "87715440-6288-4aab-8070-2fff799e1aef",
 		hook: {
 			text: "电梯",
-			imgUrl: "https://s2.loli.net/2023/11/14/pfU7AtC3HhoMzJm.png",
 		},
 	},
 	{

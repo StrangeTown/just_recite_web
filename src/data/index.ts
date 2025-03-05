@@ -2,6 +2,7 @@ import strings2023 from "./2023";
 import strings2024 from "./2024";
 import qingkStrings from "./qingke";
 import guoqingStrings from "./guoqing";
+import strings2025 from "./2025";
 
 export type tStringItem = {
 	id: string;
@@ -129,6 +130,7 @@ const data = [
 	...strings2023,
 	...guoqingStrings,
 	...strings2024,
+	...strings2025,
 ];
 
 let isTest = false;
