@@ -89,46 +89,166 @@ const strings: tStringItem[] = [
 			text: "风太大",
 		},
 	},
-	// {
-	// 	en: "",
-	// 	zh: "",
-	// 	id: "",
-	// 	hook: {
-	// 		text: "",
-	// 	},
-	// },
-	// {
-	// 	en: "",
-	// 	zh: "",
-	// 	id: "",
-	// 	hook: {
-	// 		text: "",
-	// 	},
-	// },
-	// {
-	// 	en: "",
-	// 	zh: "",
-	// 	id: "",
-	// 	hook: {
-	// 		text: "",
-	// 	},
-	// },
-	// {
-	// 	en: "",
-	// 	zh: "",
-	// 	id: "",
-	// 	hook: {
-	// 		text: "",
-	// 	},
-	// },
-	// {
-	// 	en: "",
-	// 	zh: "",
-	// 	id: "",
-	// 	hook: {
-	// 		text: "",
-	// 	},
-	// },
+	{
+		en: "Your toy has fallen onto the floor.",
+		zh: "你的玩具掉到地上了。",
+		id: "c4a5eb8f-1b4a-4e89-b7dd-3f30c578e2a9",
+		hook: {
+			text: "掉到地上",
+		},
+	},
+	{
+		en: "Would you like another prune",
+		zh: "你还要吃一颗西梅吗",
+		id: "d7f6a2b5-94c2-4c32-ae71-b8e13d9f8e10",
+		hook: {
+			text: "吃一颗",
+		},
+	},
+	{
+		en: "Your hands are almost clean.",
+		zh: "你的手差不多干净了。",
+		id: "e9b7c3a1-85d3-4f29-b6e2-a9c8d7e4f012",
+		hook: {
+			text: "差不多干净",
+		},
+	},
+	{
+		en: "The big bad wolf is coming.",
+		zh: "大灰狼来了。",
+		id: "f1e2d3c4-b5a6-4789-8901-2345e6f7a890",
+		hook: {
+			text: "大灰狼",
+		},
+	},
+	{
+		en: "I'll help you drive the big bad wolf away.",
+		zh: "我会帮你把大灰狼赶走。",
+		id: "a1b2c3d4-e5f6-4789-8901-2345e6f7a891",
+		hook: {
+			text: "赶走",
+		},
+	},
+	{
+		en: "This sweet potato is a bit hot.",
+		zh: "这个红薯有点烫",
+		id: "b2c3d4e5-f6a7-4789-8901-2345e6f7a892",
+		hook: {
+			text: "有点烫",
+		},
+	},
+	{
+		en: "The bus we're waiting for is coming soon.",
+		zh: "我们等的公交车马上就要来了",
+		id: "c3d4e5f6-a7b8-4789-8901-2345e6f7a893",
+		hook: {
+			text: "马上就要来",
+		},
+	},
+	{
+		en: "I'm a little scared of thunder.",
+		zh: "我有点怕打雷",
+		id: "d4e5f6a7-b8c9-4789-8901-2345e6f7a894",
+		hook: {
+			text: "怕打雷",
+		},
+	},
+	{
+		en: "I can't zip up my zipper.",
+		zh: "我拉不上拉链",
+		id: "e5f6a7b8-c9d0-4789-8901-2345e6f7a895",
+		hook: {
+			text: "拉不上",
+		},
+	},
+	{
+		en: "I'm so scared that I'm sweating.",
+		zh: "我吓得出了一身汗",
+		id: "f6a7b8c9-d0e1-4789-8901-2345e6f7a896",
+		hook: {
+			text: "出了一身汗",
+		},
+	},
+	{
+		en: "My balloon has flown away!",
+		zh: "我的气球飞走了！",
+		id: "a7b8c9d0-e1f2-4789-8901-2345e6f7a897",
+		hook: {
+			text: "飞走了",
+		},
+	},
+	{
+		en: "This little boy jumped onto the tree stump.",
+		zh: "这个小男孩跳到了树桩上",
+		id: "b8c9d0e1-f2a3-4789-8901-2345e6f7a898",
+		hook: {
+			text: "跳到了",
+		},
+	},
+	{
+		en: "I'm still not quite sure how to use the vacuum cleaner.",
+		zh: "我还不太会用吸尘器",
+		id: "c9d0e1f2-a3b4-4789-8901-2345e6f7a899",
+		hook: {
+			text: "不太会用",
+		},
+	},
+	{
+		en: "I accidentally knocked over a pot of flowers.",
+		zh: "我不小心把一盆花给打翻了",
+		id: "d0e1f2a3-b4c5-4789-8901-2345e6f7a800",
+		hook: {
+			text: "打翻了",
+		},
+	},
+	{
+		en: "I hung my raincoat on the hanger by the door.",
+		zh: "我把雨衣挂在了门边的衣架上",
+		id: "e1f2a3b4-c5d6-4789-8901-2345e6f7a801",
+		hook: {
+			text: "挂在了",
+		},
+	},
+	{
+		en: "Let me help you put on your shoes.",
+		zh: "让我帮你穿鞋",
+		id: "f2a3b4c5-d6e7-4789-8901-2345e6f7a802",
+		hook: {
+			text: "帮你穿",
+		},
+	},
+	{
+		en: "There are lots of bubbles when taking a bath.",
+		zh: "洗澡的时候有很多泡泡",
+		id: "a3b4c5d6-e7f8-4789-8901-2345e6f7a803",
+		hook: {
+			text: "有很多泡泡",
+		},
+	},
+	{
+		en: "Did you make this bracelet yourself?",
+		zh: "这个手镯是你自己做的吗",
+		id: "b4c5d6e7-f8a9-4789-8901-2345e6f7a804",
+		hook: {
+			text: "自己做",
+		},
+	},
+	{
+		en: "I want to take a hot air balloon ride right now.",
+		zh: "我现在就想坐热气球",
+		id: "c5d6e7f8-a9b0-4789-8901-2345e6f7a805",
+		hook: {
+			text: "坐热气球",
+		},
+	},
+	{
+		en: "I still think pitaya tastes the best.",
+		zh: "我还是觉得火龙果最好吃",
+		id: "d6e7f8a9-b0c1-4789-8901-2345e6f7a806",
+		hook: {
+			text: "最好吃",
+		},
+	},
 ];
 
 export default strings;
