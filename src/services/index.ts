@@ -21,32 +21,54 @@ const getPreviousIds = () => {
 };
 
 const generateItems = () => {
-	// get random one of previous ids
+	// get random three of previous ids
 	const previousIds = getPreviousIds();
 	console.log(previousIds);
-	const previousId =
-		previousIds[Math.floor(Math.random() * previousIds.length)];
 
-	const randomStrings: IStoreStringItem[] = getRandomStrings({
-		len: 10,
-		excludeIds: [previousId],
-	});
+	// Select up to 3 random previous IDs
+	const selectedPreviousIds: string[] = [];
+	const availablePreviousIds = [...previousIds];
 
-	const stringFromPreviousSession = getStringById(previousId);
-	// insert string from previous session to randomStrings in a random position
-	if (stringFromPreviousSession) {
-		randomStrings.splice(Math.floor(Math.random() * randomStrings.length), 0, {
-			...stringFromPreviousSession,
-			fromPrevSession: true,
-		});
+	// Get up to 3 previous IDs if available
+	const numPreviousToInclude = Math.min(3, availablePreviousIds.length);
+	for (let i = 0; i < numPreviousToInclude; i++) {
+		if (availablePreviousIds.length === 0) break;
+		const randomIndex = Math.floor(Math.random() * availablePreviousIds.length);
+		selectedPreviousIds.push(availablePreviousIds[randomIndex]);
+		availablePreviousIds.splice(randomIndex, 1);
 	}
 
-	const imageUrls = randomStrings
+	const randomStrings: IStoreStringItem[] = getRandomStrings({
+		len: 10 - selectedPreviousIds.length, // Adjust count to maintain total of 10 items
+		excludeIds: selectedPreviousIds,
+	});
+
+	// Get strings from previous sessions and add them
+	const stringsFromPreviousSessions = selectedPreviousIds
+		.map((id) => getStringById(id))
+		.filter((s) => s && s.id) // Filter out any undefined items and items with undefined id
+		.map((s) => ({
+			...s,
+			fromPrevSession: true,
+		})) as IStoreStringItem[];
+
+	// Combine new and previous items
+	let combinedStrings = [...randomStrings];
+
+	// Insert each previous string at a random position
+	stringsFromPreviousSessions.forEach((prevString) => {
+		const randomPosition = Math.floor(
+			Math.random() * (combinedStrings.length + 1)
+		);
+		combinedStrings.splice(randomPosition, 0, prevString);
+	});
+
+	const imageUrls = combinedStrings
 		.map((s) => s.hook?.imgUrl)
 		.filter((img) => img) as string[];
 	preloadImages(imageUrls);
 
-	store.dispatch(setRandomStrings(randomStrings));
+	store.dispatch(setRandomStrings(combinedStrings));
 };
 
 const saveIdsToHistory = (ids: string[]) => {
