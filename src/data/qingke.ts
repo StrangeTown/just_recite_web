@@ -527,7 +527,6 @@ const qingkStrings: tStringItem[] = [
 		id: "2c8a8224-a7f1-4c73-b679-c304132110e4",
 		hook: {
 			text: "心碎",
-			imgUrl: "https://i.niupic.com/images/2023/11/14/cqxl.png",
 		},
 	},
 	{
